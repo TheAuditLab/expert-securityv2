@@ -2657,10 +2657,6 @@ table.shop_table .woocommerce-button {
   }
 }
 
-#header .header-top-banner {
-  border: 1px solid #000000;
-}
-
 #header .header-top-banner .header-logo {
   max-width: 350px;
 }
@@ -2675,6 +2671,8 @@ table.shop_table .woocommerce-button {
 
 #header .header-top-banner .container .logo-div {
   width: 60%;
+  border-bottom: 1px solid #000000;
+  padding: 20px;
 }
 
 #header .header-top-banner .container .contact-div {
@@ -2683,6 +2681,8 @@ table.shop_table .woocommerce-button {
   color: #ffffff;
   padding: 0 30px;
   position: relative;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
 }
 
 #header .header-top-banner .container .contact-div:after {
@@ -2692,7 +2692,7 @@ table.shop_table .woocommerce-button {
   width: 100%;
   height: 100%;
   top: 0;
-  right: 64px;
+  right: 80px;
   z-index: -1;
   background: var(--green);
   -webkit-transform-origin: bottom left;
@@ -2705,10 +2705,15 @@ table.shop_table .woocommerce-button {
   font-size: 30px;
   color: #ffffff;
   text-decoration: none;
+  padding-bottom: 30px;
 }
 
 #header .header-top-banner .container .contact_div {
   font-size: 50px;
+}
+
+#footer {
+  margin-top: 300px;
 }
 
 .search-results #content {
