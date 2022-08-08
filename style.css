@@ -2670,19 +2670,30 @@ table.shop_table .woocommerce-button {
 }
 
 #header .header-top-banner .container .logo-div {
-  width: 60%;
+  width: 50%;
   border-bottom: 1px solid #000000;
   padding: 20px;
 }
 
+#header .header-top-banner .container .phone-icon, #header .header-top-banner .container .email-icon {
+  width: 35px;
+}
+
 #header .header-top-banner .container .contact-div {
-  width: 40%;
+  width: 50%;
   background: var(--green);
   color: #ffffff;
   padding: 0 30px;
   position: relative;
   border-bottom: 1px solid #000000;
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #header .header-top-banner .container .contact-div:after {
@@ -2692,7 +2703,7 @@ table.shop_table .woocommerce-button {
   width: 100%;
   height: 100%;
   top: 0;
-  right: 80px;
+  right: 95px;
   z-index: -1;
   background: var(--green);
   -webkit-transform-origin: bottom left;

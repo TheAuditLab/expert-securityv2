@@ -56,9 +56,11 @@
             </div>
             <div class="contact-div">
                 <a class="tel" href="tel:<?php echo $header_phone_number; ?>">
+                    <img class="phone-icon" src="<?php bloginfo('template_url'); ?>/images/phone.svg" alt="Phone Icon">
                     <?php echo $header_phone_number ?>
                 </a>
                 <a class="email" href="mailto:<?php echo $header_email; ?>">
+                    <img class="email-icon" src="<?php bloginfo('template_url'); ?>/images/email.svg" alt="Email Icon">
                     <?php echo $header_email?>
                 </a>
             </div>
