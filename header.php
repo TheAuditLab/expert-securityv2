@@ -52,13 +52,13 @@
     <div class="header-top-banner">
         <div class="container">
             <div class="logo-div">
-               <img >
+                <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
             </div>
             <div class="contact-div">
-                <a href="tel:<?php echo $header_phone_number; ?>">
+                <a class="tel" href="tel:<?php echo $header_phone_number; ?>">
                     <?php echo $header_phone_number ?>
                 </a>
-                <a href="mailto:<?php echo $header_email; ?>">
+                <a class="email" href="mailto:<?php echo $header_email; ?>">
                     <?php echo $header_email?>
                 </a>
             </div>

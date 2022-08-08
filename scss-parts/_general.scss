@@ -50,7 +50,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:foc
 a img, input[type="image"], iframe{border:0}
 a img:hover, a:focus img, a svg:hover, a:focus svg{opacity:0.8}
 img[src$=".svg"], svg{display:inline-block;line-height:normal;vertical-align:middle}
-img, video, audio, table, select, textarea{max-width:100% !important;height:auto}
+img, video, audio, table, select, textarea{max-width:100%;height:auto}
 table{width:100%;margin:30px 0}
 
 
