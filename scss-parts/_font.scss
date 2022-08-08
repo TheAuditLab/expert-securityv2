@@ -1,0 +1,20 @@
+@font-face {
+    font-family: AlbertSans-Bold;
+    src: url("fonts/AlbertSans-Bold.woff");
+}
+
+@font-face {
+font-family: AlbertSans-ExtraBold;
+src: url("fonts/AlbertSans-ExtraBold.otf");
+}
+
+@font-face {
+font-family: AlbertSans-Regular;
+src: url("fonts/AlbertSans-ExtraBold.otf");
+}
+
+
+.contact-div a {
+    font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
+    font-size: 60px;
+}

@@ -1,0 +1,21 @@
+// --- Header Navigation 
+#header{
+    .header-top-banner {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            .logo-div {
+                width: 60%;
+            }
+            .contact-div{
+                width: 40%;
+                background: var(--green);
+                color: #ffffff;
+            }
+            .contact_div {
+                font-size: 50px;
+           
+            }
+        }
+    }
+}
