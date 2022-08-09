@@ -1,17 +1,6 @@
 </main>
 <?php get_sidebar(); ?>
 
-<?php
-    // Footer
-    $footer_main_description = get_field("footer_main_description", 17);
-    // Social icons
-    $footer_social_title = get_field("footer_social_title", 17);
-
-    $footer_social_icon_1 = get_field("footer_social_icon_1", 17);
-    $footer_social_icon_2 = get_field("footer_social_icon_2", 17);
-    $footer_social_icon_3 = get_field("footer_social_icon_3", 17);
-?>
-
 <footer id="footer" role="contentinfo">
     <div class="container">
         <div class="row">

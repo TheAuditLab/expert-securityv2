@@ -2657,25 +2657,73 @@ table.shop_table .woocommerce-button {
   }
 }
 
+#header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #header .header-top-banner .header-logo {
+  z-index: 5;
   max-width: 350px;
 }
 
 #header .header-top-banner .container {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: unset;
 }
 
 #header .header-top-banner .container .logo-div {
   width: 50%;
   border-bottom: 1px solid #000000;
   padding: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#header .header-top-banner .container .phone-icon, #header .header-top-banner .container .email-icon {
+@media screen and (min-width: 1447px) {
+  #header .header-top-banner .container .logo-div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+#header .header-top-banner .container .logo-div:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: #ffffff;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skew(-30deg, 0deg);
+  transform: skew(-30deg, 0deg);
+}
+
+@media screen and (min-width: 1447px) {
+  #header .header-top-banner .container .logo-div img {
+    position: relative;
+  }
+}
+
+#header .header-top-banner .container .phone-icon {
+  width: 40px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#header .header-top-banner .container .email-icon {
   width: 35px;
 }
 
@@ -2683,9 +2731,10 @@ table.shop_table .woocommerce-button {
   width: 50%;
   background: var(--green);
   color: #ffffff;
-  padding: 0 30px;
+  padding: 0 30px 20px 100px;
   position: relative;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid;
+  border-color: var(--green);
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2696,31 +2745,79 @@ table.shop_table .woocommerce-button {
           flex-direction: column;
 }
 
-#header .header-top-banner .container .contact-div:after {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 95px;
-  z-index: -1;
-  background: var(--green);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transform: skew(-30deg, 0deg);
-  transform: skew(-30deg, 0deg);
-}
-
 #header .header-top-banner .container .contact-div .email {
   font-size: 30px;
   color: #ffffff;
   text-decoration: none;
-  padding-bottom: 30px;
 }
 
 #header .header-top-banner .container .contact_div {
   font-size: 50px;
+}
+
+#header #menu-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#header #menu-main-menu li {
+  padding: 20px 45px 20px 0;
+}
+
+#header #menu-main-menu li:after {
+  content: '●';
+  position: relative;
+  font-size: 8px;
+  bottom: 2px;
+  left: 23px;
+}
+
+#header #menu-main-menu li:last-child {
+  padding: 20px 30px 20px 0;
+}
+
+#header #menu-main-menu li:last-child:after {
+  content: '';
+}
+
+#header #menu-main-menu li a {
+  text-decoration: none;
+}
+
+#header #menu-main-menu li a:hover {
+  color: var(--green);
+}
+
+#header #menu-main-menu .current-menu-item a {
+  color: var(--green);
+}
+
+#header #search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+#header #search .search-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+}
+
+#header .search-field {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  border-bottom: 1px solid;
+  border-color: var(--green);
+  padding-bottom: 7px;
 }
 
 #footer {

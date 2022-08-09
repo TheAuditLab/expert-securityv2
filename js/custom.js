@@ -5,6 +5,12 @@ jQuery(document).ready(function($) {
     
     jQuery(".woocommerce-product-details__short-description").insertBefore(".woo-related-products-container ");
 
+    // Search bar toggle
+    jQuery(".search-icon").click(function(){
+        console.log('tt');
+        $(".search-field").toggle();
+    });
+
 
     // Homepage hero slider
     $('.homepage-hero-main-slider').slick({

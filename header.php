@@ -66,6 +66,17 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <?php
+            wp_nav_menu( array( 
+                'theme_location' => 'main-menu', 
+                'container_class' => 'main-menu' ) ); 
+        ?>
+        <div id="search">
+            <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon">
+            <?php get_search_form(); ?>
+        </div>
+    </div>
 </div>
 
 <!-- Initial -->
