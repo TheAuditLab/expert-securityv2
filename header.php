@@ -78,17 +78,16 @@
         </div>
         <div class="social-icons">
             <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
-                <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon">
+                <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon">
             </a>
-                <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon">
+                <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon">
             </a>
             <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
-                <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon">
+                <img src="<?php bloginfo('template_url'); ?>/images/linkedin-green.svg" alt="LinkedIn Icon">
             </a>
         </div>
     </div>
 </div>
 
-<!-- Initial -->
-<?php if (is_blog()) { get_template_part( 'blog-header' ); }?>
+
 <main id="content" role="main">

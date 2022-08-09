@@ -187,11 +187,11 @@ add_action('wp_enqueue_scripts','custom_js_load');
 
 // Footer Menu
 
-function footer_menu() {
-    register_nav_menus(
-      array(
-        'footer-menu' => __( 'Footer Menu' )
-      )
-    );
-  }
-  add_action( 'init', 'footer_menu' );
+function wpb_custom_footer_menu() {
+  register_nav_menus(
+    array(
+      'main-footer-menu' => __( 'Main Footer Menu' )
+    )
+  );
+}
+add_action( 'init', 'wpb_custom_footer_menu' );
