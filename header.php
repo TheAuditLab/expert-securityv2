@@ -76,6 +76,16 @@
             <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon">
             <?php get_search_form(); ?>
         </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
+                <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon">
+            </a>
+                <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon">
+            </a>
+            <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
+                <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+        </div>
     </div>
 </div>
 

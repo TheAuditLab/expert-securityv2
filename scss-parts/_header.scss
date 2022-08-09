@@ -109,7 +109,7 @@
 
         .search-icon {
             display: flex;
-            width: 30px;
+            width: 25px;
         }
     }
     .search-field {
@@ -120,5 +120,21 @@
         border-bottom: 1px solid;
         border-color: var(--green);
         padding-bottom: 7px;
+    }
+    .social-icons {
+        display: flex;
+        align-self: center;
+        margin-left: auto;
+        img {
+            width: 25px;
+            &:nth-child(2) {
+                margin: 0 15px;
+            }
+        }
+       
+        a {
+            text-decoration: none;
+            
+        }
     }
 }

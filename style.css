@@ -854,7 +854,7 @@ h2.entry-title, h3.widget-title {
 
 @media (min-width: 1400px) {
   #content .container, #content .container-lg, #content .container-md, #content .container-sm, #content .container-xl, #content .container-xxl {
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 0;
   }
 }
@@ -2807,7 +2807,7 @@ table.shop_table .woocommerce-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30px;
+  width: 25px;
 }
 
 #header .search-field {
@@ -2818,6 +2818,27 @@ table.shop_table .woocommerce-button {
   border-bottom: 1px solid;
   border-color: var(--green);
   padding-bottom: 7px;
+}
+
+#header .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: auto;
+}
+
+#header .social-icons img {
+  width: 25px;
+}
+
+#header .social-icons img:nth-child(2) {
+  margin: 0 15px;
+}
+
+#header .social-icons a {
+  text-decoration: none;
 }
 
 #footer {
@@ -2844,7 +2865,7 @@ table.shop_table .woocommerce-button {
 
 @media screen and (min-width: 1400px) {
   .search-results #content {
-    max-width: 1320px !important;
+    max-width: 1200px !important;
   }
 }
 
