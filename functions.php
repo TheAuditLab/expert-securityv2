@@ -195,3 +195,14 @@ function wpb_custom_footer_menu() {
   );
 }
 add_action( 'init', 'wpb_custom_footer_menu' );
+
+// Useful Links Menu
+
+function useful_links_menu() {
+  register_nav_menus(
+    array(
+      'useful-links-menu' => __( 'Useful Links Menu' )
+    )
+  );
+}
+add_action( 'init', 'useful_links_menu' );

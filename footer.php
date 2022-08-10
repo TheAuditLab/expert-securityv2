@@ -3,21 +3,17 @@
 
 <?php
     // Footer
-    $footer_main_description = get_field("footer_main_description", 17);
-    // Social icons
-    $footer_social_title = get_field("footer_social_title", 17);
-
-    $footer_social_icon_1 = get_field("footer_social_icon_1", 17);
-    $footer_social_icon_2 = get_field("footer_social_icon_2", 17);
-    $footer_social_icon_3 = get_field("footer_social_icon_3", 17);
+    $contact_info = get_field("contact_info", 5);
 ?>
 
 <footer id="footer" role="contentinfo">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h4>Contact</h4>
-                <?php echo $footer_main_description ?>
+                <div class="logo-div">
+                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                </div>
+                <?php echo $contact_info ?>
 
             
             </div>
@@ -30,11 +26,11 @@
                 ?>
             </div>
             <div class="col-12 col-lg-3">
-                <h4>Useful Info</h4>
+                <h4>Useful Links</h4>
                 <?php
                     wp_nav_menu( array( 
-                        'theme_location' => 'main-footer-menu', 
-                        'container_class' => 'main-footer-menu' ) ); 
+                        'theme_location' => 'useful-links-menu', 
+                        'container_class' => 'useful-links-menu' ) ); 
                 ?>
             </div>
             <div class="col-12 d-flex justify-content-center footer-bottom">
