@@ -52,26 +52,38 @@
                 width: 35px;
             }
             .contact-div{
-                width: 50%;
+                width: 100%;
                 background: var(--green);
                 color: #ffffff;
-                padding: 0 30px 20px 100px;
                 position: relative;
                 border-bottom: 1px solid;
                 border-color: var(--green); 
                 padding-bottom: 20px;
                 display: flex;
                 flex-direction: column;
+                @media screen and (min-width: 768px) {
+                    width: 50%;
+                    padding: 0 30px 20px 100px;
+                }
 
                 a {
                     max-width: 540px;
                     text-align: end; 
+                    font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
+                    font-size: 20px;
+
+                    @media screen and (min-width: 768px) {
+                        font-size: 60px;
+                    }
                 }
 
                 .email {
-                    font-size: 30px;
+                    font-size: 18px;
                     color: #ffffff;
                     text-decoration: none;
+                    @media screen and (min-width: 768px) {
+                        font-size: 30px;
+                    }
                 }
             }
             .contact_div {

@@ -15,7 +15,7 @@ Text Domain: generic
 */
 :root {
   --green: #83bb55;
-  --dark-grey: #494949;
+  --light-grey: #c3c3c3;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2029,10 +2029,9 @@ a:hover {
 }
 
 #header .header-top-banner .container .contact-div {
-  width: 50%;
+  width: 100%;
   background: var(--green);
   color: #ffffff;
-  padding: 0 30px 20px 100px;
   position: relative;
   border-bottom: 1px solid;
   border-color: var(--green);
@@ -2046,15 +2045,36 @@ a:hover {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  #header .header-top-banner .container .contact-div {
+    width: 50%;
+    padding: 0 30px 20px 100px;
+  }
+}
+
 #header .header-top-banner .container .contact-div a {
   max-width: 540px;
   text-align: end;
+  font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #header .header-top-banner .container .contact-div a {
+    font-size: 60px;
+  }
 }
 
 #header .header-top-banner .container .contact-div .email {
-  font-size: 30px;
+  font-size: 18px;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  #header .header-top-banner .container .contact-div .email {
+    font-size: 30px;
+  }
 }
 
 #header .header-top-banner .container .contact_div {
@@ -2185,6 +2205,19 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .contact-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 #footer .contact-box:after {
@@ -2195,11 +2228,17 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #footer .contact-info {
-  width: 50%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .contact-info {
+    width: 50%;
+  }
 }
 
 #footer .contact-info h4 {
@@ -2216,13 +2255,19 @@ a:hover {
 }
 
 #footer .newsletter {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .newsletter {
+    width: 50%;
+  }
 }
 
 #footer .newsletter .wpcf7-form {
@@ -2231,11 +2276,44 @@ a:hover {
   display: flex;
   position: relative;
   z-index: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .newsletter .wpcf7-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#footer .newsletter .submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .newsletter .submit {
+    width: unset;
+    display: block;
+  }
 }
 
 #footer .newsletter .wpcf7-email {
-  border: 1px solid #000000;
-  width: 95%;
+  border: 1px solid;
+  border-color: var(--light-grey);
+  width: 97%;
+}
+
+#footer .newsletter .wpcf7-submit {
+  background-color: var(--green);
 }
 
 #footer #copyright {
@@ -2387,10 +2465,5 @@ a:hover {
 @font-face {
   font-family: AlbertSans-Regular;
   src: url("fonts/AlbertSans-Regular.otf");
-}
-
-.contact-div a {
-  font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
-  font-size: 60px;
 }
 /*# sourceMappingURL=style.css.map */
