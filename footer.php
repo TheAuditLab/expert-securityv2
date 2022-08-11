@@ -4,10 +4,26 @@
 <?php
     // Footer
     $contact_info = get_field("contact_info", 5);
+    $contact_box_sub_title = get_field("contact_box_sub_title", 5);
+    $contact_box_title = get_field("contact_box_title", 5);
+    $contact_box_text = get_field("contact_box_text", 5);
+    $contact_form = get_field("contact_form", 5);
 ?>
 
 <footer id="footer" role="contentinfo">
     <div class="container">
+        <div class="contact-box">
+            <div class="contact-info">
+                <h4><?php echo $contact_box_sub_title ?></h4>
+                <h2><?php echo $contact_box_title ?></h2>
+                <?php echo $contact_box_text ?>
+            </div>
+            <div class="newsletter">
+                <?php
+                    echo do_shortcode($contact_form);
+                ?>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="logo-div">

@@ -838,18 +838,6 @@ h2.entry-title, h3.widget-title {
   display: none !important;
 }
 
-@font-face {
-  font-family: CircularStdBook;
-  src: url("fonts/CircularStdBook.woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: CircularStdBold;
-  src: url("fonts/CircularStdBold.otf");
-  font-weight: 800;
-}
-
 #content {
   width: 100%;
   overflow: hidden;
@@ -863,7 +851,7 @@ h2.entry-title, h3.widget-title {
 }
 
 body {
-  font-family: "CircularStdBook", Arial, Helvetica, sans-serif !important;
+  font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif !important;
   background: #ffffff;
   color: var(--dark-grey);
 }
@@ -874,13 +862,13 @@ h1, h2, h3, h4, h5 {
 }
 
 p, a, span {
-  font-family: "CircularStdBook", Arial, Helvetica, sans-serif;
+  font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 }
 
 strong, .slide-link {
-  font-family: "CircularStdBold", Arial, Helvetica, sans-serif;
+  font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -903,6 +891,7 @@ h1 {
 h2 {
   font-size: 40px;
   letter-spacing: 1px;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
 }
 
 h3 {
@@ -2057,6 +2046,11 @@ a:hover {
           flex-direction: column;
 }
 
+#header .header-top-banner .container .contact-div a {
+  max-width: 540px;
+  text-align: end;
+}
+
 #header .header-top-banner .container .contact-div .email {
   font-size: 30px;
   color: #ffffff;
@@ -2161,8 +2155,11 @@ a:hover {
 
 #footer h4 {
   font-family: 'AlbertSans-Regular';
-  text-transform: uppercase;
   font-weight: 100;
+}
+
+#footer .row h4 {
+  text-transform: uppercase;
 }
 
 @media (max-width: 1023px) {
@@ -2173,8 +2170,72 @@ a:hover {
 
 @media (min-width: 1400px) {
   #footer .container {
-    max-width: 1240px;
+    max-width: 1200px;
   }
+}
+
+#footer .contact-box {
+  background: url("images/sliding-gate.jpg");
+  margin: 60px 0;
+  padding: 40px 50px;
+  background-position: center;
+  position: relative;
+  -webkit-box-shadow: 8px 10px 13px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 10px 13px -8px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .contact-box:after {
+  content: '';
+  position: absolute;
+  background: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+#footer .contact-info {
+  width: 50%;
+}
+
+#footer .contact-info h4 {
+  color: var(--green);
+}
+
+#footer .contact-info h4, #footer .contact-info h2, #footer .contact-info p {
+  z-index: 3;
+  position: relative;
+}
+
+#footer .contact-info p {
+  max-width: 330px;
+}
+
+#footer .newsletter {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .newsletter .wpcf7-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+#footer .newsletter .wpcf7-email {
+  border: 1px solid #000000;
+  width: 95%;
 }
 
 #footer #copyright {
@@ -2197,10 +2258,6 @@ a:hover {
 #footer a, #footer p {
   color: #000000;
   text-decoration: none;
-}
-
-#footer a:hover {
-  color: var(--pink);
 }
 
 #footer .social-icons {
@@ -2232,6 +2289,10 @@ a:hover {
 
 #footer .logo-div img {
   max-width: 350px;
+}
+
+#footer a:hover {
+  color: var(--green);
 }
 
 .search-results #content {
@@ -2315,7 +2376,7 @@ a:hover {
 
 @font-face {
   font-family: AlbertSans-Bold;
-  src: url("fonts/AlbertSans-Bold.oft");
+  src: url("fonts/AlbertSans-Bold.otf");
 }
 
 @font-face {
