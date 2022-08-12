@@ -2,17 +2,19 @@
 #header{
     .container {
         display: flex;
+        max-width: 1220px !important;
     }
     .header-top-banner {
         .header-logo {
             z-index: 5;
-            max-width: 350px;
+            max-width: 400px;
+            margin-left: 50px;
         }
         .container {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            max-width: unset;
+            max-width: unset !important;
             .logo-div {
                 width: 50%;
                 border-bottom: 1px solid #000000;
@@ -63,7 +65,7 @@
                 flex-direction: column;
                 @media screen and (min-width: 768px) {
                     width: 50%;
-                    padding: 0 30px 20px 100px;
+                    padding: 0 30px 20px 55px;
                 }
 
                 a {
@@ -133,11 +135,13 @@
     .search-field {
         display: none;
         position: absolute;
-        top: 30px;
+        top: 49px;
         right: 0px;
         border-bottom: 1px solid;
         border-color: var(--green);
-        padding-bottom: 7px;
+        z-index: 5;
+        background-color: #ffffff;
+        padding: 10px;
     }
     .social-icons {
         display: flex;
