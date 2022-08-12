@@ -2,8 +2,8 @@
 
 <?php get_header(); ?>
 <?php   
-    //load hero slider
     include "template-blocks/hero-slider.php"; 
+    include "template-blocks/info-block.php"; 
 ?>
 
 <?php get_footer(); ?>

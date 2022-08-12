@@ -1007,7 +1007,7 @@ a:hover {
           align-items: center;
   vertical-align: center;
   padding: 10px;
-  max-height: 400px;
+  max-height: 350px;
 }
 
 #homepageHeroSlider .home-hero-img .container {
@@ -1950,6 +1950,124 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 20px;
+}
+
+#info-block {
+  padding-top: 25px;
+}
+
+#info-block .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-wdith: 768px) {
+  #info-block .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#info-block .info-text {
+  width: 50%;
+}
+
+#info-block .info-text h3 {
+  font-size: 45px;
+  line-height: 1;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+#info-block .enquiry-form {
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 40%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -102px;
+  -webkit-box-shadow: 0px 0px 15px -5px #000000;
+  box-shadow: 0px 0px 15px -5px #000000;
+}
+
+#info-block .enquiry-form input, #info-block .enquiry-form textarea {
+  background: unset;
+  border: 1px solid var(--light-grey);
+}
+
+#info-block .enquiry-form textarea {
+  padding: 0 10px;
+  resize: none;
+}
+
+#info-block .enquiry-form input::-webkit-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+}
+
+#info-block .enquiry-form input:-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+}
+
+#info-block .enquiry-form input::-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+}
+
+#info-block .enquiry-form input::placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+}
+
+#info-block .enquiry-form .wpcf7-submit {
+  background: #000000;
+  width: 80%;
+}
+
+#info-block .enquiry-form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+}
+
+#info-block .enquiry-title {
+  background: var(--green);
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid var(--green);
 }
 
 @font-face {
