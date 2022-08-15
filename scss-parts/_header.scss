@@ -23,12 +23,15 @@
     .desktop {
         display: none !important;
     }
+    .mobile {
+        display: block !important;
+    }
     @media screen and (min-width: 1200px) {
         .desktop {
-            display: block;
+            display: block !important;
         }
         .mobile {
-            display: none;
+            display: none !important;
         }
     }
     .header-top-banner {
@@ -38,8 +41,8 @@
             max-width: 160px;
             position: relative;
             @media screen and (min-width: 1200px) {
-                max-width: 400px;
-                margin-left: 100px;
+                max-width: 300px;
+                margin-left: 200px;
             }
         }
      
@@ -60,7 +63,6 @@
                 @media screen and (min-width: 1200px) {
                     border-bottom: 1px solid #000000;
                     padding-left: 50px;
-                    padding: 20px;
                     width: 50%;
                     justify-content: space-around;
                     &:after {
@@ -106,7 +108,7 @@
                 width: 20px;
                 transform: rotate(20deg);
                 @media screen and (min-width: 1200px) {
-                    width: 40px;
+                    width: 30px;
                 }
             }
              .email-icon {
@@ -125,7 +127,7 @@
                 padding: 5px 10px;
                 display: flex;
                 flex-direction: column;
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 1200px) {
                     width: 50%;
                     padding: 0 30px 20px 55px;
                     place-content: center;
@@ -138,8 +140,8 @@
                     font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
                     font-size: 20px;
 
-                    @media screen and (min-width: 768px) {
-                        font-size: 60px;
+                    @media screen and (min-width: 1200px) {
+                        font-size: 40px;
                     }
                 }
 
@@ -147,8 +149,8 @@
                     font-size: 18px;
                     color: #ffffff;
                     text-decoration: none;
-                    @media screen and (min-width: 768px) {
-                        font-size: 30px;
+                    @media screen and (min-width: 1200px) {
+                        font-size: 25px;
                     }
                 }
             }
@@ -223,9 +225,11 @@
             display: flex;
             width: 25px;
             margin-left: 25px;
+            filter: invert(1);
 
             @media screen and (min-width: 1200px) {
                 margin-left: unset;
+                filter: unset;
             }
         }
     }
@@ -240,7 +244,8 @@
         background-color: #ffffff;
         padding: 10px;
         @media screen and (min-width: 1200px) {
-            top: 49px;
+            top: -1px;
+            right: -240px;
         }
     }
     .social-icons {

@@ -12,11 +12,19 @@ jQuery(document).ready(function($) {
 
     // mobile menu toggle
     $(".mobile-menu").click(function(){
-        console.log('ee');
         $(this).toggleClass("active");
         $("#menu-main-menu").toggleClass("active");
         $("body").toggleClass("overflow");
       });
+
+    $(window).resize(function(){
+        if(screen.width >= 700){
+            $(".mobile-menu").removeClass("active");
+            $("#menu-main-menu").removeClass("active");
+            $("body").removeClass("overflow");
+            console.log('ee');
+        }
+    });
 
     // Homepage hero slider
     $('.homepage-hero-main-slider').slick({
