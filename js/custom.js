@@ -7,10 +7,16 @@ jQuery(document).ready(function($) {
 
     // Search bar toggle
     jQuery(".search-icon").click(function(){
-        console.log('tt');
         $(".search-field").toggle();
     });
 
+    // mobile menu toggle
+    $(".mobile-menu").click(function(){
+        console.log('ee');
+        $(this).toggleClass("active");
+        $("#menu-main-menu").toggleClass("active");
+        $("body").toggleClass("overflow");
+      });
 
     // Homepage hero slider
     $('.homepage-hero-main-slider').slick({

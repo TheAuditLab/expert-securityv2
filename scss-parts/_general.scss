@@ -18,6 +18,8 @@ Text Domain: generic
     --green: #83bb55;
     --light-grey: #c3c3c3;
     --light-blue: #319cc2;
+    --dark-blue: #234c76;
+    --red: #dc3232;
 }
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}html{scroll-behavior:smooth}body{line-height:1}a{text-decoration-skip-ink:auto}a[href^="tel"]{color:inherit;text-decoration:none}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}input[type="search"]{-webkit-appearance:textfield}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;transition:all 0.5s ease}
@@ -26,13 +28,17 @@ h1, h2, h3, h4, h5, h6{font-weight:bold;margin-bottom:15px;}
 p{margin:10px 0;
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
-s
+a {
+    text-decoration: none;
+}
+.overflow {
+    overflow: hidden;
+}
 .page #content p, .single-post #content p{font-size:18px;line-height:145%}
 * p:last-of-type, #sidebar .widget-container:last-child{margin-bottom:0}
 #sidebar{
     display: none !important;
 }
-a{color:#007acc}
 a:hover, a:focus{text-decoration:none}
 strong{font-weight:bold;
     font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;}
@@ -49,7 +55,7 @@ blockquote p:first-of-type{margin-top:0}
 .entry-content li, .widget-container li, .comment-body li{line-height:125%;margin:20px 0}
 input, textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size:16px;padding:15px;border:0;border-bottom:1px solid transparent;outline:0;margin-top:10px;background:#f6f6f6}
 input:focus, textarea:focus{border-bottom:1px solid var(--pink)}
-input[type="submit"], button, .button{display:inline-block;font-size:18px;color:#fff;text-align:center;text-decoration:none;padding:15px 25px;border:0;background:#007acc;cursor:pointer}
+input[type="submit"] {display:inline-block;font-size:18px;color:#fff;text-align:center;text-decoration:none;padding:15px 25px;border:0;background:#007acc;cursor:pointer}
 input[type="submit"]:hover, input[type="submit"]:focus, button:hover, button:focus, .button:hover, .button:focus{opacity:0.8}
 a img, input[type="image"], iframe{border:0}
 a img:hover, a:focus img, a svg:hover, a:focus svg{opacity:0.8}
@@ -199,10 +205,9 @@ h1, h2, h3, h4, h5 {
  p, a, span{
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
     line-height: 1.2;
-    -webkit-font-smoothing: antialiased;
 }
 
-strong, .slide-link {
+strong {
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
 
@@ -234,35 +239,6 @@ h4{
     padding-bottom: 5px;
 }
 
-a{
-    color: var(--dark-grey);
-    transition: 0.2s ease-in-out;
-
-    &:hover{
-        color: var(--pink);
-    }
-}
-
-.woocommerce .woocommerce-breadcrumb {
-    margin: 0 auto;
-    padding: 10px 5px 40px;
-    font-size: 14px;
-
-
-    a{
-        padding-right: 10px;
-        text-decoration: none;
-
-        &:not(:first-child) {
-            padding-left: 10px;
-        }
-
-        &::after{
-            content: '>';
-            padding-left: 15px;
-        }
-    }
-}
 
 // header default title
 .header{
@@ -271,5 +247,18 @@ a{
     h1{
         font-size: 48px;
     }
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 12px;
+}
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+    margin: 0;
+    padding: 0 20px 20px;
+    font-size: 12px;
+}
+.invalid {
+    color: var(--red);
 }
 

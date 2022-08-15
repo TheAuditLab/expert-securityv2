@@ -12,13 +12,18 @@
         }
     }
     .info-text {
+        margin-bottom: 120px;
         @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
             width: 50%;
         }
         h3 {
-            font-size: 45px;
+            font-size: 30px;
             line-height: 1;
             font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            @media screen and (min-width: 1200px) {
+                font-size: 45px;
+            }
         }
         p {
             padding-bottom: 15px;
@@ -95,7 +100,6 @@
             justify-content: center;
             flex-direction: column;
             place-items: center;
-            padding-bottom: 30px;
         }
     }
     .enquiry-title {
@@ -109,10 +113,23 @@
     .security-products {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         a {
             text-decoration: none;
+            width: 50%;
+            @media screen and (min-width: 1200px) {
             width: 20%;
+            }
         }
+        a:nth-child(5){
+            display: none;
+        }
+        @media screen and (min-width: 1200px) {
+            a:nth-child(5){
+                display: block;
+            }   
+        }
+
         .product {
             height: 200px;
             background-size: cover;
@@ -143,7 +160,7 @@
                 font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
                 transition: 1.3s;
                 &:hover {
-                    transform: scale(1.1);
+                    color: var(--green);
                 }
             }
         }

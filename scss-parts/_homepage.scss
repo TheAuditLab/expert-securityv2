@@ -74,9 +74,12 @@
     }
     .hero-title {
         font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
-        font-size: 60px;
         line-height: 1;
         max-width: 800px;
+        font-size: 30px;
+        @media screen and (min-width: 1200px) {
+            font-size: 60px;
+        }
     }
     .button-div {
         display: flex;
@@ -87,6 +90,7 @@
             margin: 10px 10px 10px 0;
             background: var(--green);
             font-family: 'AlbertSans-Bold';
+            color: #ffffff;
         }
         .read-button {
             text-decoration: none;
@@ -95,6 +99,7 @@
             background: unset;
             border: 1px solid #ffffff;
             font-family: 'AlbertSans-Bold';
+            color: #ffffff;
         }
     }
 }

@@ -52,7 +52,14 @@
     <div class="header-top-banner">
         <div class="container">
             <div class="logo-div">
-                <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                <a href="/">
+                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                </a>
+                <button class="mobile-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
             </div>
             <div class="contact-div">
                 <a class="tel" href="tel:<?php echo $header_phone_number; ?>">
@@ -66,25 +73,38 @@
             </div>
         </div>
     </div>
+  
     <div class="container">
         <?php
             wp_nav_menu( array( 
                 'theme_location' => 'main-menu', 
                 'container_class' => 'main-menu' ) ); 
         ?>
-        <div id="search">
-            <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon">
-            <?php get_search_form(); ?>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
-                <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon">
-            </a>
-                <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon">
-            </a>
-            <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
-                <img src="<?php bloginfo('template_url'); ?>/images/linkedin-green.svg" alt="LinkedIn Icon">
-            </a>
+        <div class="header-info">
+            <div id="search">
+                <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon">
+                <?php get_search_form(); ?>
+            </div>
+            <div class="social-icons desktop">
+                <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
+                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon">
+                </a>
+                    <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
+                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-green.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="social-icons mobile">
+                <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
+                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-white.svg" alt="Facebook Icon">
+                </a>
+                    <img src="<?php bloginfo('template_url'); ?>/images/instagram-white.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
+                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-white.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
         </div>
     </div>
 </div>

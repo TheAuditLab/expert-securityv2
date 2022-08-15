@@ -27,7 +27,9 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="logo-div">
-                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                    <a href="/">
+                        <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                    </a>
                 </div>
                 <?php echo $contact_info ?>
 
