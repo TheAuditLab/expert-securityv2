@@ -867,13 +867,12 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  line-height: 1.2;
   -webkit-font-smoothing: antialiased;
 }
 
 p, a, span {
   font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
-  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 }
 
 strong {
@@ -899,7 +898,6 @@ h1 {
 
 h2 {
   font-size: 40px;
-  letter-spacing: 1px;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
 }
 
@@ -2734,6 +2732,47 @@ h4 {
   100% {
     -webkit-transform: rotate(180deg);
   }
+}
+
+#worked-with {
+  padding-top: 200px;
+}
+
+#worked-with .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#worked-with .text-area {
+  width: 30%;
+}
+
+#worked-with .logos {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#worked-with .logos div {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#worked-with .logos img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @font-face {
