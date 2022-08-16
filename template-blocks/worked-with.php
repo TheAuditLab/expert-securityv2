@@ -19,19 +19,19 @@
                 <img src="<?php echo $worked_with_1_image['url']; ?>" alt="<?php echo $worked_with_1_image['alt']; ?>">
             </div>
             <div>
-                <img src="<?php echo $worked_with_2_image['url']; ?>">
+                <img src="<?php echo $worked_with_2_image['url']; ?>" alt="<?php echo $worked_with_2_image['alt']; ?>">
             </div>
             <div>
-                <img src="<?php echo $worked_with_3_image['url']; ?>">
+                <img src="<?php echo $worked_with_3_image['url']; ?>" alt="<?php echo $worked_with_3_image['alt']; ?>">
             </div>
             <div>
-                <img src="<?php echo $worked_with_4_image['url']; ?>">
+                <img src="<?php echo $worked_with_4_image['url']; ?>" alt="<?php echo $worked_with_4_image['alt']; ?>">
             </div>
             <div>
-                <img src="<?php echo $worked_with_5_image['url']; ?>">
+                <img src="<?php echo $worked_with_5_image['url']; ?>" alt="<?php echo $worked_with_5_image['alt']; ?>">
             </div>
             <div>
-                <img src="<?php echo $worked_with_6_image['url']; ?>">
+                <img src="<?php echo $worked_with_6_image['url']; ?>" alt="<?php echo $worked_with_6_image['alt']; ?>">
             </div>
         </div>
     </div>

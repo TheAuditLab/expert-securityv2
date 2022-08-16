@@ -1,0 +1,54 @@
+#enquire-block {
+    position: relative;
+    padding: 100px 0 120px;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    background: center;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 130%;
+        background: var(--green);
+        left: -60px;
+        top: 0;
+        -webkit-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+        z-index: 10;
+        opacity: 0.7;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        background: var(--light-blue);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.84;
+    }
+    h3 {
+        padding-bottom: 50px;
+        line-height: 1.2;
+    }
+    h4 {
+        padding-bottom: 10px;
+        font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    .enquire-btn {
+        margin-top: 20px;
+        background: var(--green);
+        font-size: 24px;
+        padding: 20px 70px;
+        border-radius: 6px;
+        font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+    }
+    a:hover {
+        color: unset;
+    }
+}

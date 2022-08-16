@@ -1,0 +1,39 @@
+#team-block {
+    padding: 70px 0;
+    .team-block {
+        display: flex;
+    }
+    .team-text {
+        width: 35%;
+        p {
+            max-width: 90%;
+        }
+    }
+    .team-btn {
+        display: inline-block;
+        margin-top: 30px;
+        background: var(--green);
+        color: #ffffff;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
+    }
+    .team-images {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .team-div {
+            width: 30%;
+            p {
+                margin: 0;
+                background: var(--green);
+                position: relative;
+                top: -4px;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,13 +1,16 @@
 #worked-with {
+    padding: 250px 0 70px;
     .container {
         @media screen and (min-width: 768px) {
             display: flex;
         }
     }
-    padding-top: 200px;
     .text-area {
         @media screen and (min-width: 768px) {
-            width: 30%;
+            width: 35%;
+            p {
+                width: 90%;
+            }
         }
     }
     .logos {
