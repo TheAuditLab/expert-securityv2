@@ -1,12 +1,17 @@
 #worked-with {
-    padding: 250px 0 70px;
+    padding: 50px 0 70px;
+    @media screen and (min-width: 768px) {
+        padding: 250px 0 70px;
+    }
     .container {
         @media screen and (min-width: 768px) {
             display: flex;
         }
     }
     .text-area {
+        text-align: center;
         @media screen and (min-width: 768px) {
+            text-align: left;
             width: 35%;
             p {
                 width: 90%;

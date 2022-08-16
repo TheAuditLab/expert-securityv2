@@ -6,17 +6,19 @@
     overflow: hidden;
     background: center;
     &:before {
-        content: '';
-        position: absolute;
-        width: 140px;
-        height: 130%;
-        background: var(--green);
-        left: -60px;
-        top: 0;
-        -webkit-transform: rotate(-7deg);
-        transform: rotate(-7deg);
-        z-index: 10;
-        opacity: 0.7;
+        @media screen and (min-width: 768px) {
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 130%;
+            background: var(--green);
+            left: -60px;
+            top: 0;
+            -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+            z-index: 10;
+            opacity: 0.7;
+        }
     }
     &:after {
         content: '';

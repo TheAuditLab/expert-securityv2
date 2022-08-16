@@ -1,8 +1,11 @@
 #why-choose {
     .why-choose {
-        padding: 50px 0 150px;
+        padding: 50px 0 70px;
         margin: 80px 0 0;
         position: relative;
+        @media screen and (min-width: 768px) {
+          padding: 50px 0 150px;
+        }
         .container {
             position: relative;
             z-index: 2;
