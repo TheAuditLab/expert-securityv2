@@ -36,6 +36,55 @@
                     <p><?php echo $why_choose_3_text; ?></p>
                 </div>
             </div>
+            <div class="stats-div">
+                <div>
+                    <p class="percentage">100%</p>
+                    <div id="circle-loader-wrap">
+                        <div class="l-wrap left-wrap">
+                            <div class="loader"></div>	
+                        </div>
+                        <div class="r-wrap right-wrap">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                    <p>Projects Completed</p>
+                </div>
+                <div>
+                    <p class="percentage">100%</p>
+                    <div id="circle-loader-wrap">
+                        <div class="l-wrap left-wrap">
+                            <div class="loader"></div>	
+                        </div>
+                        <div class="r-wrap right-wrap">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                    <p>Security</p>
+                </div>
+                <div>
+                    <p class="percentage">100%</p>
+                    <div id="circle-loader-wrap">
+                        <div class="l-wrap left-wrap">
+                            <div class="loader"></div>	
+                        </div>
+                        <div class="r-wrap right-wrap">
+                            <div class="loader"></div>
+                        </div>
+                    </div>
+                        <p>Support Network</p>
+                    </div>
+                <div>
+                    <p class="percentage">100%</p>
+                    <div id="circle-loader-wrap">
+                        <div class="l-wrap left-wrap">
+                            <div class="loader"></div>	
+                        </div>
+                        <div class="r-wrap right-wrap">
+                            <div class="loader"></div>
+                        </div>
+                    </div><p>Job Satisfaction</p></div>
+            </div>
         </div>
+      
     </div>
 </section>

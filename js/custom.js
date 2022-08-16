@@ -49,5 +49,36 @@ jQuery(document).ready(function($) {
             }
         }
     }
+
+    //Loader animation in view
+        // Check if it's time to start the animation.
+    function checkAnimation() {
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+        
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+        
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+
+        var $elem = $('.stats-div');
+        var $lWrap = $('.l-wrap');
+        var $rWrap = $('.r-wrap');
+        console.log($lWrap);
+
+      $(window).scroll(function () {
+        if ($('.stats-div').isInViewport()) {
+                // Start the animation
+                console.log('hh');
+                $lWrap.addClass('left-wrap');
+                $rWrap.addClass('right-wrap');
+            } else {
+                $lWrap.removeClass('left-wrap');
+                $rWrap.removeClass('right-wrap');
+            }
+        }
+    )}
 });
 
