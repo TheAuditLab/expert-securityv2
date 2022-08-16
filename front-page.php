@@ -4,6 +4,7 @@
 <?php   
     include "template-blocks/hero-slider.php"; 
     include "template-blocks/info-block.php"; 
+    include "template-blocks/why-choose.php"; 
 ?>
 
 <?php get_footer(); ?>

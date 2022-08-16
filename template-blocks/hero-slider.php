@@ -1,34 +1,34 @@
 <?php
-    $hero_slider_group_1 = get_field('hero_slider_group_1'); 
-    $hero_slider_group_2 = get_field('hero_slider_group_2'); 
-    $hero_slider_group_3 = get_field('hero_slider_group_3'); 
+    $hero_slider_1 = get_field('hero_slider_1'); 
+    $hero_slider_2 = get_field('hero_slider_2'); 
+    $hero_slider_3 = get_field('hero_slider_3'); 
 
 
     // Hero Slider
     $hero_slider_image_1 = get_field("hero_slider_image_1");
     $hero_slider_title_1 = get_field("hero_slider_title_1");
     $hero_slider_link_1 = get_field("hero_slider_link_1");
-    $hero_slider_shop_text_1 = $hero_slider_group_1["hero_slider_shop_text_1"];
-    $hero_slider_shop_link_1 =  $hero_slider_group_1["hero_slider_shop_link_1"];
-    $hero_slider_read_text_1 = $hero_slider_group_1["hero_slider_read_text_1"];
-    $hero_slider_read_link_1 =  $hero_slider_group_1["hero_slider_read_link_1"];
+    $hero_slider_shop_text_1 = $hero_slider_1["hero_slider_shop_text_1"];
+    $hero_slider_shop_link_1 =  $hero_slider_1["hero_slider_shop_link_1"];
+    $hero_slider_read_text_1 = $hero_slider_1["hero_slider_read_text_1"];
+    $hero_slider_read_link_1 =  $hero_slider_1["hero_slider_read_link_1"];
 
 
     $hero_slider_image_2 = get_field("hero_slider_image_2");
     $hero_slider_title_2 = get_field("hero_slider_title_2");
     $hero_slider_link_2 = get_field("hero_slider_link_2");
-    $hero_slider_shop_text_2 = $hero_slider_group_2["hero_slider_shop_text_2"];
-    $hero_slider_shop_link_2 =  $hero_slider_group_2["hero_slider_shop_link_2"];
-    $hero_slider_read_text_2 = $hero_slider_group_2["hero_slider_read_text_2"];
-    $hero_slider_read_link_2 =  $hero_slider_group_2["hero_slider_read_link_2"];
+    $hero_slider_shop_text_2 = $hero_slider_2["hero_slider_shop_text_2"];
+    $hero_slider_shop_link_2 =  $hero_slider_2["hero_slider_shop_link_2"];
+    $hero_slider_read_text_2 = $hero_slider_2["hero_slider_read_text_2"];
+    $hero_slider_read_link_2 =  $hero_slider_2["hero_slider_read_link_2"];
 
     $hero_slider_image_3 = get_field("hero_slider_image_3");
     $hero_slider_title_3 = get_field("hero_slider_title_3");
     $hero_slider_link_3 = get_field("hero_slider_link_3");
-    $hero_slider_shop_text_3 = $hero_slider_group_3["hero_slider_shop_text_3"];
-    $hero_slider_shop_link_3 =  $hero_slider_group_3["hero_slider_shop_link_3"];
-    $hero_slider_read_text_3 = $hero_slider_group_3["hero_slider_read_text_3"];
-    $hero_slider_read_link_3 =  $hero_slider_group_3["hero_slider_read_link_3"];
+    $hero_slider_shop_text_3 = $hero_slider_3["hero_slider_shop_text_3"];
+    $hero_slider_shop_link_3 =  $hero_slider_3["hero_slider_shop_link_3"];
+    $hero_slider_read_text_3 = $hero_slider_3["hero_slider_read_text_3"];
+    $hero_slider_read_link_3 =  $hero_slider_3["hero_slider_read_link_3"];
 ?>
 
 <section id="homepageHeroSlider">

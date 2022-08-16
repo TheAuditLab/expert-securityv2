@@ -30,6 +30,10 @@ p{margin:10px 0;
 }
 a {
     text-decoration: none;
+    color: unset;
+    &:hover {
+        color: var(--green);
+    }
 }
 .overflow {
     overflow: hidden;
@@ -230,8 +234,13 @@ h2{
 }
 
 h3{
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: 0.8px;
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
+
+    @media screen and (min-width: 768px) {
+        font-size: 45px;
+    }
 }
 
 h4{
