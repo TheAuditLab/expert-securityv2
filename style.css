@@ -1823,8 +1823,8 @@ h4 {
 }
 
 #footer {
-  margin-top: 300px;
-  padding: 40px 0 100px 0;
+  margin-top: -160px;
+  padding: 0;
 }
 
 #footer h4 {
@@ -1841,6 +1841,10 @@ h4 {
   #footer {
     padding-top: 30px;
   }
+}
+
+#footer .container {
+  padding: 0;
 }
 
 @media (min-width: 1400px) {
@@ -2849,7 +2853,7 @@ h4 {
 }
 
 #worked-with .logos div {
-  width: 33%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2858,9 +2862,16 @@ h4 {
           justify-content: flex-end;
 }
 
+@media screen and (min-width: 768px) {
+  #worked-with .logos div {
+    width: 33%;
+  }
+}
+
 #worked-with .logos img {
   -o-object-fit: contain;
      object-fit: contain;
+  padding: 30px;
 }
 
 #enquire-block {
@@ -3011,23 +3022,71 @@ h4 {
 }
 
 #latest-news-block {
-  padding: 50px 0 100px;
+  padding: 50px 0 250px;
   background: var(--blue);
   color: #ffffff;
 }
 
-#latest-news-block .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+#latest-news-block .row {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
 }
 
 #latest-news-block .container .title {
   width: 80%;
 }
 
+#latest-news-block .container .blog-div {
+  border: 1px solid;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  width: 31%;
+}
+
+#latest-news-block .container .blog-title {
+  margin: 10px 20px 20px;
+}
+
+#latest-news-block .container .excerpt p {
+  margin-bottom: 20px;
+}
+
+#latest-news-block .container .excerpt, #latest-news-block .container h4 {
+  color: #ffffff !important;
+}
+
+#latest-news-block .container .read-more {
+  color: var(--green);
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+#latest-news-block .container .read-more:hover {
+  color: #ffffff;
+}
+
+#latest-news-block .container .title-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
 #latest-news-block .container .button {
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-height: 50px;
 }
 
 #latest-news-block .container .button a {
@@ -3045,6 +3104,12 @@ h4 {
   padding: 10px 30px;
   font-size: 20px;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+#latest-news-block .container .img-tiles {
+  width: 100%;
+  height: 100%;
+  height: 250px;
 }
 
 @font-face {
