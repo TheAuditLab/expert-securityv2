@@ -17,6 +17,7 @@ Text Domain: generic
   --green: #83bb55;
   --light-grey: #c3c3c3;
   --light-blue: #319cc2;
+  --blue: #2797c1;
   --dark-blue: #234c76;
   --red: #dc3232;
 }
@@ -1015,12 +1016,12 @@ h4 {
 #homepageHeroSlider .home-hero-img:after {
   content: '';
   position: absolute;
-  background: var(--light-blue);
+  background: var(--blue);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 #homepageHeroSlider .hero-title {
@@ -1050,6 +1051,7 @@ h4 {
   background: var(--green);
   font-family: 'AlbertSans-Bold';
   color: #ffffff;
+  border-radius: 2px;
 }
 
 #homepageHeroSlider .button-div .read-button {
@@ -1060,6 +1062,7 @@ h4 {
   border: 1px solid #ffffff;
   font-family: 'AlbertSans-Bold';
   color: #ffffff;
+  border-radius: 2px;
 }
 
 .blog #content {
@@ -1511,9 +1514,14 @@ h4 {
   position: relative;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   #header .header-top-banner .header-logo {
     max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  #header .header-top-banner .header-logo {
     margin-left: 200px;
   }
 }
@@ -1558,13 +1566,15 @@ h4 {
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
+    right: -80px;
     z-index: 2;
     background: #ffffff;
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
     -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
+    border-bottom: 1px solid black;
+    top: 1px;
   }
 }
 
@@ -1646,7 +1656,6 @@ h4 {
 }
 
 #header .header-top-banner .container .contact-div a {
-  max-width: 540px;
   text-align: end;
   font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
   font-size: 20px;
@@ -1655,6 +1664,7 @@ h4 {
 @media screen and (min-width: 1200px) {
   #header .header-top-banner .container .contact-div a {
     font-size: 40px;
+    max-width: 540px;
   }
 }
 
@@ -2319,6 +2329,7 @@ h4 {
   background: #000000;
   width: 82%;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  line-height: 1;
 }
 
 #info-block .enquiry-form .submit {
@@ -2447,12 +2458,12 @@ h4 {
 #why-choose .why-choose:after {
   content: '';
   position: absolute;
-  background: var(--light-blue);
+  background: var(--blue);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.92;
+  opacity: 0.95;
 }
 
 #why-choose .why-choose .stats-div {
@@ -2880,12 +2891,12 @@ h4 {
 #enquire-block:after {
   content: '';
   position: absolute;
-  background: var(--light-blue);
+  background: var(--blue);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.84;
+  opacity: 0.90;
 }
 
 #enquire-block h3 {
@@ -2997,6 +3008,43 @@ h4 {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+#latest-news-block {
+  padding: 50px 0 100px;
+  background: var(--blue);
+  color: #ffffff;
+}
+
+#latest-news-block .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#latest-news-block .container .title {
+  width: 80%;
+}
+
+#latest-news-block .container .button {
+  width: 20%;
+}
+
+#latest-news-block .container .button a {
+  display: inline-block;
+  background: var(--green);
+  border-radius: 4px;
+}
+
+#latest-news-block .container .button a:hover {
+  color: #ffffff;
+}
+
+#latest-news-block .container .button .news-btn {
+  margin: 0;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
 }
 
 @font-face {

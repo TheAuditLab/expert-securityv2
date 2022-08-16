@@ -1,0 +1,28 @@
+#latest-news-block {
+    padding: 50px 0 100px;
+    background: var(--blue);
+    color: #ffffff;
+    .container {
+        display: flex;
+        .title {
+            width: 80%;
+        }
+        .button {
+            width: 20%;
+            a {
+                display: inline-block;
+                background: var(--green);
+                border-radius: 4px;
+                &:hover {
+                    color:#ffffff;
+                }
+            }
+            .news-btn {
+                margin: 0;
+                padding: 10px 30px;
+                font-size: 20px;
+                font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}

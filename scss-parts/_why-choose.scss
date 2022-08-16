@@ -17,12 +17,12 @@
         &:after {
             content: '';
             position: absolute;
-            background: var(--light-blue);
+            background: var(--blue);
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.92;
+            opacity: 0.95;
         }
         .stats-div {
             z-index: 2;

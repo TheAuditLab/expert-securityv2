@@ -23,12 +23,12 @@
     &:after {
         content: '';
         position: absolute;
-        background: var(--light-blue);
+        background: var(--blue);
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.84;
+        opacity: 0.90;
     }
     h3 {
         padding-bottom: 50px;

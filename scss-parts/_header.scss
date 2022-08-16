@@ -40,8 +40,10 @@
             padding: 5px 0;
             max-width: 160px;
             position: relative;
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 768px) {
                 max-width: 300px;
+            }
+            @media screen and (min-width: 1450px) {
                 margin-left: 200px;
             }
         }
@@ -72,13 +74,15 @@
                         width: 100%;
                         height: 100%;
                         top: 0;
-                        right: 0;
+                        right: -80px;
                         z-index: 2;
                         background: #ffffff;
                         transform-origin: bottom left;
                         -ms-transform: skew(-30deg, 0deg);
                         -webkit-transform: skew(-30deg, 0deg);
                         transform: skew(-30deg, 0deg);
+                        border-bottom: 1px solid black;
+                        top: 1px;
                     }
                 }
                 .mobile-menu {
@@ -135,13 +139,13 @@
                     
 
                 a {
-                    max-width: 540px;
                     text-align: end; 
                     font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
                     font-size: 20px;
 
                     @media screen and (min-width: 1200px) {
                         font-size: 40px;
+                        max-width: 540px;
                     }
                 }
 

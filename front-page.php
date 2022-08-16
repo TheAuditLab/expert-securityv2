@@ -8,7 +8,7 @@
     include "template-blocks/worked-with.php";
     include "template-blocks/enquire-block.php";
     include "template-blocks/team-block.php";
-
+    include "template-blocks/latest-news-block.php";
 ?>
 
 <?php get_footer(); ?>
