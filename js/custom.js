@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
         $(this).toggleClass("active");
         $("#menu-main-menu").toggleClass("active");
         $("body").toggleClass("overflow");
-      });
+    });
 
     $(window).resize(function(){
         if(screen.width >= 700){
@@ -63,22 +63,27 @@ jQuery(document).ready(function($) {
             return elementBottom > viewportTop && elementTop < viewportBottom;
         };
 
-        var $elem = $('.stats-div');
+    }
+    // loading when the page comes in the view
+    $(window).scroll(function() {
         var $lWrap = $('.l-wrap');
         var $rWrap = $('.r-wrap');
         console.log($lWrap);
-
-      $(window).scroll(function () {
-        if ($('.stats-div').isInViewport()) {
-                // Start the animation
-                console.log('hh');
-                $lWrap.addClass('left-wrap');
-                $rWrap.addClass('right-wrap');
-            } else {
-                $lWrap.removeClass('left-wrap');
-                $rWrap.removeClass('right-wrap');
-            }
+        console.log(window.pageYOffset);
+        if (window.pageYOffset >= 2000) {
+            $lWrap.addClass('left-wrap');
+            $rWrap.addClass('right-wrap');
         }
-    )}
+        if (window.pageYOffset <= 1500) {
+            $lWrap.removeClass('left-wrap');
+            $rWrap.removeClass('right-wrap');
+        }
+    });
+
+    // mobile menu toggle
+      $(".enquire-popup-btn").click(function(){
+        $(".enquiry-form").toggleClass("active");
+        $("body").toggleClass("overflow");
+    });
 });
 

@@ -214,7 +214,7 @@
   
           @keyframes loading-left{
             0%{
-              transform:rotate(0deg)
+              transform:rotate(0deg);
             }
             25%{
               transform:rotate(180deg)
@@ -226,7 +226,7 @@
               transform:rotate(180deg)
             }
             100%{
-              transform:rotate(180deg)
+              transform:rotate(180deg);
             }
           }
           @-webkit-keyframes loading-left{
@@ -248,10 +248,12 @@
           }
           @keyframes loading-right{
             0%{
-              transform:rotate(0deg)
+              transform:rotate(0deg);
+              opacity: 0%;
             }
             25%{
-              transform:rotate(0deg)
+              transform:rotate(0deg);
+              opacity: 60%;
             }
             50%{
               transform:rotate(180deg)
@@ -260,7 +262,8 @@
               transform:rotate(180deg)
             }
             100%{
-              transform:rotate(180deg)
+              transform:rotate(180deg);
+              opacity: 100%;
             }
           }
   

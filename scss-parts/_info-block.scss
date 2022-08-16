@@ -6,6 +6,7 @@
         flex-direction: column;
         width: 100%;
         flex-wrap: wrap;
+        max-width: 1200px;
 
         @media screen and (min-width: 1200px) {
             flex-direction: row;
@@ -47,6 +48,19 @@
         top: -96px;
         -webkit-box-shadow: 0px 0px 15px -5px #000000; 
         box-shadow: 0px 0px 15px -5px #000000;
+        display: none;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+        &.active {
+            display: flex;
+            height: 100%;
+            position: fixed;
+            background: #ffffff;
+            top: -60px;
+            left: 0;
+            z-index: 5;
+        }
         @media screen and (min-width: 1200px) {
             width: 50%;
             max-width: 460px;
@@ -55,7 +69,10 @@
             border: 1px solid red;
         }
         .wpcf7-date {
-            width: 82%;
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: 82%;
+            }
         }
         @media screen and (min-width: 1200px) {
             .half {
@@ -125,6 +142,8 @@
         color: #ffffff;
         font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
         border-bottom: 1px solid var(--green);
+        position: relative;
+        z-index: 11;
     }
     .security-products {
         width: 100%;

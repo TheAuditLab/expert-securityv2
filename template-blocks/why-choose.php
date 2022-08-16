@@ -40,10 +40,10 @@
                 <div>
                     <p class="percentage">100%</p>
                     <div id="circle-loader-wrap">
-                        <div class="l-wrap left-wrap">
+                        <div class="l-wrap">
                             <div class="loader"></div>	
                         </div>
-                        <div class="r-wrap right-wrap">
+                        <div class="r-wrap">
                             <div class="loader"></div>
                         </div>
                     </div>
@@ -52,10 +52,10 @@
                 <div>
                     <p class="percentage">100%</p>
                     <div id="circle-loader-wrap">
-                        <div class="l-wrap left-wrap">
+                        <div class="l-wrap">
                             <div class="loader"></div>	
                         </div>
-                        <div class="r-wrap right-wrap">
+                        <div class="r-wrap">
                             <div class="loader"></div>
                         </div>
                     </div>
@@ -64,10 +64,10 @@
                 <div>
                     <p class="percentage">100%</p>
                     <div id="circle-loader-wrap">
-                        <div class="l-wrap left-wrap">
+                        <div class="l-wrap ">
                             <div class="loader"></div>	
                         </div>
-                        <div class="r-wrap right-wrap">
+                        <div class="r-wrap">
                             <div class="loader"></div>
                         </div>
                     </div>
@@ -76,10 +76,10 @@
                 <div>
                     <p class="percentage">100%</p>
                     <div id="circle-loader-wrap">
-                        <div class="l-wrap left-wrap">
+                        <div class="l-wrap">
                             <div class="loader"></div>	
                         </div>
-                        <div class="r-wrap right-wrap">
+                        <div class="r-wrap">
                             <div class="loader"></div>
                         </div>
                     </div><p>Job Satisfaction</p></div>
