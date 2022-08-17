@@ -89,6 +89,7 @@
                 <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
                     <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon">
                 </a>
+                <a href="https://www.instagram.com/expertsecurityuk">
                     <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon">
                 </a>
                 <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
