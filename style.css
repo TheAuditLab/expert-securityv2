@@ -1564,7 +1564,12 @@ h4 {
   padding: 0 10px;
   background: #ffffff;
   position: relative;
-  z-index: 11;
+  z-index: 99999;
+}
+
+.overflow #header .header-top-banner .container .logo-div {
+  position: fixed;
+  top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2068,7 +2073,6 @@ h4 {
 }
 
 #footer .footer-bottom {
-  border-top: 1px solid #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2078,6 +2082,12 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .footer-bottom {
+    border-top: 1px solid #000000;
+  }
 }
 
 #footer .logo-div img {
@@ -3008,7 +3018,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   #enquire-block h3 {
-    font-size: inherit;
+    font-size: 37px;
   }
 }
 
@@ -3267,9 +3277,10 @@ h4 {
   right: 0;
   background-color: var(--green);
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 20px 35px;
   border: none;
   opacity: 1;
+  width: 170px;
 }
 
 @media screen and (min-width: 768px) {
