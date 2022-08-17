@@ -1,14 +1,15 @@
 #enquire-popup {
     position: relative;
-    z-index: 9;
+    z-index: 22;
     .enquire-popup-btn {
         position: fixed;
         bottom: 0;
         right: 0;
         background-color: var(--green);
         color: #ffffff;
-        padding: 20px 40px;
+        padding: 10px 20px;
         border: none;
+        opacity: 1;
         @media screen and (min-width: 768px) {
             display: none;
         }

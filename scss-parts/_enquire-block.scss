@@ -30,13 +30,18 @@
         height: 100%;
         opacity: 0.90;
     }
-    h3 {
+    h3 {        
         padding-bottom: 50px;
         line-height: 1.2;
+        font-size: 22px;
+        @media screen and (min-width: 768px) {
+            font-size: inherit;
+        }
     }
     h4 {
         padding-bottom: 10px;
         font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
+        font-weight: 200;
     }
     .container {
         position: relative;

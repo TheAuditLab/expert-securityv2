@@ -22,7 +22,6 @@ jQuery(document).ready(function($) {
             $(".mobile-menu").removeClass("active");
             $("#menu-main-menu").removeClass("active");
             $("body").removeClass("overflow");
-            console.log('ee');
         }
     });
 
@@ -68,9 +67,7 @@ jQuery(document).ready(function($) {
     $(window).scroll(function() {
         var $lWrap = $('.l-wrap');
         var $rWrap = $('.r-wrap');
-        console.log($lWrap);
-        console.log(window.pageYOffset);
-        if (window.pageYOffset >= 2000) {
+        if (window.pageYOffset >= 1501) {
             $lWrap.addClass('left-wrap');
             $rWrap.addClass('right-wrap');
         }
@@ -84,6 +81,8 @@ jQuery(document).ready(function($) {
       $(".enquire-popup-btn").click(function(){
         $(".enquiry-form").toggleClass("active");
         $("body").toggleClass("overflow");
+        var $el = $(this);
+        $el.text($el.text() == "Close" ? "Enquire here": "Close");
     });
 });
 

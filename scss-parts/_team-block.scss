@@ -13,7 +13,9 @@
             width: 35%;
         }
         p {
-            max-width: 90%;
+            @media screen and (min-width: 768px) {
+                max-width: 90%;
+            }
         }
     }
     .team-btn {
@@ -26,10 +28,13 @@
         font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
     }
     .team-images {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
         @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             justify-content: space-between;
         }
         @media screen and (min-width: 1200px) {
@@ -48,6 +53,14 @@
                 color: white;
                 text-align: center;
                 padding: 10px;
+            }
+            img {
+                max-height: 360px;
+                width: 100%;
+                object-fit: cover;
+                @media screen and (min-width: 768px) {
+                    max-height: auto;;
+                }
             }
         }
     }
