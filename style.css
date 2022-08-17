@@ -1956,7 +1956,7 @@ h4 {
   position: relative;
 }
 
-@media screen and (min-768) {
+@media screen and (min-width: 768px) {
   #footer .contact-info p {
     max-width: 330px;
   }
@@ -2229,7 +2229,13 @@ h4 {
 }
 
 #info-block .info-text {
-  margin-bottom: 120px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #info-block .info-text {
+    margin-bottom: 120px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
