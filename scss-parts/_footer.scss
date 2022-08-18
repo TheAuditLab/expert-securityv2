@@ -1,6 +1,9 @@
 #footer {
     margin-top: -160px;
     padding: 10px;
+    .page-template-contact_page & {
+        margin-top: 200px;
+    }
     @media screen and (min-width: 768) {
         padding: 0;
     }
