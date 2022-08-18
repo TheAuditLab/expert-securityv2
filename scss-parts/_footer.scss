@@ -187,4 +187,27 @@
         color: var(--green);
        } 
     }
+    .page-template-contact_page & {
+        background: var(--blue);
+        .container {
+            position: relative;
+            .contact-box {
+                position: absolute;
+                width: 100%;
+                top: -170px;
+            }
+            .row {
+                padding-top: 130px;
+                p, a, h4, li {
+                    color: #ffffff;
+                }
+                .footer-bottom {
+                    border-top: 1px solid #ffffff;
+                }
+                .social-icons {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
 }

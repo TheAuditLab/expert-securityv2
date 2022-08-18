@@ -2113,6 +2113,37 @@ h4 {
   color: var(--green);
 }
 
+.page-template-contact_page #footer {
+  background: var(--blue);
+}
+
+.page-template-contact_page #footer .container {
+  position: relative;
+}
+
+.page-template-contact_page #footer .container .contact-box {
+  position: absolute;
+  width: 100%;
+  top: -170px;
+}
+
+.page-template-contact_page #footer .container .row {
+  padding-top: 130px;
+}
+
+.page-template-contact_page #footer .container .row p, .page-template-contact_page #footer .container .row a, .page-template-contact_page #footer .container .row h4, .page-template-contact_page #footer .container .row li {
+  color: #ffffff;
+}
+
+.page-template-contact_page #footer .container .row .footer-bottom {
+  border-top: 1px solid #ffffff;
+}
+
+.page-template-contact_page #footer .container .row .social-icons {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .search-results #content {
   max-width: unset !important;
   margin: 0 auto;
