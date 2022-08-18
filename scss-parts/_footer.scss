@@ -172,6 +172,12 @@
         }
     }
     .logo-div {
+        .page-template-contact_page & {
+            padding-top: 60px;
+            @media screen and (min-width: 768px) {
+                padding-top: 0;
+            }
+        }
         img {
             max-width: 160px;
             margin: 0 auto;
@@ -188,7 +194,11 @@
        } 
     }
     .page-template-contact_page & {
+        margin-top: 1800px;
         background: var(--blue);
+        @media screen and (min-width: 768px) {
+            margin-top: 600px;
+        }
         .container {
             position: relative;
             .contact-box {
@@ -198,8 +208,11 @@
             }
             .row {
                 padding-top: 130px;
-                p, a, h4, li {
+                p, a, h4, li, #copyright {
                     color: #ffffff;
+                }
+                a:hover {
+                    color: var(--green);
                 }
                 .footer-bottom {
                     border-top: 1px solid #ffffff;
