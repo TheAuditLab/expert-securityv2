@@ -125,13 +125,13 @@
                 width: 20px;
                 transform: rotate(20deg);
                 @media screen and (min-width: 1200px) {
-                    width: 30px;
+                    width: 27px;
                 }
             }
              .email-icon {
                 width: 15px;
                 @media screen and (min-width: 1200px) {
-                    width: 35px;
+                    width: 30px;
                 }
             }
             .contact-div{
@@ -159,6 +159,7 @@
                     @media screen and (min-width: 1200px) {
                         font-size: 40px;
                         max-width: 540px;
+                        padding-bottom: 5px;
                     }
                 }
 
@@ -167,7 +168,7 @@
                     color: #ffffff;
                     text-decoration: none;
                     @media screen and (min-width: 1200px) {
-                        font-size: 25px;
+                        font-size: 21px;
                     }
                 }
             }

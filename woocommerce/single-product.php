@@ -29,6 +29,15 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
 		echo '<div class="container">';
+		echo '<div class="hero-image" style="background-image: url('echo $product_hero_image['url'];')">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">			
+							<h2 class="title">dff<h2>
+						</div>
+					</div>
+				</div>	
+			</div>';
 		do_action( 'woocommerce_before_main_content' );
 		echo '</div>';
 	?>
