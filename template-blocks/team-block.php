@@ -6,11 +6,11 @@
     $team_1_image = get_field("team_1_image", 5);
     $team_1_text = get_field("team_1_text", 5);
 
-    $team_2_image = get_field("team_2_image");
-    $team_2_text = get_field("team_2_text");
+    $team_2_image = get_field("team_2_image",5);
+    $team_2_text = get_field("team_2_text",5);
 
-    $team_3_image = get_field("team_3_image");
-    $team_3_text = get_field("team_3_text");
+    $team_3_image = get_field("team_3_image",5);
+    $team_3_text = get_field("team_3_text",5);
 ?>
 
 <section id="team-block">

@@ -78,7 +78,8 @@
                     border-bottom: 1px solid #000000;
                     padding-left: 50px;
                     width: 50%;
-                    justify-content: space-around;
+                    justify-content: flex-end;
+                    padding-right: 250px;
                     &:after {
                         content: " ";
                         position: absolute;
