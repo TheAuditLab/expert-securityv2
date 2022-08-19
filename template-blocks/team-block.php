@@ -1,10 +1,10 @@
 <?php 
-    $team_text = get_field("team_text");
-    $team_btn_link = get_field("team_btn_link");
-    $team_btn_text = get_field("team_btn_text");
+    $team_text = get_field("team_text", 5);
+    $team_btn_link = get_field("team_btn_link", 5);
+    $team_btn_text = get_field("team_btn_text",5);
 
-    $team_1_image = get_field("team_1_image");
-    $team_1_text = get_field("team_1_text");
+    $team_1_image = get_field("team_1_image", 5);
+    $team_1_text = get_field("team_1_text", 5);
 
     $team_2_image = get_field("team_2_image");
     $team_2_text = get_field("team_2_text");

@@ -1,0 +1,138 @@
+#about-us {
+    //hero image
+    .hero-image {
+        height: 350px;
+        position: relative;
+        color: #ffffff;
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--blue);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.85;
+        }
+    }
+    //about us info 
+    .about-us-info {
+        padding: 40px 0 100px 0;
+        display: flex;
+        .about-us-info-text {
+            width: 50%;
+            p {
+                padding-bottom: 25px;
+            }
+        }
+
+        .about-us-info-image {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            h2 {
+                font-size: 70px;
+                margin: 0;
+            }
+            p {
+                font-size: 14px;
+                margin-top: 0;
+            }
+            .about-us-image-1 {
+                width: 40%;
+                margin-right: 30px;
+                position: relative;
+                & img {
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+            .about-us-image-2 {
+                width: 40%;
+                & img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .about-us-image-info {
+                background: var(--green);
+                width: 70%;
+                margin: 0 auto;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                color: #ffffff;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                @media screen and (min-width: 768px) {
+                    left: 17%;
+                }
+                h2 {
+                    display: flex;
+                    width: 80%;
+                    padding-left: 5px;
+                }
+                h3 {
+                    display: flex;
+                    width: 20%;
+                    margin: 0;
+                    align-self: center;
+                    position: relative;
+                    right: 8px;
+                    span {
+                        font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    //latest work
+    .latest-work {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--blue);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.85;
+        }
+        .latest-work-text {
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 100px 0 400px;
+        }
+    }
+    .team-block {
+        .team-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            bottom: 370px;
+        }
+        .team-div {
+            width: 32%;
+            img {
+                height: 600px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1822,7 +1822,7 @@ h4 {
 @media screen and (min-width: 1200px) {
   #header .search-field {
     top: -1px;
-    right: -240px;
+    right: -340px;
   }
 }
 
@@ -2167,6 +2167,10 @@ h4 {
 .page-template-contact_page #footer .container .row .social-icons {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.page-template-about-us #footer {
+  padding-top: 250px;
 }
 
 .search-results #content {
@@ -3331,6 +3335,190 @@ h4 {
   width: 100%;
   height: 100%;
   height: 250px;
+}
+
+#about-us .hero-image {
+  height: 350px;
+  position: relative;
+  color: #ffffff;
+}
+
+#about-us .hero-image .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#about-us .hero-image:after {
+  content: '';
+  position: absolute;
+  background: var(--blue);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#about-us .about-us-info {
+  padding: 40px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about-us .about-us-info .about-us-info-text {
+  width: 50%;
+}
+
+#about-us .about-us-info .about-us-info-text p {
+  padding-bottom: 25px;
+}
+
+#about-us .about-us-info .about-us-info-image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#about-us .about-us-info .about-us-info-image h2 {
+  font-size: 70px;
+  margin: 0;
+}
+
+#about-us .about-us-info .about-us-info-image p {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-1 {
+  width: 40%;
+  margin-right: 30px;
+  position: relative;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-1 img {
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-2 {
+  width: 40%;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-2 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-info {
+  background: var(--green);
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  #about-us .about-us-info .about-us-info-image .about-us-image-info {
+    left: 17%;
+  }
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-info h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding-left: 5px;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-info h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  margin: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  right: 8px;
+}
+
+#about-us .about-us-info .about-us-info-image .about-us-image-info h3 span {
+  font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif;
+}
+
+#about-us .latest-work {
+  position: relative;
+}
+
+#about-us .latest-work:after {
+  content: '';
+  position: absolute;
+  background: var(--blue);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+#about-us .latest-work .latest-work-text {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0 400px;
+}
+
+#about-us .team-block .team-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 370px;
+}
+
+#about-us .team-block .team-div {
+  width: 32%;
+}
+
+#about-us .team-block .team-div img {
+  height: 600px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contact-page .hero-image {
