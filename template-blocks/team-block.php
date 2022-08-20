@@ -18,7 +18,7 @@
         <div class="team-block">
             <div class="team-text">
                 <?php echo $team_text; ?>
-                <a href="<?php $team_btn_link ?>"><p class="team-btn"><?php echo $team_btn_text ?></p></a>
+                <a href="<?php echo $team_btn_link ?>"><p class="team-btn"><?php echo $team_btn_text ?></p></a>
             </div>
             <div class="team-images">
                 <div class="team-div">

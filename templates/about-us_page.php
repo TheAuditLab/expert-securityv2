@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-        <div class="latest-work" style="background-image: url('<?php echo $latest_work_bg['url']; ?>')">
+        <div id="latest-work" class="latest-work" style="background-image: url('<?php echo $latest_work_bg['url']; ?>')">
             <div class="latest-work-text">
                 <?php echo $latest_work_text; ?>
             </div>

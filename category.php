@@ -4,6 +4,7 @@
    $hero_title = get_field("hero_title");
 
    $info_text = get_field("info_text");
+   $category = get_field("category");
 
 ?>
 
@@ -13,6 +14,7 @@
         <div class="row">
             <div class="col-12">			
                 <?php echo $hero_title; ?>
+                <?php var_dump($category); ?>
             </div>
         </div>	
     </div>
