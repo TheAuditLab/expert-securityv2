@@ -208,3 +208,11 @@ function useful_links_menu() {
 add_action( 'init', 'useful_links_menu' );
 
 //
+function space_change_custom_taxonomy_slug_args( $taxonomy, $object_type, $args ){
+  if( 'category' == $taxonomy ){ // Instead of the "old-slug", add current slug, which you want to change.
+      remove_action( current_action(), __FUNCTION__ );
+      $args['rewrite'] = array( 'slug' => 'security-solutions' ); // Instead of the "new-slug", add a new slug name.
+      register_taxonomy( $taxonomy, $object_type, $args );
+  }
+}
+add_action( 'registered_taxonomy', 'space_change_custom_taxonomy_slug_args', 10, 3 );

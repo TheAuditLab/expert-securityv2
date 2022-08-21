@@ -77,6 +77,23 @@
             width: 100%;
             height: 100%;
             height: 250px;
+            position: relative;
+            &:after {
+                content: '';
+                transition: 1s ease-in-out;
+            }
+            &:hover {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.85;
+                    background: var(--green);
+                }
+            }
         }
     }
 }

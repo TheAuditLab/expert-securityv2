@@ -1822,7 +1822,7 @@ h4 {
 @media screen and (min-width: 1200px) {
   #header .search-field {
     top: -1px;
-    right: -340px;
+    right: -200px;
   }
 }
 
@@ -2838,6 +2838,14 @@ h4 {
   margin-bottom: 25px;
 }
 
+#why-choose .why-choose .why-choose-text a {
+  color: var(--green);
+}
+
+#why-choose .why-choose .why-choose-text a:hover {
+  color: #ffffff;
+}
+
 #why-choose #circle-loader-wrap {
   overflow: hidden;
   position: relative;
@@ -3377,6 +3385,24 @@ h4 {
   width: 100%;
   height: 100%;
   height: 250px;
+  position: relative;
+}
+
+#latest-news-block .container .img-tiles:after {
+  content: '';
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#latest-news-block .container .img-tiles:hover:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background: var(--green);
 }
 
 #about-us .hero-image {

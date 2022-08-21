@@ -131,6 +131,12 @@
             }
             h2{
                 margin-bottom: 25px;
+            } 
+            a {
+              color: var(--green);
+              &:hover {
+                color: #ffffff;
+              }
             }
         }
     }
