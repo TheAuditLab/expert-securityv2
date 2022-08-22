@@ -28,7 +28,7 @@
         <div class="info-text">
             <?php echo $info_text; ?>
         </div>
-        <div class="enquiry-form">
+        <div id="enquiry-form" class="enquiry-form">
             <span class="enquiry-title">Enquire here</span>
             <?php
                 echo do_shortcode($enquiry_form);

@@ -214,7 +214,7 @@
         &.active {
             display: block;
             width: 100%;
-            background: var(--green);
+            background: var(--blue);
             height: 100vh;
             position: fixed;
             left: 0;
@@ -254,8 +254,8 @@
     .search-field {
         display: none;
         position: absolute;
-        top: 30px;
-        right: 0px;
+        top: -18px;
+        right: 35px;
         border-bottom: 1px solid;
         border-color: var(--green);
         z-index: 5;

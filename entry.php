@@ -1,9 +1,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
 <header>
 <div class="title-div">
-    <div > 
+    <div> 
         <a class="img-title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
-        <img src="<?php the_post_thumbnail_url(); ?>">
+        <img class="hero-image"src="<?php the_post_thumbnail_url(); ?>">
         <p><?php the_title(); ?></p></a>
     </div>
     <?php if ( !is_singular() ) {

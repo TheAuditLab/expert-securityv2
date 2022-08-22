@@ -59,7 +59,7 @@
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2367.8994776370982!2d-2.342940584152164!3d53.595255230031945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba45aa718ed29%3A0x1551faa76e25ce0a!2sBury%20BL8%203PA!5e0!3m2!1sen!2suk!4v1660813512592!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class='contact-map'></iframe>
 				</div>
-				<div class="contact-form">
+				<div id="contact" class="contact-form">
 					<h3>Send us a message</h3>
 					<?php
 						echo do_shortcode($sector_page_form);

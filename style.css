@@ -1372,7 +1372,7 @@ h4 {
 
 .single-post .title-div {
   background-color: #9c9c9c;
-  min-height: 400px;
+  min-height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,12 +1387,6 @@ h4 {
 
 .single-post .title-div img {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .single-post .title-div {
-    min-height: 600px;
-  }
 }
 
 .single-post .title-div a {
@@ -1752,7 +1746,7 @@ h4 {
 #header .menu.active {
   display: block;
   width: 100%;
-  background: var(--green);
+  background: var(--blue);
   height: 100vh;
   position: fixed;
   left: 0;
@@ -1810,8 +1804,8 @@ h4 {
 #header .search-field {
   display: none;
   position: absolute;
-  top: 30px;
-  right: 0px;
+  top: -18px;
+  right: 35px;
   border-bottom: 1px solid;
   border-color: var(--green);
   z-index: 5;
@@ -4007,6 +4001,25 @@ h4 {
   border-bottom: 1px solid var(--green);
   position: relative;
   z-index: 11;
+}
+
+.single-security-solutions .hero-image {
+  max-height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.single-security-solutions .hero-image:after {
+  content: '';
+  position: absolute;
+  background: var(--blue);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.90;
 }
 
 #contact-page .hero-image {

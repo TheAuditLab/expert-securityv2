@@ -1,0 +1,19 @@
+.single-security-solutions {
+    .hero-image {
+        max-height: 350px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--blue);
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.90;
+        }
+    }
+    
+}
