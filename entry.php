@@ -14,6 +14,7 @@
     }?>
     <?php if ( is_singular() ) { echo '</h1>'; } else { echo '</h3>'; } ?>
     <?php if ( is_singular() )
+        include "security-product.php";
         echo '<a href="#content">
             <img src="' . get_template_directory_uri() .'/icons/arrow.png" class="arrow"/>
         </a>';

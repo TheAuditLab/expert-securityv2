@@ -7,8 +7,5 @@
             </div>
         </div>
         <img class="blog-img" src="'. $blog_page_image .'">
-        <a href="#content-div">
-            <img src="' . get_template_directory_uri() . '/icons/arrow.png" class="arrow"/>
-        </a>
     </div>';
 }?>
