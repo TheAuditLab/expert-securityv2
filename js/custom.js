@@ -36,6 +36,18 @@ jQuery(document).ready(function($) {
         swipeToSlide: true
     });
 
+
+    // Feedback slider
+    $('.feedback-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        fade: true,
+        autoplay: true,
+        swipeToSlide: true
+    });
+
       // Search Bar Header placeholder text
       headerSearchBar();
 

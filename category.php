@@ -10,26 +10,18 @@
 
    $post =  $category->post_title;
 
+   //categories
+
    $left_category_title = get_field('left_category_title');
    $right_category_title = get_field('right_category_title');
    $category_title = get_field('category_title');
    
    
    $left_category_1 	= get_field('left_category_1');
-   $left_category_1_name =  $left_category_1->post_title;
-   $left_category_1_url =  $left_category_1->guid;
-
    $left_category_2 	= get_field('left_category_2');
-   $left_category_2_name =  $left_category_2->post_title;
-   $left_category_2_url =  $left_category_2->guid;
 
    $right_category_1 	= get_field('right_category_1');
-   $right_category_1_name =  $right_category_1->post_title;
-   $right_category_1_url =  $right_category_1->guid;
-
    $right_category_2 	= get_field('right_category_2');
-   $right_category_2_name =  $right_category_2->post_title;
-   $right_category_2_url =  $right_category_2->guid;
 
    $category_1 	= get_field('category_1');
    $category_2 	= get_field('category_2');
@@ -39,6 +31,10 @@
    $category_6 	= get_field('category_6');
    $category_7 	= get_field('category_7');
    $category_8 	= get_field('category_8');
+
+
+   // feedback slider
+
 ?>
 
 <header class="header">
@@ -70,7 +66,7 @@
                     <h3>' . $left_category_title . '</h3>
                         <div>
                             <a href="' . $left_category_1->guid  .'">
-                                <h4>' . $left_category_1_name . '</h4>
+                                <h4>' . $left_category_1->post_title . '</h4>
                                 <img src="' . get_field('product_image',  $left_category_1->ID )['url'] . '">
                                 <span class="price">
                                     <p>Prices available from</p>
@@ -80,7 +76,7 @@
                         </div>
                         <div>
                             <a href="' . $left_category_2->guid  .'">
-                                <h4>' . $left_category_2_name . '</h4>
+                                <h4>' . $left_category_2->post_title . '</h4>
                                 <img src="' . get_field('product_image',  $left_category_2->ID )['url'] . '">
                                 <span class="price">
                                     <p>Prices available from</p>
@@ -93,7 +89,7 @@
                     <h3>' . $right_category_title . '</h3>
                         <div>
                             <a href="' . $right_category_1->guid  .'">
-                                <h4>' . $right_category_2_name . '</h4>
+                                <h4>' . $right_category_2->post_title . '</h4>
                                 <img src="' . get_field('product_image',  $right_category_2->ID )['url'] . '">
                                 <span class="price">
                                     <p>Prices available from</p>
@@ -103,7 +99,7 @@
                         </div>
                         <div>
                             <a href="' . $right_category_2->guid  .'">
-                                <h4>' . $right_category_2_name . '</h4>
+                                <h4>' . $right_category_2->post_title . '</h4>
                                 <img src="' . get_field('product_image',  $right_category_2->ID )['url'] . '">
                                 <span class="price">
                                     <p>Prices available from</p>
@@ -199,8 +195,11 @@
                     </a>
                 </div>
             </div>
-        </div>';
+        </div>
+    </div>';
 ?>
+<?php include "template-blocks/feedback-slider.php";?>
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>
 <?php endwhile; endif; ?>
