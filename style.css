@@ -28,6 +28,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
+  vertical-align: baseline;
 }
 
 html {
@@ -979,6 +980,16 @@ h5 {
   display: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-hero-img .container {
+  text-align: left;
+  width: 100%;
+}
+
 .slide-link {
   text-transform: uppercase;
   color: #ffffff;
@@ -1623,7 +1634,6 @@ h5 {
     -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
     border-bottom: 1px solid black;
-    top: 1px;
   }
 }
 
@@ -3385,6 +3395,12 @@ h5 {
   }
 }
 
+#latest-news-block .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #latest-news-block .container .button {
   width: 100%;
   display: -webkit-box;
@@ -4071,6 +4087,7 @@ h5 {
   border: 2px solid;
   text-align: center;
   background: #ffffff;
+  margin-top: 25px;
 }
 
 .category .left-category div img {
@@ -4122,11 +4139,12 @@ h5 {
   width: 45%;
   border: 2px solid;
   text-align: center;
+  background: #ffffff;
+  margin-top: 25px;
 }
 
 .category .right-category div img {
   padding: 40px 40px 20px;
-  background: #ffffff;
 }
 
 .category .right-category h3 {
@@ -4138,6 +4156,77 @@ h5 {
   padding-top: 20px;
   margin-bottom: 0;
   background: #ffffff;
+}
+
+.category .right-category .price {
+  display: block;
+  margin: 0 20px;
+  background: var(--blue);
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.category .right-category .price h4 {
+  padding-top: 5px;
+}
+
+.category .right-category .price p {
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+.category .security-solution-div {
+  background: var(--blue);
+  margin-top: 50px;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category .security-solution-div div {
+  width: 23%;
+  border: 2px solid;
+  text-align: center;
+  background: #ffffff;
+  margin-top: 25px;
+}
+
+.category .security-solution-div div img {
+  padding: 40px 40px 20px;
+}
+
+.category .security-solution-div h3 {
+  width: 100%;
+}
+
+.category .security-solution-div h4 {
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 0;
+  background: #ffffff;
+}
+
+.category .security-solution-div .price {
+  display: block;
+  margin: 0 20px;
+  background: var(--green);
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.category .security-solution-div .price h4 {
+  padding-top: 5px;
+}
+
+.category .security-solution-div .price p {
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
 }
 
 #security-solutions .hero-image {

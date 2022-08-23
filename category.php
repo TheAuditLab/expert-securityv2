@@ -12,8 +12,9 @@
 
    $left_category_title = get_field('left_category_title');
    $right_category_title = get_field('right_category_title');
+   $category_title = get_field('category_title');
    
-
+   
    $left_category_1 	= get_field('left_category_1');
    $left_category_1_name =  $left_category_1->post_title;
    $left_category_1_url =  $left_category_1->guid;
@@ -30,6 +31,14 @@
    $right_category_2_name =  $right_category_2->post_title;
    $right_category_2_url =  $right_category_2->guid;
 
+   $category_1 	= get_field('category_1');
+   $category_2 	= get_field('category_2');
+   $category_3 	= get_field('category_3');
+   $category_4 	= get_field('category_4');
+   $category_5 	= get_field('category_5');
+   $category_6 	= get_field('category_6');
+   $category_7 	= get_field('category_7');
+   $category_8 	= get_field('category_8');
 ?>
 
 <header class="header">
@@ -84,20 +93,113 @@
                     <h3>' . $right_category_title . '</h3>
                         <div>
                             <a href="' . $right_category_1->guid  .'">
-                                <h4>' . $right_category_1_name . '</h4>
-                                <img src="' . get_field('product_image',  $right_category_1->ID )['url'] . '">
+                                <h4>' . $right_category_2_name . '</h4>
+                                <img src="' . get_field('product_image',  $right_category_2->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $right_category_2->ID ) . '</h5>
+                                </span>
                             </a>
                         </div>
                         <div>
                             <a href="' . $right_category_2->guid  .'">
                                 <h4>' . $right_category_2_name . '</h4>
                                 <img src="' . get_field('product_image',  $right_category_2->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $right_category_2->ID ) . '</h5>
+                                </span>
                             </a>
                         </div>
                 </div>
             </div>
         </div>';
     }
+    echo '<div class="container">
+            <div class="security-solution-div">
+                <h3>' . $category_title . '</h3>
+                <div>
+                    <a href="' . $category_1->guid  .'">
+                        <h4>' . $category_1->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_1->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_1->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_2->guid  .'">
+                        <h4>' . $category_2->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_2->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_2->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_3->guid  .'">
+                        <h4>' . $category_3->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_3->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_3->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_4->guid  .'">
+                        <h4>' . $category_4->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_4->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_4->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_5->guid  .'">
+                        <h4>' . $category_5->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_5->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_5->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_6->guid  .'">
+                        <h4>' . $category_6->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_6->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_6->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_7->guid  .'">
+                        <h4>' . $category_7->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_7->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_7->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a href="' . $category_8->guid  .'">
+                        <h4>' . $category_8->post_title . '</h4>
+                        <img src="' . get_field('product_image',  $category_8->ID )['url'] . '">
+                        <span class="price">
+                            <p>Prices available from</p>
+                            <h5>' . get_field('price',  $category_8->ID ) . '</h5>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>';
 ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part( 'entry' ); ?>

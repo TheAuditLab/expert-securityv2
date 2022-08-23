@@ -218,6 +218,7 @@
             border: 2px solid;
             text-align: center;
             background: #ffffff;
+            margin-top: 25px;
             img {
                 padding: 40px 40px 20px;
             }
@@ -258,9 +259,10 @@
             width: 45%;
             border: 2px solid;
             text-align: center;
+            background: #ffffff;
+            margin-top: 25px;
             img {
                 padding: 40px 40px 20px;
-                background: #ffffff;
             }
         }
         h3 {
@@ -271,6 +273,63 @@
             padding-top: 20px;
             margin-bottom: 0;
             background: #ffffff;
+        }
+        .price {
+            display: block;
+            margin: 0 20px;
+            background: var(--blue);
+            margin-bottom: 20px;
+            color: #ffffff;
+            padding: 5px 0;
+
+            h4 {
+                padding-top: 5px;
+            }
+            p {
+                font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+    .security-solution-div {
+        background: var(--blue);
+        margin-top: 50px;
+        padding: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: 23%;    
+            border: 2px solid;
+            text-align: center;
+            background: #ffffff;
+            margin-top: 25px;
+            img {
+                padding: 40px 40px 20px;
+            }
+        }
+        h3 {
+            width: 100%;
+        }
+        h4 {
+            font-size: 24px;
+            padding-top: 20px;
+            margin-bottom: 0;
+            background: #ffffff;
+        }
+        .price {
+            display: block;
+            margin: 0 20px;
+            background: var(--green);
+            margin-bottom: 20px;
+            color: #ffffff;
+            padding: 5px 0;
+
+            h4 {
+                padding-top: 5px;
+            }
+            p {
+                font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            }
         }
     }
 }
