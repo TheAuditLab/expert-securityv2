@@ -45,7 +45,9 @@ jQuery(document).ready(function($) {
         dots: false,
         fade: true,
         autoplay: true,
-        swipeToSlide: true
+        swipeToSlide: true,
+        prevArrow:"<span class='slick-prev' alt='Previous arrow'></span>",
+        nextArrow:"<span class='slick-next' alt='Next arrow'></span>",
     });
 
       // Search Bar Header placeholder text
