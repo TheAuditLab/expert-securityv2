@@ -167,6 +167,10 @@ p {
   font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
 
+b {
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: unset;
@@ -988,6 +992,257 @@ h5 {
 .home-hero-img .container {
   text-align: left;
   width: 100%;
+}
+
+.enquiry-form .wpcf7-form {
+  padding: 0 20px 50px;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .enquiry-form .wpcf7-form {
+    padding: 0;
+  }
+}
+
+.enquiry-form {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: -96px;
+  -webkit-box-shadow: 0px 0px 15px -5px #000000;
+  box-shadow: 0px 0px 15px -5px #000000;
+  display: none;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .enquiry-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
+}
+
+.enquiry-form.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.86);
+  top: 0px;
+  left: 0;
+  z-index: 11;
+}
+
+@media screen and (min-width: 1200px) {
+  .enquiry-form {
+    width: 50%;
+    max-width: 460px;
+  }
+}
+
+.enquiry-form .wpcf7-not-valid {
+  border: 1px solid red;
+}
+
+.enquiry-form .wpcf7-date {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .enquiry-form .wpcf7-date {
+    width: 82%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .enquiry-form .half {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 82%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+  }
+  .enquiry-form .half .wpcf7-form-control-wrap {
+    width: 50%;
+  }
+  .enquiry-form .half .wpcf7-date {
+    margin-top: 0;
+    width: 100%;
+  }
+  .enquiry-form .half .wpcf7-tel {
+    width: 100%;
+  }
+}
+
+.enquiry-form input, .enquiry-form textarea {
+  background: unset;
+  border: 1px solid var(--light-grey);
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .enquiry-form input, .enquiry-form textarea {
+    width: unset;
+  }
+}
+
+.enquiry-form input {
+  max-height: 50px;
+}
+
+.enquiry-form textarea {
+  padding: 10px;
+  resize: none;
+  height: 100px;
+}
+
+.enquiry-form input::-webkit-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+.enquiry-form input:-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+.enquiry-form input::-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+.enquiry-form input::placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+.enquiry-form textarea::-webkit-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+  color: var(--light-grey);
+}
+
+.enquiry-form textarea:-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+  color: var(--light-grey);
+}
+
+.enquiry-form textarea::-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+  color: var(--light-grey);
+}
+
+.enquiry-form textarea::placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+  color: var(--light-grey);
+}
+
+.enquiry-form .wpcf7-submit {
+  background: #000000;
+  width: 100%;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.enquiry-form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+}
+
+.enquiry-title {
+  background: var(--green);
+  padding: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid var(--green);
+  position: relative;
+  z-index: 11;
+}
+
+.info-text {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .info-text {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-text {
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
+.info-text h2 {
+  margin-top: 25px;
+}
+
+.info-text h3 {
+  font-size: 30px;
+  line-height: 1;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+  .info-text h3 {
+    font-size: 45px;
+  }
+}
+
+.info-text p {
+  padding-bottom: 15px;
+  line-height: 1.5;
 }
 
 .slide-link {
@@ -4756,6 +5011,108 @@ h5 {
   width: 100%;
   height: 100%;
   opacity: 0.85;
+}
+
+.single-security-solutions .title-div .img-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single-security-solutions .title-div h2 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+#security-product .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#security-product .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#security-product .product-info .product-image {
+  width: 50%;
+  text-align-last: center;
+}
+
+#security-product .product-info .product-image img {
+  max-height: 400px;
+}
+
+#security-product .product-info .product-spec {
+  width: 50%;
+  border: 1px solid;
+  padding: 0px 15px;
+  background: #eeeeed;
+}
+
+#security-product .product-info .product-spec p {
+  font-size: 26px;
+  margin-top: 5px;
+}
+
+#security-product .product-info .product-spec h3 {
+  margin: 0;
+  padding-left: 10px;
+  font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
+}
+
+#security-product .product-info .product-spec h4 {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+#security-product .product-info .product-spec table {
+  margin-top: 20px;
+}
+
+#security-product .product-info .product-spec table td {
+  border: 1px solid #dddddd;
+}
+
+#security-product .product-info .product-spec table tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+#security-product .product-info .product-spec table tr:nth-child(even) {
+  background: #eeeeed;
+}
+
+#security-product .product-info .product-spec .price {
+  color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
 }
 
 #contact-page .hero-image {

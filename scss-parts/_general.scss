@@ -30,6 +30,9 @@ h1, h2, h3, h4, h5, h6{font-weight:bold;margin-bottom:15px;}
 p{margin:10px 0;
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
+b{
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
 a {
     text-decoration: none;
     color: unset;
@@ -285,4 +288,146 @@ h5 {
 .home-hero-img .container {
     text-align: left;
     width: 100%;
+}
+.enquiry-form .wpcf7-form {
+    padding: 0 20px 50px;
+    background: #ffffff;
+
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+}
+.enquiry-form {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: -96px;
+    -webkit-box-shadow: 0px 0px 15px -5px #000000; 
+    box-shadow: 0px 0px 15px -5px #000000;
+    display: none;
+    margin-top: 25px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 50%;
+    }
+    &.active {
+        display: flex;
+        height: 100%;
+        position: fixed;
+        background: rgba(255,255,255, 0.86);
+        top: 0px;
+        left: 0;
+        z-index: 11;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        max-width: 460px;
+    }
+    .wpcf7-not-valid {
+        border: 1px solid red;
+    }
+    .wpcf7-date {
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: 82%;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .half {
+            display: flex;
+            width: 82%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+            .wpcf7-form-control-wrap {
+                width: 50%;
+            }
+            .wpcf7-date {
+                margin-top: 0;
+                width: 100%;
+            }
+            .wpcf7-tel {
+                width: 100%;
+            }
+        }
+    }
+    input, textarea {
+        background: unset;
+        border: 1px solid var(--light-grey);
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: unset;
+        }
+    }
+    input {
+        max-height: 50px;
+    }
+    textarea {
+        padding: 10px;
+        resize: none;
+        height: 100px;
+    }
+    input::placeholder {
+        font-size: 10px;
+        position: relative;
+        top: -15px;
+        right: 4px;
+        color: var(--light-grey);
+    }
+    textarea::placeholder {
+        font-size: 10px;
+        position: relative;
+        top: -5px;
+        color: var(--light-grey);
+    }
+    .wpcf7-submit {
+        background: #000000;
+        width: 100%;
+        font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+        line-height: 1;
+    }
+    .submit {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        place-items: center;
+    }
+}
+.enquiry-title {
+    background: var(--green);
+    padding: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid var(--green);
+    position: relative;
+    z-index: 11;
+}
+.info-text {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 120px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        width: 50%;
+    }
+    h2 {
+        margin-top: 25px;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 1;
+        font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+        @media screen and (min-width: 1200px) {
+            font-size: 45px;
+        }
+    }
+    p {
+        padding-bottom: 15px;
+        line-height: 1.5;
+    }
 }

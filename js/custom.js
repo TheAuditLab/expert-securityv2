@@ -17,6 +17,8 @@ jQuery(document).ready(function($) {
         $("body").toggleClass("overflow");
     });
 
+    jQuery(".product-spec .prive").insertAfter("table");
+
     $(window).resize(function(){
         if(screen.width >= 700){
             $(".mobile-menu").removeClass("active");

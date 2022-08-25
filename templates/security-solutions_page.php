@@ -9,7 +9,7 @@
 	$security_solutions_bg_image    = get_field('security_solutions_bg_image');   
 
 	$security_solution_1 	= get_field('security_solution_1');
-	$security_solution_1_name =  $security_solution_1->post_title;
+	$security_solution_1_name =  $security_solution_1->url;
 	$security_solution_1_url =  $security_solution_1->guid;
 
 
@@ -71,6 +71,7 @@
 				
 					<div class="security-solution" style="background-image: url('<?php echo (get_the_post_thumbnail_url( $security_solution_1 )) ?>')">
 						<a href="<?php echo $security_solution_1_url ?>">
+							<?php var_dump($security_solution_1) ?>
 							<h3><?php echo $security_solution_1_name; ?></h3>
 						</a>
 					</div>

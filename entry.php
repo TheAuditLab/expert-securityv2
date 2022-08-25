@@ -4,8 +4,9 @@
     <div> 
         <a class="img-title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark">
         <img class="hero-image"src="<?php the_post_thumbnail_url(); ?>">
-        <p><?php the_title(); ?></p></a>
     </div>
+    <h2><?php the_title(); ?></h2></a>
+
     <?php if ( !is_singular() ) {
         echo '<div class="blog-post">';
         echo '<a href="' . get_the_permalink() . '">' . get_the_title() .'</a>';
@@ -13,13 +14,10 @@
         echo '</div>';
     }?>
     <?php if ( is_singular() ) { echo '</h1>'; } else { echo '</h3>'; } ?>
-    <?php if ( is_singular() )
-        include "security-product.php";
-        echo '<a href="#content">
-            <img src="' . get_template_directory_uri() .'/icons/arrow.png" class="arrow"/>
-        </a>';
-    ?>
 </div>
+<?php if ( is_singular() )
+    include "security-product.php";
+?>
 <?php edit_post_link(); ?>
 </header>
 <?php if ( !is_search() && is_singular()) { get_template_part( 'entry', ( is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() || is_singular() ? 'summary' : 'content' ) ); } ?>
