@@ -424,42 +424,6 @@
             z-index: 22;
             max-width: 1200px;
             margin: 0 auto;
-            .slick-prev {
-                background-image: url('images/left-arrow.png');
-                position: absolute;
-                content: '';
-                display: block;
-                background-size: cover;
-                top: 40px;
-                cursor: pointer;
-                z-index: 12;
-                left: 30px;
-                width: 40px;
-                height: 40px;
-                @media screen and (min-width: 1200px) {
-                    left: 0;
-                    width: 70px;
-                    height: 70px;
-                }
-            }
-            .slick-next {
-                cursor: pointer;
-                background-image: url('images/right-arrow.png');
-                position: absolute;
-                content: '';
-                display: block;
-                background-size: cover;
-                top: 40px; 
-                z-index: 12;
-                right: 30px;
-                width: 40px;
-                height: 40px;
-                @media screen and (min-width: 1200px) {
-                    right: 0;
-                    width: 70px;
-                    height: 70px;
-                }
-            }
         }
     }
     .contact-info h2 {

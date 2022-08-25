@@ -28,7 +28,7 @@
         </div>
         <div class="product-info">
             <div class="product-image">
-                <img src="<?php echo $product_image['url'] ?>">
+                <?php include "template-blocks/security-product-images.php";?>
             </div>
             <div class="product-spec">
                 <?php echo $product_spec ?>

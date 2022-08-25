@@ -10,6 +10,10 @@ jQuery(document).ready(function($) {
         $(".search-field").toggle();
     });
 
+    jQuery(".wpcf7-select").click(function(){
+        $(".wpcf7-select").addClass("active");
+    })
+
     // mobile menu toggle
     $(".mobile-menu").click(function(){
         $(this).toggleClass("active");
@@ -41,6 +45,20 @@ jQuery(document).ready(function($) {
 
     // Feedback slider
     $('.feedback-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        fade: true,
+        autoplay: true,
+        swipeToSlide: true,
+        prevArrow:"<span class='slick-prev' alt='Previous arrow'></span>",
+        nextArrow:"<span class='slick-next' alt='Next arrow'></span>",
+    });
+
+
+    // Feedback slider
+    $('.security-product-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,

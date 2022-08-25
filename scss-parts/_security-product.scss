@@ -18,6 +18,7 @@
             margin-bottom: 25px;
             img {
                 max-height: 400px;
+                margin: 0 auto;
             }
         }
         .product-spec {
@@ -93,7 +94,7 @@
                 justify-content: space-between;
                 @media screen and (min-width: 768px) {
                     display: flex;
-                    padding-top: 100px; 
+                    padding-top: 50px; 
                 }
                 .usp {
                     border: 1px solid #ffffff;
@@ -132,5 +133,43 @@
                 }
             }
         }   
+    }
+    .slick-prev {
+        background-image: url('images/left-arrow.png');
+        position: absolute;
+        content: '';
+        display: block;
+        background-size: cover;
+        top: 40px;
+        cursor: pointer;
+        z-index: 12;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+        @media screen and (min-width: 1200px) {
+            top: 40%;
+            left: 40px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .slick-next {
+        cursor: pointer;
+        background-image: url('images/right-arrow.png');
+        position: absolute;
+        content: '';
+        display: block;
+        background-size: cover;
+        top: 40px; 
+        z-index: 12;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        @media screen and (min-width: 1200px) {
+            top: 40%;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+        }
     }
 }
