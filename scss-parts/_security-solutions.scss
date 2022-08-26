@@ -124,7 +124,7 @@
     }
     .security-solutions {
         color:#ffffff;
-        padding: 100px 0 200px;
+        padding: 50px 0 200px;
         background-size: cover;
         position: relative;
         background-position: center;
@@ -144,22 +144,37 @@
         }
         h2 {
             text-align: center;
+            margin-bottom: 50px;
         }
         .security-solutions-div {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            a {
+                position: relative;
+                z-index: 2;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48%;
+                margin-bottom: 30px;
+                margin-right: 2%;
+                @media screen and (min-width: 768px) {
+                    width: 23%;
+                }
+            }
             .security-solution {
-                width: 20%;
+                width: 100%;
                 text-align: center;
                 border: 2px solid var(--green);
-                height: 100%;
+                height: 200px;
                 padding: 50px 0;
                 background-size: cover;
                 position: relative;
-                a {
-                    position: relative;
-                    z-index: 2;
-                }
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                
                 &:after {
                     content: '';
                     position: absolute;
@@ -171,11 +186,19 @@
                     opacity: 0.60;
                 }
             }
+            h4 {
+                position: relative;
+                z-index: 2;
+                font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            }
         }
     }  
     .security-solutions-text {
-        width: 50%;
         margin-top: 40px;
+        margin-bottom: 50px;
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
     } 
 }
 

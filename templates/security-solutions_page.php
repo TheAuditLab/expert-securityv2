@@ -9,39 +9,37 @@
 	$security_solutions_bg_image    = get_field('security_solutions_bg_image');   
 
 	$security_solution_1 	= get_field('security_solution_1');
-	$security_solution_1_name =  $security_solution_1->url;
-	$security_solution_1_url =  $security_solution_1->guid;
-
+	$solution_1 = get_field( 'hero_image', $security_solution_1 );
 
 	$security_solution_2 	= get_field('security_solution_2');
-	$security_solution_2_name =  $security_solution_2->post_title;
-	$security_solution_2_url =  $security_solution_2->guid;
+	$solution_2 = get_field( 'hero_image', $security_solution_2 );
 
 	$security_solution_3 	= get_field('security_solution_3');
-	$security_solution_3_name =  $security_solution_3->post_title;
-	$security_solution_3_url =  $security_solution_3->guid;
+	$solution_3 = get_field( 'hero_image', $security_solution_3 );
 
 	$security_solution_4 	= get_field('security_solution_4');
-	$security_solution_4_name =  $security_solution_4->post_title;
-	$security_solution_4_url =  $security_solution_4->guid;
+	$solution_4 = get_field( 'hero_image', $security_solution_4 );
 
 	$security_solution_5 	= get_field('security_solution_5');
-	$security_solution_5_name =  $security_solution_5->post_title;
-	$security_solution_5_url =  $security_solution_5->guid;
+	$solution_5 = get_field( 'hero_image', $security_solution_5 );
 
+	$security_solution_6	= get_field('security_solution_6');
+	$solution_6 = get_field( 'hero_image', $security_solution_6 );
 
+	$security_solution_7 	= get_field('security_solution_7');
+	$solution_7 = get_field( 'hero_image', $security_solution_7 );
 
+	$security_solution_8 	= get_field('security_solution_8');
+	$solution_8 = get_field( 'hero_image', $security_solution_8 );
 
-	$security_solutions_page_form		= get_field('security_solutions_page_form');
+	$security_solution_9 	= get_field('security_solution_9');
+	$solution_9 = get_field( 'hero_image', $security_solution_9 );
 
-	$phone_icon				= get_field('phone_icon');
-	$phone_icon_text		= get_field('phone_icon_text');
-	$mail_icon				= get_field('mail_icon');
-	$mail_icon_text			= get_field('mail_icon_text');
-	$home_icon				= get_field('home_icon');
-	$home_icon_text				= get_field('home_icon_text');
+	$security_solution_10 	= get_field('security_solution_10');
+	$solution_10 = get_field( 'hero_image', $security_solution_10 );
 
 	$enquiry_form				= get_field('enquiry_form', 5);
+
 
 ?>
 
@@ -68,28 +66,56 @@
 			<div class="container">
 				<h2><?php echo $security_solutions_hero_title ?></h2>
 				<div class="security-solutions-div">
-				
-					<div class="security-solution" style="background-image: url('<?php echo (get_the_post_thumbnail_url( $security_solution_1 )) ?>')">
-						<a href="<?php echo $security_solution_1_url ?>">
-							<?php var_dump($security_solution_1) ?>
-							<h3><?php echo $security_solution_1_name; ?></h3>
-						</a>
-					</div>
-					<div class="security-solution" style="background-image: url('<?php echo (get_the_post_thumbnail_url( $security_solution_2 )) ?>')">
-						<a href="<?php echo $security_solution_2_url ?>">
-							<h3><?php echo $security_solution_2_name; ?></h3>
-						</a>
-					</div>
-					<div class="security-solution" style="background-image: url('<?php echo (get_the_post_thumbnail_url( $security_solution_3 )) ?>')">
-						<a href="<?php echo $security_solution_3_url ?>">
-							<h3><?php echo $security_solution_3_name; ?></h3>
-						</a>
-					</div>
-					<div class="security-solution" style="background-image: url('<?php echo (get_the_post_thumbnail_url( $security_solution_4 )) ?>')">
-						<a href="<?php echo $security_solution_4_url ?>">
-							<h3><?php echo $security_solution_4_name; ?></h3>
-						</a>
-					</div>
+					<a href="/security-solutions/<?php echo $security_solution_1->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_1['url'] ?>')">
+								<h4> <?php echo $security_solution_1->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_2->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_2['url'] ?>')">
+								<h4> <?php echo $security_solution_2->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_3->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_3['url'] ?>')">
+								<h4> <?php echo $security_solution_3->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_4->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_4['url'] ?>')">
+								<h4> <?php echo $security_solution_4->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_5->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_5['url'] ?>')">
+								<h4> <?php echo $security_solution_5->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_6->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_6['url'] ?>')">
+								<h4> <?php echo $security_solution_6->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_7->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_7['url'] ?>')">
+								<h4> <?php echo $security_solution_7->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_8->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_8['url'] ?>')">
+								<h4> <?php echo $security_solution_8->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_9->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_9['url'] ?>')">
+								<h4> <?php echo $security_solution_9->name ?> </h4>
+						</div>
+					</a>
+					<a href="/security-solutions/<?php echo $security_solution_10->slug ?>">
+						<div class="security-solution" style="background-image: url('<?php echo $solution_10['url'] ?>')">
+								<h4> <?php echo $security_solution_10->name ?> </h4>
+						</div>
+					</a>
 				</div>
 			</div>
 	</section>

@@ -477,4 +477,35 @@ h5 {
     }
 }
 
+//menu 
+.menu-item-has-children {
+    position: relative;
+    .sub-menu {
+        position: absolute;
+        z-index: 2;
+        background: #ffffff;
+        width: 100%;
+        display:none;
+        li {
+            padding: 0 !important;
+            &:after {
+                display: none;
+            }
+        }
+        &:hover > .sub-menu  {
+            display:block !important;
+        }
+        .sub-menu {
+            display: none;
+            left: 100%;
+            top: 0;
+            margin-top: 0;
+        }
+    }
+    
+    &:hover > ul{
+        display:block !important;
+    }
+}
+
 

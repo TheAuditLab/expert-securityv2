@@ -1298,6 +1298,41 @@ h5 {
   opacity: 0.85;
 }
 
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+  position: absolute;
+  z-index: 2;
+  background: #ffffff;
+  width: 100%;
+  display: none;
+}
+
+.menu-item-has-children .sub-menu li {
+  padding: 0 !important;
+}
+
+.menu-item-has-children .sub-menu li:after {
+  display: none;
+}
+
+.menu-item-has-children .sub-menu:hover > .sub-menu {
+  display: block !important;
+}
+
+.menu-item-has-children .sub-menu .sub-menu {
+  display: none;
+  left: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.menu-item-has-children:hover > ul {
+  display: block !important;
+}
+
 .slide-link {
   text-transform: uppercase;
   color: #ffffff;
@@ -4639,6 +4674,50 @@ h5 {
   margin: 0 auto;
 }
 
+.category #feedbackSlider .feedback-slider .slick-prev {
+  background-image: url("images/left-arrow.png");
+  position: absolute;
+  content: '';
+  display: block;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 12;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .category #feedbackSlider .feedback-slider .slick-prev {
+    left: 40px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.category #feedbackSlider .feedback-slider .slick-next {
+  cursor: pointer;
+  background-image: url("images/right-arrow.png");
+  position: absolute;
+  content: '';
+  display: block;
+  background-size: cover;
+  z-index: 12;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .category #feedbackSlider .feedback-slider .slick-next {
+    right: 40px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
 .category .contact-info h2 {
   color: #000000;
 }
@@ -4868,7 +4947,7 @@ h5 {
 
 #security-solutions .security-solutions {
   color: #ffffff;
-  padding: 100px 0 200px;
+  padding: 50px 0 200px;
   background-size: cover;
   position: relative;
   background-position: center;
@@ -4892,30 +4971,58 @@ h5 {
 
 #security-solutions .security-solutions h2 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #security-solutions .security-solutions .security-solutions-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#security-solutions .security-solutions .security-solutions-div a {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48%;
+  margin-bottom: 30px;
+  margin-right: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  #security-solutions .security-solutions .security-solutions-div a {
+    width: 23%;
+  }
 }
 
 #security-solutions .security-solutions .security-solutions-div .security-solution {
-  width: 20%;
+  width: 100%;
   text-align: center;
   border: 2px solid var(--green);
-  height: 100%;
+  height: 200px;
   padding: 50px 0;
   background-size: cover;
   position: relative;
-}
-
-#security-solutions .security-solutions .security-solutions-div .security-solution a {
-  position: relative;
-  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #security-solutions .security-solutions .security-solutions-div .security-solution:after {
@@ -4929,9 +5036,21 @@ h5 {
   opacity: 0.60;
 }
 
+#security-solutions .security-solutions .security-solutions-div h4 {
+  position: relative;
+  z-index: 2;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+}
+
 #security-solutions .security-solutions-text {
-  width: 50%;
   margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #security-solutions .security-solutions-text {
+    width: 50%;
+  }
 }
 
 .single-security-solutions {
