@@ -6,6 +6,7 @@
     }
     .info-block {
         display: flex;
+        justify-content: space-between;
         .wpcf7-form {
             padding: 0 20px 50px;
             background: #ffffff;
@@ -89,6 +90,7 @@
                 top: -15px;
                 right: 4px;
                 color: var(--light-grey);
+                -webkit-font-smoothing: antialiased;
             }
             textarea::placeholder {
                 font-size: 10px;
@@ -143,10 +145,6 @@
         h2 {
             text-align: center;
         }
-        .security-solutions-text {
-            width: 50%;
-            margin-top: 40px;
-        }
         .security-solutions-div {
             display: flex;
             justify-content: space-between;
@@ -174,7 +172,11 @@
                 }
             }
         }
-    }   
+    }  
+    .security-solutions-text {
+        width: 50%;
+        margin-top: 40px;
+    } 
 }
 
 //single page

@@ -28,7 +28,8 @@
             <div class="col-12 col-lg-6">
                 <div class="logo-div">
                     <a href="/">
-                        <img class="footer-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                        <img class="footer-logo" src="<?php bloginfo('template_url'); ?>/images/crest-logo.png" alt="Expert Security Logo">
+                        <p>Expert Security UK</p>
                     </a>
                 </div>
                 <?php echo $contact_info ?>
@@ -54,13 +55,13 @@
             <div class="col-12 d-flex justify-content-center footer-bottom">
                 <div class="social-icons">
                     <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
-                        <img src="<?php bloginfo('template_url'); ?>/images/facebook-black.svg" alt="Facebook Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon">
                     </a>
                     <a href="https://www.instagram.com/expertsecurityuk/">
-                        <img src="<?php bloginfo('template_url'); ?>/images/instagram-black.svg" alt="Instagram Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon">
                     </a>
                     <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
-                        <img src="<?php bloginfo('template_url'); ?>/images/linkedin-black.svg" alt="LinkedIn Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon">
                     </a>
                 </div>
 

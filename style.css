@@ -1077,6 +1077,7 @@ h5 {
   padding-bottom: 23px;
   color: var(--light-grey);
   border: 1px solid var(--light-grey);
+  margin-top: 10px;
 }
 
 .enquiry-form .wpcf7-select.active {
@@ -1084,10 +1085,6 @@ h5 {
   position: unset;
   padding: 0;
   color: #000000;
-}
-
-.enquiry-form .wpcf7-select.active option:nth-child(1) {
-  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1104,7 +1101,7 @@ h5 {
     margin: 0 auto;
   }
   .enquiry-form .half .wpcf7-form-control-wrap {
-    width: 50%;
+    width: 47% !important;
   }
   .enquiry-form .half .wpcf7-date {
     margin-top: 0;
@@ -2456,6 +2453,25 @@ h5 {
   }
 }
 
+#footer .logo-div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .logo-div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  margin: 20px 10px;
+}
+
+.home #footer .logo-div p {
+  color: var(--dark-blue);
+}
+
 .page-template-contact_page #footer .logo-div {
   padding-top: 60px;
 }
@@ -2467,7 +2483,7 @@ h5 {
 }
 
 #footer .logo-div img {
-  max-width: 160px;
+  max-width: 70px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2476,7 +2492,6 @@ h5 {
 
 @media screen and (min-width: 768px) {
   #footer .logo-div img {
-    max-width: 350px;
     margin: unset;
   }
 }
@@ -2648,10 +2663,6 @@ h5 {
   padding-bottom: 20px;
 }
 
-#info-block {
-  padding-top: 25px;
-}
-
 #info-block .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2691,6 +2702,7 @@ h5 {
 
 #info-block .info-text {
   margin-bottom: 20px;
+  padding-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -4639,6 +4651,9 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #security-solutions .info-block .wpcf7-form {
@@ -4761,6 +4776,7 @@ h5 {
   top: -15px;
   right: 4px;
   color: var(--light-grey);
+  -webkit-font-smoothing: antialiased;
 }
 
 #security-solutions .info-block .enquiry-form input:-ms-input-placeholder {
@@ -4769,6 +4785,7 @@ h5 {
   top: -15px;
   right: 4px;
   color: var(--light-grey);
+  -webkit-font-smoothing: antialiased;
 }
 
 #security-solutions .info-block .enquiry-form input::-ms-input-placeholder {
@@ -4777,6 +4794,7 @@ h5 {
   top: -15px;
   right: 4px;
   color: var(--light-grey);
+  -webkit-font-smoothing: antialiased;
 }
 
 #security-solutions .info-block .enquiry-form input::placeholder {
@@ -4785,6 +4803,7 @@ h5 {
   top: -15px;
   right: 4px;
   color: var(--light-grey);
+  -webkit-font-smoothing: antialiased;
 }
 
 #security-solutions .info-block .enquiry-form textarea::-webkit-input-placeholder {
@@ -4875,11 +4894,6 @@ h5 {
   text-align: center;
 }
 
-#security-solutions .security-solutions .security-solutions-text {
-  width: 50%;
-  margin-top: 40px;
-}
-
 #security-solutions .security-solutions .security-solutions-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4913,6 +4927,11 @@ h5 {
   width: 100%;
   height: 100%;
   opacity: 0.60;
+}
+
+#security-solutions .security-solutions-text {
+  width: 50%;
+  margin-top: 40px;
 }
 
 .single-security-solutions {

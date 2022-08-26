@@ -179,6 +179,18 @@
         }
     }
     .logo-div {
+        a {
+            display: flex;
+        }
+        p {
+            display: flex;
+            font-size: 24px;
+            font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            margin: 20px 10px;
+            .home & {
+                color: var(--dark-blue);
+            }
+        }
         .page-template-contact_page & {
             padding-top: 60px;
             @media screen and (min-width: 768px) {
@@ -186,11 +198,10 @@
             }
         }
         img {
-            max-width: 160px;
+            max-width: 70px;
             margin: 0 auto;
             display: flex;
             @media screen and (min-width: 768px) {
-                max-width: 350px;
                 margin: unset;
             } 
         }

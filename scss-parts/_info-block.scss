@@ -1,5 +1,4 @@
 #info-block {
-    padding-top: 25px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -22,6 +21,7 @@
     }
     .info-text {
         margin-bottom: 20px;
+        padding-top: 25px;
         @media screen and (min-width: 768px) {
             margin-bottom: 120px;
         }

@@ -223,6 +223,7 @@ h1, h2, h3, h4, h5 {
     -webkit-font-smoothing: antialiased;
 }
 
+
 strong {
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
@@ -344,14 +345,12 @@ h5 {
         padding-bottom: 23px;
         color: var(--light-grey);
         border: 1px solid var(--light-grey);
+        margin-top: 10px;
         &.active {
            font-size: 16px;
            position: unset;
            padding: 0; 
            color: #000000;
-            option:nth-child(1) {
-               display: none;
-           }
         }
     }
     @media screen and (min-width: 1200px) {
@@ -362,7 +361,7 @@ h5 {
             justify-content: space-between;
             margin: 0 auto;
             .wpcf7-form-control-wrap {
-                width: 50%;
+                width: 47% !important;
             }
             .wpcf7-date {
                 margin-top: 0;
