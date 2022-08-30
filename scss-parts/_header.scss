@@ -21,6 +21,55 @@
             }
         }
     }
+    .sub-menu {
+        li {
+            border-bottom: 1px solid #000000;
+        }
+        .menu-item-has-children  {
+            position: relative;
+                &:before{
+                    position: absolute;
+                    content: '';
+                    border-left: solid 5px var(--green);
+                    border-bottom: solid 5px transparent;
+                    border-top: solid 5px transparent;
+                    right: 5px;
+                    top: 14px;
+                    opacity: 0.4;
+                }
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .sub-menu {
+            li {
+                background: var(--green);
+                border-bottom: 1px solid #ffffff;
+                a {
+                    color:#ffffff;
+                    &:hover {
+                        color: #ffffff !important;
+                    }
+                }
+            }
+            .menu-item-has-children  {
+                position: relative;
+                    &:before{
+                        position: absolute;
+                        content: '';
+                        border-left: solid 5px #ffffff;
+                        border-bottom: solid 5px transparent;
+                        border-top: solid 5px transparent;
+                        right: 5px;
+                        top: 14px;
+                        opacity: 0.4;
+                    }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
     .tel {
         &:hover {
             color: #ffffff;
@@ -201,6 +250,7 @@
             li a {
                 text-decoration: none;
                 color: #000000;
+                position: relative;
                 &:hover {
                     color: var(--green); 
                 }
@@ -209,6 +259,10 @@
             .current-menu-parent > a,
             .current-menu-item > a {
                 color: var(--green); 
+            }
+            .current-menu-item,
+            .sub-menu .current-menu-ancestor {
+                border-bottom: 1px solid var(--green);
             }
         }
 
@@ -284,4 +338,5 @@
             
         }
     }
+   
 }

@@ -6,8 +6,7 @@
     height: 100%;
     align-content: center;
     position: relative;
-    z-index: 1;
-    
+    z-index: 1;       
   }
   #content {
     margin: 0 auto;
@@ -15,7 +14,9 @@
     flex-wrap: wrap;
     background-color: #e7e7e0;
     padding-bottom: 100px;
-
+    .container {
+      padding-bottom: 75px !important;
+    }
     .post {
       margin-bottom: 0;
     }
@@ -28,7 +29,6 @@
     position: relative;
     background-size: cover;
     color: #ffffff;
-    margin-bottom: 50px;
       &:after {
         content: '';
         position: absolute;

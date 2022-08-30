@@ -1270,6 +1270,7 @@ h5 {
   height: 350px;
   position: relative;
   color: #ffffff;
+  z-index: 1;
 }
 
 .hero-image .container {
@@ -1484,6 +1485,10 @@ h5 {
   padding-bottom: 100px;
 }
 
+.blog #content .container {
+  padding-bottom: 75px !important;
+}
+
 .blog #content .post {
   margin-bottom: 0;
 }
@@ -1496,7 +1501,6 @@ h5 {
   position: relative;
   background-size: cover;
   color: #ffffff;
-  margin-bottom: 50px;
 }
 
 .blog .news-header:after {
@@ -1825,6 +1829,61 @@ h5 {
   }
 }
 
+#header .sub-menu li {
+  border-bottom: 1px solid #000000;
+}
+
+#header .sub-menu .menu-item-has-children {
+  position: relative;
+}
+
+#header .sub-menu .menu-item-has-children:before {
+  position: absolute;
+  content: '';
+  border-left: solid 5px var(--green);
+  border-bottom: solid 5px transparent;
+  border-top: solid 5px transparent;
+  right: 5px;
+  top: 14px;
+  opacity: 0.4;
+}
+
+#header .sub-menu .menu-item-has-children:hover {
+  opacity: 1;
+}
+
+#header .sub-menu .sub-menu li {
+  background: var(--green);
+  border-bottom: 1px solid #ffffff;
+}
+
+#header .sub-menu .sub-menu li a {
+  color: #ffffff;
+}
+
+#header .sub-menu .sub-menu li a:hover {
+  color: #ffffff !important;
+}
+
+#header .sub-menu .sub-menu .menu-item-has-children {
+  position: relative;
+}
+
+#header .sub-menu .sub-menu .menu-item-has-children:before {
+  position: absolute;
+  content: '';
+  border-left: solid 5px #ffffff;
+  border-bottom: solid 5px transparent;
+  border-top: solid 5px transparent;
+  right: 5px;
+  top: 14px;
+  opacity: 0.4;
+}
+
+#header .sub-menu .sub-menu .menu-item-has-children:hover {
+  opacity: 1;
+}
+
 #header .tel:hover {
   color: #ffffff;
 }
@@ -2067,6 +2126,7 @@ h5 {
   #header .menu li a {
     text-decoration: none;
     color: #000000;
+    position: relative;
   }
   #header .menu li a:hover {
     color: var(--green);
@@ -2075,6 +2135,10 @@ h5 {
   #header .menu .current-menu-parent > a,
   #header .menu .current-menu-item > a {
     color: var(--green);
+  }
+  #header .menu .current-menu-item,
+  #header .menu .sub-menu .current-menu-ancestor {
+    border-bottom: 1px solid var(--green);
   }
 }
 
@@ -3008,10 +3072,6 @@ h5 {
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
   -webkit-transition: 1.3s;
   transition: 1.3s;
-}
-
-#info-block .security-products .product p:hover {
-  color: var(--green);
 }
 
 #why-choose .why-choose {
