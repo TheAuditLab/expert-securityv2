@@ -482,12 +482,12 @@ h5 {
     position: relative;
     .sub-menu {
         position: absolute;
-        z-index: 2;
+        z-index: 92;
         background: #ffffff;
         width: 100%;
         display:none;
         li {
-            padding: 0 !important;
+            padding: 10px !important;
             &:after {
                 display: none;
             }

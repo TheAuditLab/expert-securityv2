@@ -1304,14 +1304,14 @@ h5 {
 
 .menu-item-has-children .sub-menu {
   position: absolute;
-  z-index: 2;
+  z-index: 92;
   background: #ffffff;
   width: 100%;
   display: none;
 }
 
 .menu-item-has-children .sub-menu li {
-  padding: 0 !important;
+  padding: 10px !important;
 }
 
 .menu-item-has-children .sub-menu li:after {
@@ -1852,6 +1852,8 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   max-width: 1220px !important;
+  position: relative;
+  z-index: 2;
 }
 
 #header .container .header-info {
@@ -2122,7 +2124,9 @@ h5 {
   #header .menu li a:hover {
     color: var(--green);
   }
-  #header .menu .current-menu-item a {
+  #header .menu .current-menu-ancestor > a,
+  #header .menu .current-menu-parent > a,
+  #header .menu .current-menu-item > a {
     color: var(--green);
   }
 }
@@ -4049,7 +4053,7 @@ h5 {
 
 .category .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4571,7 +4575,7 @@ h5 {
 }
 
 .category .security-solution-div h4 {
-  font-size: 24px;
+  font-size: 20px;
   padding-top: 20px;
   margin-bottom: 0;
   background: #ffffff;
@@ -4965,7 +4969,7 @@ h5 {
 }
 
 #security-solutions .security-solutions .container {
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 
@@ -5114,7 +5118,7 @@ h5 {
 
 .single-security-solutions .title-div h2 {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #ffffff;
 }
 
@@ -5243,7 +5247,7 @@ h5 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 #security-product .product-information .container p {

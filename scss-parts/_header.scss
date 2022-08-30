@@ -3,7 +3,8 @@
     .container {
         display: flex;
         max-width: 1220px !important;
-        
+        position: relative;
+        z-index: 2;
         .header-info {
             display: none;
             .overflow & {
@@ -204,7 +205,9 @@
                     color: var(--green); 
                 }
             }
-            .current-menu-item a{
+            .current-menu-ancestor > a,
+            .current-menu-parent > a,
+            .current-menu-item > a {
                 color: var(--green); 
             }
         }
