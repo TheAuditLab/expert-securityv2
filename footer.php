@@ -54,13 +54,13 @@
             </div>
             <div class="col-12 d-flex justify-content-center footer-bottom">
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592">
+                    <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592" target="_blank">
                         <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon">
                     </a>
-                    <a href="https://www.instagram.com/expertsecurityuk/">
+                    <a href="https://www.instagram.com/expertsecurityuk/" target="_blank">
                         <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon">
                     </a>
-                    <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd">
+                    <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd" target="_blank">
                         <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon">
                     </a>
                 </div>
