@@ -15,7 +15,9 @@
     }?>
     <?php if ( is_singular() ) { echo '</h1>'; } else { echo '</h3>'; } ?>
 </div>
-<?php if ( is_singular() )
+<?php 
+$price = get_field("price");
+if ( is_singular() && $price )
     include "security-product.php";
 ?>
 <?php edit_post_link(); ?>
