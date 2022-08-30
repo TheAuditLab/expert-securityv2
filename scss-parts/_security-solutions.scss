@@ -230,7 +230,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            opacity: 0.85;
+            opacity: 0;
         }
         .img-title {
             display: flex;
@@ -240,6 +240,8 @@
             align-items: center;
             width: 100%;
             justify-content: center;
+            background-position: center;
+            background-size: cover;
         }
         h2 {
             position: relative;

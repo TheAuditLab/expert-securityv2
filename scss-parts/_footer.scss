@@ -2,7 +2,7 @@
     margin-top: -160px;
     padding: 10px;
     position: relative;
-    z-index: 12;
+    z-index: 1;
     .page-template-contact_page & {
         margin-top: 200px;
     }
@@ -271,5 +271,8 @@
                 }
             }
         }
+    }
+    .search-results & {
+        margin-top: 0;
     }
 }
