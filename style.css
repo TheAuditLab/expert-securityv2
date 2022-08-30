@@ -1829,8 +1829,21 @@ h5 {
   }
 }
 
+#header .menu-item {
+  position: relative;
+}
+
+#header .sub-menu {
+  position: absolute;
+  top: 56px;
+}
+
 #header .sub-menu li {
   border-bottom: 1px solid #000000;
+}
+
+#header .sub-menu li:last-child .sub-menu {
+  top: -226px;
 }
 
 #header .sub-menu .menu-item-has-children {
@@ -1850,6 +1863,10 @@ h5 {
 
 #header .sub-menu .menu-item-has-children:hover {
   opacity: 1;
+}
+
+#header .sub-menu .sub-menu {
+  top: 0px;
 }
 
 #header .sub-menu .sub-menu li {
@@ -2136,7 +2153,6 @@ h5 {
   #header .menu .current-menu-item > a {
     color: var(--green);
   }
-  #header .menu .current-menu-item,
   #header .menu .sub-menu .current-menu-ancestor {
     border-bottom: 1px solid var(--green);
   }
@@ -3150,7 +3166,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   #why-choose .why-choose .stats-div p {
-    font-size: inherit;
+    font-size: 24px;
   }
 }
 

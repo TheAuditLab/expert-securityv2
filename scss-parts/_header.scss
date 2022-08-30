@@ -21,9 +21,20 @@
             }
         }
     }
+    .menu-item {
+        position: relative;
+    }
     .sub-menu {
+        position: absolute;
+        top: 56px;
+       
         li {
             border-bottom: 1px solid #000000;
+            &:last-child {
+                .sub-menu {
+                    top: -226px;
+                }
+            }
         }
         .menu-item-has-children  {
             position: relative;
@@ -42,6 +53,7 @@
             }
         }
         .sub-menu {
+            top: 0px ;
             li {
                 background: var(--green);
                 border-bottom: 1px solid #ffffff;
@@ -260,7 +272,6 @@
             .current-menu-item > a {
                 color: var(--green); 
             }
-            .current-menu-item,
             .sub-menu .current-menu-ancestor {
                 border-bottom: 1px solid var(--green);
             }
