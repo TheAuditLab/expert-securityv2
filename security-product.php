@@ -6,10 +6,10 @@
     $product_information = get_field("product_information");
     $product_information_bg = get_field("product_information_bg");
 
-    $usp_1 = get_field("usp_1");
-    $usp_2 = get_field("usp_2");
-    $usp_3 = get_field("usp_3");
-    $usp_4 = get_field("usp_4");
+    $usp_1 = get_field("usp_1", 383);
+    $usp_2 = get_field("usp_2", 383);
+    $usp_3 = get_field("usp_3", 383);
+    $usp_4 = get_field("usp_4", 383);
 
 
 ?>

@@ -58,7 +58,6 @@
         <span class="enquiry-title">Enquire here</span>
         <?php
             echo do_shortcode('[contact-form-7 id="112" title="Enquiry Form"]');
-            var_dump($category_8->post_name);
         ?>
     </div>
 </div>
