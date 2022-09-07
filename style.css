@@ -1068,25 +1068,6 @@ h5 {
   }
 }
 
-.enquiry-form .wpcf7-select {
-  height: 50px;
-  width: 100%;
-  font-size: 10px;
-  padding-left: 3px;
-  position: relative;
-  padding-bottom: 23px;
-  color: var(--light-grey);
-  border: 1px solid var(--light-grey);
-  margin-top: 10px;
-}
-
-.enquiry-form .wpcf7-select.active {
-  font-size: 16px;
-  position: unset;
-  padding: 0;
-  color: #000000;
-}
-
 @media screen and (min-width: 1200px) {
   .enquiry-form .half {
     display: -webkit-box;
@@ -1245,6 +1226,7 @@ h5 {
 
 .info-text h2 {
   margin-top: 25px;
+  color: #000000;
 }
 
 .info-text h3 {
@@ -1262,6 +1244,15 @@ h5 {
 .info-text p {
   padding-bottom: 15px;
   line-height: 1.5;
+}
+
+.info-text a {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.info-text a:hover {
+  color: #000000;
 }
 
 .hero-image {
@@ -1332,6 +1323,29 @@ h5 {
 
 .menu-item-has-children:hover > ul {
   display: block !important;
+}
+
+form .wpcf7-select {
+  height: 50px;
+  width: 100%;
+  font-size: 10px;
+  padding-left: 3px;
+  position: relative;
+  padding-bottom: 23px;
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
+  margin-top: 10px;
+}
+
+form .wpcf7-select.active {
+  font-size: 16px;
+  position: unset;
+  padding: 0 10px;
+  color: #000000;
+}
+
+form .wpcf7-select:focus, form .wpcf7-select:visited {
+  outline: 1px solid var(--green);
 }
 
 .slide-link {
@@ -2375,7 +2389,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   #footer .contact-info {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -2408,6 +2422,19 @@ h5 {
   width: 100%;
 }
 
+#footer .newsletter .half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .newsletter .half span {
+  width: 50%;
+}
+
 @media screen and (min-width: 768px) {
   #footer .newsletter {
     width: 50%;
@@ -2424,6 +2451,9 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -2439,6 +2469,10 @@ h5 {
   width: 100%;
   display: block;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2463,6 +2497,38 @@ h5 {
   background-color: var(--green);
   height: 51px;
   width: 100%;
+}
+
+#footer .newsletter input::-webkit-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+#footer .newsletter input:-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+#footer .newsletter input::-ms-input-placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
+}
+
+#footer .newsletter input::placeholder {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  right: 4px;
+  color: var(--light-grey);
 }
 
 #footer #copyright {
@@ -2589,6 +2655,9 @@ h5 {
   position: absolute;
   width: 100%;
   top: -170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-template-contact_page #footer .container .row {
@@ -2656,6 +2725,28 @@ h5 {
 
 .search-results #footer {
   margin-top: 0;
+}
+
+#footer .wpcf7-response-output, #footer .wpcf7-not-valid-tip {
+  position: absolute;
+}
+
+#footer .wpcf7-not-valid-tip {
+  width: 100% !important;
+}
+
+#footer .wpcf7 form.invalid .wpcf7-response-output {
+  display: none;
+}
+
+#footer .wpcf7-spinner {
+  bottom: -30px;
+  right: 0;
+  position: absolute;
+}
+
+#footer input {
+  background: #ffffff;
 }
 
 .search-results #content {
@@ -4594,6 +4685,7 @@ h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .category .security-solution-div div {
@@ -4611,7 +4703,22 @@ h5 {
 }
 
 .category .security-solution-div div img {
-  padding: 40px 40px 20px;
+  padding: 20px;
+  height: 200px;
+}
+
+.category .security-solution-div div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 
 .category .security-solution-div h3 {
@@ -4623,6 +4730,15 @@ h5 {
   padding-top: 20px;
   margin-bottom: 0;
   background: #ffffff;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .category .security-solution-div .price {
@@ -5202,12 +5318,16 @@ h5 {
 #security-product .product-info .product-image img {
   max-height: 400px;
   margin: 0 auto;
+  max-width: 90%;
 }
 
 #security-product .product-info .product-spec {
   border: 1px solid;
   padding: 0px 15px;
   background: #eeeeed;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media screen and (min-width: 768px) {
@@ -5285,6 +5405,14 @@ h5 {
   width: 100%;
   height: 100%;
   opacity: 0.95;
+}
+
+#security-product .product-information li {
+  margin-bottom: 10px;
+}
+
+#security-product .product-information ul, #security-product .product-information p {
+  width: 100%;
 }
 
 #security-product .product-information .container {

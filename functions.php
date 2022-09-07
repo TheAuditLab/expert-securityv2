@@ -216,3 +216,5 @@ function space_change_custom_taxonomy_slug_args( $taxonomy, $object_type, $args 
   }
 }
 add_action( 'registered_taxonomy', 'space_change_custom_taxonomy_slug_args', 10, 3 );
+
+

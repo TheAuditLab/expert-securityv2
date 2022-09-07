@@ -19,12 +19,14 @@
             img {
                 max-height: 400px;
                 margin: 0 auto;
+                max-width: 90%;
             }
         }
         .product-spec {
             border: 1px solid;
             padding: 0px 15px;
             background: #eeeeed;
+            height: fit-content;
             @media screen and (min-width: 768px) {
                 width: 50%;
             }
@@ -81,6 +83,12 @@
             width: 100%;
             height: 100%;
             opacity: 0.95;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        ul, p {
+            width: 100%;
         }
         .container {
             padding: 50px;

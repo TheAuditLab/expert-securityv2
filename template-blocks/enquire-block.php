@@ -9,7 +9,7 @@
     <div class="container">
         <div class="enquire-block">
             <div class="enquire_text"><?php echo $enquire_text; ?></div>
-            <a class="enquire-btn" href="<?php $enquire_button_link ?>"><?php echo $enquire_button_text ?></a>
+            <a class="enquire-btn" href="<?php echo $enquire_button_link ?>"><?php echo $enquire_button_text ?></a>
         </div>
     </div>
 </section>
