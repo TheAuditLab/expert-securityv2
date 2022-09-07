@@ -1,6 +1,6 @@
 #enquire-popup {
     position: relative;
-    z-index: 22;
+    z-index: 99999;
     .enquire-popup-btn {
         position: fixed;
         bottom: 0;
@@ -11,6 +11,7 @@
         border: none;
         opacity: 1;
         width: 170px;
+        z-index: 99999;
         @media screen and (min-width: 768px) {
             display: none;
         }

@@ -111,11 +111,6 @@
 								<h4> <?php echo $security_solution_9->name ?> </h4>
 						</div>
 					</a>
-					<a href="/security-solutions/<?php echo $security_solution_10->slug ?>">
-						<div class="security-solution" style="background-image: url('<?php echo $solution_10['url'] ?>')">
-								<h4> <?php echo $security_solution_10->name ?> </h4>
-						</div>
-					</a>
 				</div>
 			</div>
 	</section>

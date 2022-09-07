@@ -102,8 +102,12 @@
         .half {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             span {
-                width: 50%;
+                width: 100%;
+                @media screen and (min-width: 768px) {
+                    width: 50%;
+                }
             }
         }
         @media screen and (min-width: 768px) {
@@ -229,7 +233,7 @@
        } 
     }
     .page-template-contact_page & {
-        margin-top: 1800px;
+        margin-top: 1700px;
         background: var(--blue);
         @media screen and (min-width: 768px) {
             margin-top: 500px;
@@ -309,5 +313,8 @@
     }
     input  {
         background: #ffffff;
+    }
+    form p {
+        margin: 0 auto;
     }
 }

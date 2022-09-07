@@ -9,7 +9,6 @@
     include "template-blocks/enquire-block.php";
     include "template-blocks/team-block.php";
     include "template-blocks/latest-news-block.php";
-    include "template-blocks/enquire-popup.php";
 ?>
 
 <?php get_footer(); ?>

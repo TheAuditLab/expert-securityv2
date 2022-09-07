@@ -73,7 +73,10 @@
     </div>
 </footer>
 </div>
-<?php wp_footer(); ?>
+<?php wp_footer(); 
+include "template-blocks/enquire-popup.php";
+?>
+
 
 </body>
 </html>

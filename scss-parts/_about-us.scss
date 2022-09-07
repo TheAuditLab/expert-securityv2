@@ -90,6 +90,8 @@
     //latest work
     .latest-work {
         position: relative;
+        background-size: cover;
+        background-position: center;
         &:after {
             content: '';
             position: absolute;
@@ -117,9 +119,16 @@
             justify-content: space-between;
             position: relative;
             bottom: 370px;
+            flex-direction: column;
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
         }
         .team-div {
-            width: 32%;
+            @media screen and (min-width: 768px) {
+                width: 32%;
+            }
             img {
                 height: 600px;
                 width: 100%;
@@ -135,13 +144,20 @@
         position: relative;
         bottom: 250px;
         flex-wrap: wrap;
+        flex-direction: column;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
         .team-title {
             width: 100%;
             padding-bottom: 20px;
         }
         .team-div {
-            width: 30%;
+            width: 100%;
             position: relative;
+            @media screen and (min-width: 768px) {
+                width: 30%;
+            }
             strong {
                 font-size: 30px;
             }
