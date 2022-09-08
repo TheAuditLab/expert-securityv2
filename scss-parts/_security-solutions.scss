@@ -206,10 +206,13 @@
 .single-security-solutions {
     position: relative;
     .hero-image {
-        height: 350px;
+        height: 250px;
         width: 100%;
         position: relative;
         object-fit: cover;
+        @media screen and (min-width: 768px) {
+            height: 350px;
+        }
         .container {
             height: 100%;
             display: flex;

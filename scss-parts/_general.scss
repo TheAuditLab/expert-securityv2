@@ -445,10 +445,13 @@ h5 {
 .hero-image {
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 250px;
     position: relative;
     color: #ffffff;
     z-index: 1;
+    @media screen and (min-width: 768px) {
+        height: 350px;        
+    }
     .container {
         height: 100%;
         display: flex;
@@ -519,6 +522,4 @@ form .wpcf7-select {
         outline: 1px solid var(--green)
     }
 } 
-
-
 

@@ -1258,10 +1258,16 @@ h5 {
 .hero-image {
   background-size: cover;
   background-position: center;
-  height: 350px;
+  height: 250px;
   position: relative;
   color: #ffffff;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-image {
+    height: 350px;
+  }
 }
 
 .hero-image .container {
@@ -1378,8 +1384,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 35px;
-  left: 50%;
+  bottom: 15px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  #homepageHeroSlider .slick-dots {
+    bottom: 35px;
+  }
 }
 
 #homepageHeroSlider .slick-dots li button {
@@ -1412,7 +1427,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
           align-items: center;
   vertical-align: center;
   padding: 10px;
-  max-height: 350px;
+  max-height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  #homepageHeroSlider .home-hero-img {
+    max-height: 350px;
+  }
 }
 
 #homepageHeroSlider .home-hero-img .container {
@@ -2941,7 +2962,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: 36px;
   -webkit-box-shadow: 0px 0px 15px -5px #000000;
   box-shadow: 0px 0px 15px -5px #000000;
   display: none;
@@ -2965,6 +2985,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   left: 0;
   top: 0 !important;
   z-index: 9999;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -5260,11 +5281,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .single-security-solutions .hero-image {
-  height: 350px;
+  height: 250px;
   width: 100%;
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .single-security-solutions .hero-image {
+    height: 350px;
+  }
 }
 
 .single-security-solutions .hero-image .container {
@@ -5581,9 +5608,15 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 #contact-page .hero-image {
-  height: 350px;
+  height: 250px;
   position: relative;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  #contact-page .hero-image {
+    height: 350px;
+  }
 }
 
 #contact-page .hero-image .container {
