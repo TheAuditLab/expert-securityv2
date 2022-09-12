@@ -110,13 +110,5 @@ jQuery(document).ready(function($) {
             $rWrap.removeClass('right-wrap');
         }
     });
-
-    // mobile menu toggle
-      $(".enquire-popup-btn").click(function(){
-        $(".enquiry-form").toggleClass("active");
-        $("body").toggleClass("overflow");
-        var $el = $(this);
-        $el.text($el.text() == "Close" ? "Enquire here": "Close");
-    });
 });
 

@@ -217,4 +217,8 @@ function space_change_custom_taxonomy_slug_args( $taxonomy, $object_type, $args 
 }
 add_action( 'registered_taxonomy', 'space_change_custom_taxonomy_slug_args', 10, 3 );
 
-
+// changing blog excerpt length 
+function mytheme_custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );

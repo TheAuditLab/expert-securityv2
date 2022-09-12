@@ -1,3 +1,3 @@
 <section id="enquire-popup">
-    <button class="enquire-popup-btn">Enquire here</button>
+    <a href="/#enquiry-form"><button class="enquire-popup-btn">Enquire here</button></a>
 </section>

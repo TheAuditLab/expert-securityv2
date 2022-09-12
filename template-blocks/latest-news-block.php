@@ -1,5 +1,5 @@
 <?php
-
+    $defaultImage = 'new';
 ?>
 
 <section id="latest-news-block">
@@ -24,12 +24,20 @@
 
                     <div class="blog-div">
                         <a href="<?php the_permalink(); ?>" >
-                            <div class="img-tiles" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="<?php the_title() ?>">
+                            <?php if ( has_post_thumbnail() ) { ?>
+                                <div class="img-tiles" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="' <?php the_title() ?>'">
+                            <?php 
+                            }else{ 
+                            ?>
+                                <div class="img-tiles" style="background-image: url('<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')" alt="' <?php the_title() ?>'">
+                            <?php
+                            } 
+                            ?>  
                             </div>
                         </a>
 
                         <a class="blog-title" href="<?php the_permalink(); ?>" >
-                            <h4><?php ç; ?></h4>
+                            <h4><?php the_title(); ?></h4>
                             <span class="excerpt"><?php the_excerpt(); ?></span>
                             <p class="read-more">Read more</p>
                         </a>

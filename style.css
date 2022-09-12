@@ -52,10 +52,6 @@ button {
   outline: 0;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -151,6 +147,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-tap-highlight-color: transparent;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 .search main {
@@ -601,23 +601,6 @@ h2.entry-title, h3.widget-title {
 
 #content p.wp-block-cover-text {
   color: #fff;
-}
-
-.nav-links {
-  margin-top: 30px;
-}
-
-.nav-links a, #nav-above a {
-  text-decoration: none;
-}
-
-#nav-above a {
-  display: block;
-  font-family: tahoma,sans-serif;
-  font-size: 50px;
-  color: #767676;
-  line-height: 0;
-  margin: 30px 0 15px;
 }
 
 .nav-previous {
@@ -1520,10 +1503,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   padding-bottom: 100px;
 }
 
-.blog #content .container {
-  padding-bottom: 75px !important;
-}
-
 .blog #content .post {
   margin-bottom: 0;
 }
@@ -1601,7 +1580,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 .blog .title-div {
   background-color: #ffffff;
   padding: 20px 20px 40px;
-  max-width: 350px;
+  width: 350px;
   margin: 30px 0;
 }
 
@@ -1625,7 +1604,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 .blog .title-div h2 {
   color: #000000;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .blog .title-div .image {
@@ -1702,7 +1681,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   width: 100%;
   margin: 0 auto;
   text-align: left;
-  font-family: "CircularStd-Book", Sans-serif;
   font-weight: 700;
   font-size: 50px;
   position: relative;
@@ -1719,6 +1697,15 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   height: 200px;
 }
 
+.blog .posts-navigation {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  padding: 100px 0;
+}
+
 .single-post a {
   text-decoration: none;
 }
@@ -1727,18 +1714,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   color: var(--pink);
 }
 
-.single-post h1,
-.single-post h2,
-.single-post h3,
 .single-post p {
   color: #000000;
-  font-family: "CircularStd-Book", Sans-serif;
 }
 
 .single-post p,
 .single-post span,
 .single-post b {
-  font-family: "CircularStd-Book", Sans-serif;
   line-height: 1.7;
 }
 
@@ -1748,12 +1730,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   margin-bottom: 45px;
   font-size: 35px;
   line-height: 1;
+  font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
 }
 
 @media screen and (min-width: 768px) {
   .single-post h1 {
     margin-bottom: 60px;
-    font-size: 40px;
+    font-size: 50px;
   }
 }
 
@@ -1829,8 +1812,20 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 @media screen and (min-width: 1024px) {
   .single-post #content .container {
-    padding: 90px;
+    padding: 90px 0;
   }
+}
+
+.single-post #content ul li, .single-post #content ol li {
+  margin: 0 40px 10px;
+}
+
+.single-post #content ul li {
+  list-style: disc;
+}
+
+.single-post #content ol li {
+  list-style: auto;
 }
 
 #header .container {
@@ -2298,10 +2293,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 #footer {
-  margin-top: -160px;
   padding: 10px;
   position: relative;
   z-index: 1;
+}
+
+.home #footer, .category #footer, .page-template #footer {
+  margin-top: -160px;
 }
 
 .page-template-contact_page #footer {
@@ -2526,8 +2524,9 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 #footer .newsletter .wpcf7-submit {
   background-color: var(--green);
-  height: 51px;
+  height: 50px;
   width: 100%;
+  line-height: 1;
 }
 
 #footer .newsletter input::-webkit-input-placeholder {
@@ -2560,6 +2559,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   top: -15px;
   right: 4px;
   color: var(--light-grey);
+}
+
+#footer .newsletter input {
+  height: 50px;
 }
 
 #footer #copyright {
@@ -2964,32 +2967,12 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   position: relative;
   -webkit-box-shadow: 0px 0px 15px -5px #000000;
   box-shadow: 0px 0px 15px -5px #000000;
-  display: none;
+  margin-top: 100px;
 }
 
 @media screen and (min-width: 1200px) {
   #info-block .enquiry-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-#info-block .enquiry-form.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 120vh;
-  position: fixed;
-  background: #ffffff;
-  left: 0;
-  top: 0 !important;
-  z-index: 9999;
-  margin-top: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  #info-block .enquiry-form {
+    margin-top: 25px;
     width: 50%;
     max-width: 460px;
   }
@@ -3967,6 +3950,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   height: 100%;
   height: 250px;
   position: relative;
+  background-size: cover;
 }
 
 #latest-news-block .container .img-tiles:after {
