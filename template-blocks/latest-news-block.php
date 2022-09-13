@@ -35,12 +35,14 @@
                             ?>  
                             </div>
                         </a>
-
-                        <a class="blog-title" href="<?php the_permalink(); ?>" >
-                            <h4><?php the_title(); ?></h4>
-                            <span class="excerpt"><?php the_excerpt(); ?></span>
-                            <p class="read-more">Read more</p>
-                        </a>
+                        <span class="text-div">
+                            <a class="blog-title" href="<?php the_permalink(); ?>" >
+                                <h4><?php the_title(); ?></h4>
+                                <span class="excerpt"><?php the_excerpt(); ?>
+                                    <p class="read-more">Read more</p>
+                                </span>
+                            </a>
+                        </span>
                     </div>
                   
                 <?php

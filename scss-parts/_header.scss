@@ -14,13 +14,21 @@
                 z-index: 9;
                 width: 100%;
                 right: 15px;    
+                margin-top: 10px;
             }
             @media screen and (min-width: 1200px) {
                 position: unset;
                 display: contents;
                 top: 70px;
+                margin-top: 0;
             }
         }
+    }
+    ul li, ol li {
+        margin: 0;
+    }
+    ul li, ol li {
+        list-style: none;
     }
     .menu-item {
         position: relative;
@@ -29,12 +37,17 @@
         top: 56px;
         display: none;
         position: unset;
+        margin-top: 10px;
         @media screen and (min-width: 1200px) {
+            margin-top: 0;
             position: absolute;
         }
        
         li {
-            border-bottom: 1px solid #000000;
+            border-bottom: 1px solid #ffffff;
+            @media screen and (min-width: 1200px) {
+                border-bottom: 1px solid #000000;
+            }
             &:last-child {
                 .sub-menu {
                     top: -226px;

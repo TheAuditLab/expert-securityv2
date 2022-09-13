@@ -29,6 +29,9 @@
             bottom: 35px;
         }
     }
+    ul li, ol li {
+        list-style: none;
+    }
 
     .slick-dots li button {
         text-indent: -9999px;
@@ -38,6 +41,7 @@
         border-radius: 100%;
         border: 1px solid #ffffff;
         background-color: transparent;
+        width: 17px;
     }
 
     .slick-active{

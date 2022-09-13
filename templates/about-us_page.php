@@ -30,14 +30,14 @@
 
 <section id="about-us">
     <div class="hero-image" style="background-image: url('<?php echo $about_us_hero_image['url']; ?>')">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">			
-						<h2 class="title"><?php echo $about_us_hero_title; ?><h2>
-					</div>
-				</div>
-			</div>	
-		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">			
+                    <h2 class="title"><?php echo $about_us_hero_title; ?><h2>
+                </div>
+            </div>
+        </div>	
+    </div>
     <div class="container">
         <div class="about-us-info">
             <div class="about-us-info-text">

@@ -24,7 +24,16 @@
             
         }
         .blog-title {
-            margin: 10px 20px 20px;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+        .text-div {
+            margin: 15px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .excerpt p {
             margin-bottom: 20px;
@@ -37,6 +46,7 @@
         .read-more {
             color: var(--green);
             font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+            cursor: pointer;
             &:hover {
                 color:#ffffff;
             }

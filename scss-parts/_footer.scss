@@ -11,6 +11,12 @@
     @media screen and (min-width: 768) {
         padding: 0;
     }
+    ul li, ol li {
+        margin: 0;
+    }
+    ul li, ol li {
+        list-style: none;
+    }
 
     h4 {
         font-family: 'AlbertSans-Regular';
@@ -113,7 +119,7 @@
             }
         }
         @media screen and (min-width: 768px) {
-            width: 50%;
+            width: 60%;
         }
         .wpcf7-form {
             display: flex;
@@ -300,6 +306,36 @@
             }
         }
     }
+    .page-template-text_page & {
+        margin-top: 0px;
+        background: var(--blue);
+        @media screen and (min-width: 768px) {
+            margin-top: 200px;
+        }
+        .container {
+            position: relative;
+            .contact-box {
+                position: absolute;
+                width: 100%;
+                top: -170px;
+            }
+            .row {
+                padding-top: 130px;
+                p, a, h4, li, #copyright {
+                    color: #ffffff;
+                }
+                a:hover {
+                    color: var(--green);
+                }
+                .footer-bottom {
+                    border-top: 1px solid #ffffff;
+                }
+                .social-icons {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
     .search-results & {
         margin-top: 0;
     }
@@ -322,5 +358,8 @@
     }
     form p {
         margin: 0 auto;
+    }
+    .single-security-solutions & {
+        bottom: 180px;
     }
 }

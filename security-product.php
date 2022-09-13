@@ -20,7 +20,7 @@
         <div class="info-text">
             <?php echo $security_product_text; ?>
         </div>
-        <div class="enquiry-form">
+        <div id="product-form" class="enquiry-form">
             <span class="enquiry-title">Enquire here</span>
             <?php
                 echo do_shortcode('[contact-form-7 id="112" title="Enquiry Form"]');
@@ -34,8 +34,9 @@
                 <?php echo $product_spec ?>
                 <div class="price">
                     <p>from</p>
-                    <h3><?php echo $price ?></h3>
+                    <h4><?php echo $price ?></h4>
                 </div>
+                <div class="enquire-btn"><a href="#product-form">Enquire Now</a></div>
             </div>
         </div>
     </div>
