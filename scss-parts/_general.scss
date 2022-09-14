@@ -29,9 +29,7 @@ h1, h2, h3, h4, h5, h6{font-weight:bold;margin-bottom:15px;}
 p{margin:10px 0;
     font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
-ul li, ol li {
-    margin: 0 40px 10px;
-}
+
 ul li {
     list-style: disc;
     line-height: 1.3;
@@ -544,4 +542,11 @@ form .wpcf7-select {
 .nav-links a {
     font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif;
 }
-
+.hover-effect {
+    overflow: hidden;
+    transition: 1.3s;
+    &:hover {
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+}

@@ -25,11 +25,11 @@
                     <div class="blog-div">
                         <a href="<?php the_permalink(); ?>" >
                             <?php if ( has_post_thumbnail() ) { ?>
-                                <div class="img-tiles" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="' <?php the_title() ?>'">
+                                <div class="img-tiles hover-effect" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="' <?php the_title() ?>'">
                             <?php 
                             }else{ 
                             ?>
-                                <div class="img-tiles" style="background-image: url('<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')" alt="' <?php the_title() ?>'">
+                                <div class="img-tiles hover-effect" style="background-image: url('<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')" alt="' <?php the_title() ?>'">
                             <?php
                             } 
                             ?>  

@@ -163,10 +163,6 @@ p {
   font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
 }
 
-ul li, ol li {
-  margin: 0 40px 10px;
-}
-
 ul li {
   list-style: disc;
   line-height: 1.3;
@@ -1361,6 +1357,18 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 .nav-links a {
   font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif;
+}
+
+.hover-effect {
+  overflow: hidden;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+.hover-effect:hover {
+  overflow: hidden;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .slide-link {
@@ -3953,6 +3961,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   }
 }
 
+#latest-news-block .container .blog-div a {
+  overflow: hidden;
+}
+
 #latest-news-block .container .blog-title:hover {
   color: #ffffff;
 }
@@ -4053,6 +4065,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   padding: 10px 30px;
   font-size: 20px;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+}
+
+#latest-news-block .container .button .news-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #latest-news-block .container .img-tiles {
@@ -4061,23 +4080,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   height: 250px;
   position: relative;
   background-size: cover;
-}
-
-#latest-news-block .container .img-tiles:after {
-  content: '';
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-
-#latest-news-block .container .img-tiles:hover:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.85;
-  background: var(--green);
 }
 
 #about-us .about-us-info {

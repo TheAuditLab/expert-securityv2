@@ -21,6 +21,9 @@
             @media screen and (min-width: 768px) {
                 width: 31%;
             }
+            a { 
+                overflow: hidden;
+            }
             
         }
         .blog-title {
@@ -84,6 +87,10 @@
                 padding: 10px 30px;
                 font-size: 20px;
                 font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+                transition: 1.3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
         .img-tiles {
@@ -92,22 +99,22 @@
             height: 250px;
             position: relative;
             background-size: cover;
-            &:after {
-                content: '';
-                transition: 1s ease-in-out;
-            }
-            &:hover {
-                &:after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0.85;
-                    background: var(--green);
-                }
-            }
+            // &:after {
+            //     content: '';
+            //     transition: 1s ease-in-out;
+            // }
+            // &:hover {
+            //     &:after {
+            //         content: '';
+            //         position: absolute;
+            //         left: 0;
+            //         top: 0;
+            //         width: 100%;
+            //         height: 100%;
+            //         opacity: 0.85;
+            //         background: var(--green);
+            //     }
+            // }
         }
     }
 }
