@@ -2,6 +2,9 @@
     padding: 10px;
     position: relative;
     z-index: 1;
+    .footer-logo {
+        object-fit: cover;
+    }
     .home &, .category &, .page-template & {
         margin-top: -160px;
     }
@@ -277,7 +280,7 @@
     }
     //about us page
     .page-template-about-us_page & {
-        margin-top: 1800px;
+        margin-top: 10px;
         background: var(--blue);
         @media screen and (min-width: 768px) {
             margin-top: 0px;

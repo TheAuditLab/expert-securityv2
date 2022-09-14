@@ -57,21 +57,15 @@
             </div>
         </div>
     <div class="container">
-        <div class="team-block">
-            <div class="team-text">
-                <?php echo $team_text; ?>
-                <a href="<?php $team_btn_link ?>"><p class="team-btn"><?php echo $team_btn_text ?></p></a>
+        <div class="latest-work-div">
+            <div class="work-image">
+                <img src="<?php echo $latest_work_image_1['url']; ?>" alt="<?php echo $latest_work_image_1['alt']; ?>">
             </div>
-            <div class="team-images">
-                <div class="team-div">
-                    <img src="<?php echo $latest_work_image_1['url']; ?>" alt="<?php echo $latest_work_image_1['alt']; ?>">
-                </div>
-                <div class="team-div">
-                    <img src="<?php echo $latest_work_image_2['url']; ?>" alt="<?php echo $latest_work_image_2['alt']; ?>">
-                </div>
-                <div class="team-div">
-                    <img src="<?php echo $latest_work_image_3['url']; ?>" alt="<?php echo $latest_work_image_3['alt']; ?>">
-                </div>
+            <div class="work-image">
+                <img src="<?php echo $latest_work_image_2['url']; ?>" alt="<?php echo $latest_work_image_2['alt']; ?>">
+            </div>
+            <div class="work-image">
+                <img src="<?php echo $latest_work_image_3['url']; ?>" alt="<?php echo $latest_work_image_3['alt']; ?>">
             </div>
         </div>
         <div class="team-members">

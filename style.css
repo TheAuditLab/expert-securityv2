@@ -1371,6 +1371,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
           transform: scale(1.1);
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 .slide-link {
   text-transform: uppercase;
   color: #ffffff;
@@ -1621,6 +1625,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   padding: 20px 20px 40px;
   width: 350px;
   margin: 30px 0;
+  min-height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .blog .title-div a {
@@ -2310,12 +2325,14 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   z-index: 5;
   background-color: #ffffff;
   padding: 10px;
+  width: 70vw;
 }
 
 @media screen and (min-width: 1200px) {
   #header .search-field {
     top: -1px;
     right: -280px;
+    width: unset;
   }
 }
 
@@ -2344,6 +2361,11 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   padding: 10px;
   position: relative;
   z-index: 1;
+}
+
+#footer .footer-logo {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home #footer, .category #footer, .page-template #footer {
@@ -2772,7 +2794,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .page-template-about-us_page #footer {
-  margin-top: 1800px;
+  margin-top: 10px;
   background: var(--blue);
 }
 
@@ -3435,6 +3457,11 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   margin: 0;
 }
 
+#why-choose .why-choose .why-choose-div h2, #why-choose .why-choose .why-choose-div p {
+  position: relative;
+  z-index: 10;
+}
+
 #why-choose .why-choose .why-choose-div div {
   text-align: center;
   border: 2px solid white;
@@ -3442,6 +3469,9 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -3467,13 +3497,29 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 #why-choose .why-choose .why-choose-div div:after {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 100px;
+  width: 100%;
+  height: 400px;
   background: var(--green);
-  right: -20px;
-  bottom: -47px;
+  right: -85%;
+  bottom: -277px;
   -webkit-transform: rotate(33deg);
           transform: rotate(33deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#why-choose .why-choose .why-choose-div div:hover a {
+  color: #ffffff;
+}
+
+#why-choose .why-choose .why-choose-div div:hover:after {
+  height: 900px;
+  width: 900px;
+  bottom: -220px;
+  -webkit-transition: 1.3s;
+  transition: 1.3s;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
 }
 
 #why-choose .why-choose .why-choose-div img {
@@ -4318,11 +4364,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 #about-us .team-members .team-div {
   width: 100%;
   position: relative;
+  margin-bottom: 110px;
 }
 
 @media screen and (min-width: 768px) {
   #about-us .team-members .team-div {
     width: 30%;
+    margin-bottom: 0px;
   }
 }
 
@@ -4336,12 +4384,52 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 #about-us .team-members .team-div div {
   position: absolute;
-  bottom: 0px;
+  bottom: -90px;
   width: 100%;
   background: var(--green);
   color: #ffffff;
   text-align: center;
   padding: 5px 0 20px;
+}
+
+#about-us .latest-work-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  #about-us .latest-work-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#about-us .latest-work-div .work-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #about-us .latest-work-div .work-image {
+    width: 30%;
+  }
+}
+
+#about-us .latest-work-div .work-image img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .category {
@@ -5408,6 +5496,16 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 .single-security-solutions .title-div {
   height: 350px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-security-solutions .title-div div {
+  width: 100%;
 }
 
 .single-security-solutions .title-div:after {
@@ -5443,6 +5541,12 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   position: relative;
   z-index: 1;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #security-product .container {
@@ -5486,6 +5590,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   color: #ffffff;
 }
 
+#security-product .product-info .enquire-btn a:hover {
+  color: #ffffff;
+}
+
 #security-product .product-info .product-image {
   width: 50%;
   text-align-last: center;
@@ -5525,6 +5633,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
   text-align: center;
   margin: 20px 0 0;
+}
+
+#security-product .product-info .product-spec ul li, #security-product .product-info .product-spec ol li {
+  list-style: none;
 }
 
 #security-product .product-info .product-spec table {

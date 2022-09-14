@@ -225,6 +225,11 @@
     .title-div {
         height: 350px;
         position: relative;
+        display: flex;
+        align-items: center;
+        div {
+            width: 100%;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -250,6 +255,8 @@
             position: relative;
             z-index: 1;
             color: #ffffff;
+            display: flex;
+            justify-content: center;
         }
     }
 }

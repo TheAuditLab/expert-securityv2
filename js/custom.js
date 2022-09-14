@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    // Feedback slider
+    // Security product slider
     $('.security-product-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -69,6 +69,7 @@ jQuery(document).ready(function($) {
         prevArrow:"<span class='slick-prev' alt='Previous arrow'></span>",
         nextArrow:"<span class='slick-next' alt='Next arrow'></span>",
     });
+
 
       // Search Bar Header placeholder text
       headerSearchBar();
@@ -95,7 +96,6 @@ jQuery(document).ready(function($) {
         
             return elementBottom > viewportTop && elementTop < viewportBottom;
         };
-
     }
     // loading when the page comes in the view
     $(window).scroll(function() {

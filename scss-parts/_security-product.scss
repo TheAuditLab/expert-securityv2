@@ -21,7 +21,10 @@
             display: flex;
             margin-bottom: 20px;
             cursor: pointer;
-            color: #ffffff;
+            color: #ffffff; 
+            a:hover {
+                color: #ffffff;
+            }
         }
         .product-image {
             width: 50%;
@@ -52,6 +55,9 @@
                 font-family: "AlbertSans-ExtraBold", Arial, Helvetica, sans-serif !important;
                 text-align: center;
                 margin: 20px 0 0;
+            }
+            ul li, ol li {
+                list-style: none;
             }
             table {
                 margin-top: 20px;

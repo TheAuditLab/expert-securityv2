@@ -345,9 +345,11 @@
         z-index: 5;
         background-color: #ffffff;
         padding: 10px;
+        width: 70vw;
         @media screen and (min-width: 1200px) {
             top: -1px;
             right: -280px;
+            width: unset;
         }
     }
     .social-icons {
@@ -363,8 +365,6 @@
        
         a {
             text-decoration: none;
-            
         }
     }
-   
 }
