@@ -21,6 +21,12 @@ jQuery(document).ready(function($) {
         $("body").toggleClass("overflow");
     });
 
+    // close menu 
+    $("#enquire-popup").click(function(){
+        $("#menu-main-menu").removeClass("active");
+        $("body").removeClass("overflow");
+    });
+
     jQuery(".product-spec .prive").insertAfter("table");
 
     $(window).resize(function(){

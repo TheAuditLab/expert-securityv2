@@ -987,7 +987,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .enquiry-form .wpcf7-form {
-    padding: 0;
+    padding: 0 40px;
   }
 }
 
@@ -1010,6 +1010,9 @@ h5 {
   box-shadow: 0px 0px 15px -5px #000000;
   display: none;
   margin-top: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1048,18 +1051,12 @@ h5 {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .enquiry-form .wpcf7-date {
-    width: 82%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .enquiry-form .half {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 82%;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1210,6 +1207,10 @@ h5 {
   }
 }
 
+.info-text ul, .info-text ol {
+  padding-left: 40px;
+}
+
 .info-text h2 {
   margin-top: 25px;
   color: #000000;
@@ -1331,7 +1332,13 @@ form .wpcf7-select {
   padding-bottom: 23px;
   color: var(--light-grey);
   border: 1px solid var(--light-grey);
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  form .wpcf7-select {
+    margin-top: 10px;
+  }
 }
 
 form .wpcf7-select.active {
@@ -2360,7 +2367,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 #footer {
   padding: 10px;
   position: relative;
-  z-index: 1;
+  z-index: 20;
 }
 
 #footer .footer-logo {
@@ -2436,6 +2443,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  #footer .col-12 {
+    text-align: left;
+  }
 }
 
 #footer .col-lg-6 p {
@@ -2489,6 +2503,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 @media screen and (min-width: 768px) {
   #footer .contact-info {
     width: 40%;
+    padding: 0;
   }
 }
 
@@ -2530,6 +2545,8 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #footer .newsletter .half span {
@@ -2705,6 +2722,23 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  #footer .logo-div a {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 #footer .logo-div p {
@@ -2732,7 +2766,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 #footer .logo-div img {
   max-width: 70px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3102,6 +3135,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   }
 }
 
+#info-block .enquiry-form form {
+  padding: 0 40px;
+}
+
 #info-block .enquiry-form .wpcf7-not-valid {
   border: 1px solid red;
 }
@@ -3110,18 +3147,12 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  #info-block .enquiry-form .wpcf7-date {
-    width: 82%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   #info-block .enquiry-form .half {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 82%;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -3145,12 +3176,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   background: unset;
   border: 1px solid var(--light-grey);
   width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  #info-block .enquiry-form input, #info-block .enquiry-form textarea {
-    width: unset;
-  }
 }
 
 #info-block .enquiry-form input {
@@ -3512,14 +3537,16 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   color: #ffffff;
 }
 
-#why-choose .why-choose .why-choose-div div:hover:after {
-  height: 900px;
-  width: 900px;
-  bottom: -220px;
-  -webkit-transition: 1.3s;
-  transition: 1.3s;
-  -webkit-transform: skewX(-45deg);
-          transform: skewX(-45deg);
+@media screen and (min-width: 768px) {
+  #why-choose .why-choose .why-choose-div div:hover:after {
+    height: 900px;
+    width: 900px;
+    bottom: -220px;
+    -webkit-transition: 1.3s;
+    transition: 1.3s;
+    -webkit-transform: skewX(-45deg);
+            transform: skewX(-45deg);
+  }
 }
 
 #why-choose .why-choose .why-choose-div img {
@@ -4225,11 +4252,14 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 #about-us .about-us-info .about-us-info-image .about-us-image-info {
   background: var(--green);
+  position: relative;
+  bottom: 60px;
   width: 70%;
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   padding: 20px;
   display: -webkit-box;
@@ -4237,15 +4267,31 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  left: 17%;
+  max-width: 170px;
+}
+
+@media screen and (min-width: 1150px) {
+  #about-us .about-us-info .about-us-info-image .about-us-image-info {
+    min-height: 130px;
+  }
 }
 
 #about-us .about-us-info .about-us-info-image .about-us-image-info h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 100%;
   padding-left: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 650px) {
+  #about-us .about-us-info .about-us-info-image .about-us-image-info h2 {
+    font-size: 60px;
+    width: 80%;
+  }
 }
 
 #about-us .about-us-info .about-us-info-image .about-us-image-info h3 {
@@ -4375,7 +4421,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 #about-us .team-members .team-div strong {
-  font-size: 30px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 900px) {
+  #about-us .team-members .team-div strong {
+    font-size: 30px;
+  }
 }
 
 #about-us .team-members .team-div p {
@@ -4581,14 +4633,8 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .enquiry-form .wpcf7-form {
-  padding: 0 20px 50px;
+  padding: 0 40px;
   background: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .category .enquiry-form .wpcf7-form {
-    padding: 0;
-  }
 }
 
 .category .enquiry-form {
@@ -4636,18 +4682,11 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .category .enquiry-form .wpcf7-date {
-    width: 82%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .category .enquiry-form .half {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 82%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -4687,6 +4726,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   padding: 10px;
   resize: none;
   height: 100px;
+  width: 100% !important;
 }
 
 .category .enquiry-form input::-webkit-input-placeholder {
@@ -4932,11 +4972,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .security-solution-div div {
-  width: 45%;
   border: 2px solid;
   text-align: center;
   background: #ffffff;
   margin-top: 25px;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .category .security-solution-div div {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -4947,7 +4993,8 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 .category .security-solution-div div img {
   padding: 20px;
-  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .category .security-solution-div div a {
@@ -5203,18 +5250,11 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  #security-solutions .info-block .enquiry-form .wpcf7-date {
-    width: 82%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   #security-solutions .info-block .enquiry-form .half {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 82%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -5494,7 +5534,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .single-security-solutions .title-div {
-  height: 350px;
+  height: 250px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5502,6 +5542,12 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .single-security-solutions .title-div {
+    height: 350px;
+  }
 }
 
 .single-security-solutions .title-div div {
@@ -5558,6 +5604,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#security-product .enquiry-form {
+  top: -71px;
 }
 
 #security-product .product-info {

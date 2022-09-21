@@ -44,10 +44,11 @@
                 <?php echo $about_us_text; ?>
             </div>
             <div class="about-us-info-image">
-                <span class="about-us-image-1"><img src="<?php echo $about_us_image_1['url']; ?>" alt="<?php echo $about_us_image_1['alt']; ?>">
+                <div class="about-us-image-1">
+                    <img src="<?php echo $about_us_image_1['url']; ?>" alt="<?php echo $about_us_image_1['alt']; ?>">
                     <div class="about-us-image-info"><?php echo $about_us_image_info; ?></div>
-                </span>
-                <span class="about-us-image-2" ><img src="<?php echo $about_us_image_2['url']; ?>" alt="<?php echo $about_us_image_2['alt']; ?>"></span>
+                </div>
+                <div class="about-us-image-2" ><img src="<?php echo $about_us_image_2['url']; ?>" alt="<?php echo $about_us_image_2['alt']; ?>"></div>
             </div>
         </div>
     </div>

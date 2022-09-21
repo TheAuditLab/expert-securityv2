@@ -125,12 +125,14 @@
                   a {
                     color: #ffffff;
                   }
-                  &:after {                    
-                    height: 900px;
-                    width: 900px;
-                    bottom: -220px;
-                    transition: 1.3s;
-                    transform: skewX(-45deg);
+                  @media screen and (min-width: 768px) {
+                    &:after {                    
+                      height: 900px;
+                      width: 900px;
+                      bottom: -220px;
+                      transition: 1.3s;
+                      transform: skewX(-45deg);
+                    }  
                   }
                 }
             }

@@ -4,18 +4,12 @@
 
     $why_choose_1_image = get_field("why_choose_1_image");
     $why_choose_1_text = get_field("why_choose_1_text");
-    $why_choose_1_link = get_field("why_choose_1_link");
-    $why_choose_1_link = get_field("why_choose_1_link_text");
 
     $why_choose_2_image = get_field("why_choose_2_image");
     $why_choose_2_text = get_field("why_choose_2_text");
-    $why_choose_2_link = get_field("why_choose_2_link");
-    $why_choose_1_link = get_field("why_choose_2_link_text");
 
     $why_choose_3_image = get_field("why_choose_3_image");
     $why_choose_3_text = get_field("why_choose_3_text");
-    $why_choose_3_link = get_field("why_choose_3_link");
-    $why_choose_1_link = get_field("why_choose_3_link_text");
 ?>
 
 <section id="why-choose">

@@ -57,19 +57,19 @@
             width: 50%;
             max-width: 460px;
         }
+        form {
+            padding: 0 40px;
+        }
         .wpcf7-not-valid {
             border: 1px solid red;
         }
         .wpcf7-date {
             width: 100%;
-            @media screen and (min-width: 768px) {
-                width: 82%;
-            }
         }
         @media screen and (min-width: 1200px) {
             .half {
                 display: flex;
-                width: 82%;
+                width: 100%;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 margin: 0 auto;
@@ -89,9 +89,6 @@
             background: unset;
             border: 1px solid var(--light-grey);
             width: 100%;
-            @media screen and (min-width: 768px) {
-                width: unset;
-            }
         }
         input {
             max-height: 50px;
