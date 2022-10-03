@@ -3501,7 +3501,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 @media screen and (min-width: 768px) {
   #why-choose .why-choose .why-choose-div div {
-    width: 30%;
+    width: 32%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4084,7 +4084,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4557,7 +4557,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   font-size: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .category h5 {
     font-size: 20px;
   }
@@ -4566,12 +4566,6 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 .category .info-text {
   margin-top: 40px;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .category .info-text {
-    margin-bottom: 120px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -4844,11 +4838,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .left-category div {
-  width: 45%;
+  width: 100%;
   border: 2px solid;
   text-align: center;
   background: #ffffff;
   margin-top: 25px;
+}
+
+@media screen and (min-width: 960px) {
+  .category .left-category div {
+    width: 45%;
+  }
 }
 
 .category .left-category div img {
@@ -4913,11 +4913,17 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .right-category div {
-  width: 45%;
+  width: 100%;
   border: 2px solid;
   text-align: center;
   background: #ffffff;
   margin-top: 25px;
+}
+
+@media screen and (min-width: 960px) {
+  .category .right-category div {
+    width: 45%;
+  }
 }
 
 .category .right-category div img {
@@ -5073,13 +5079,19 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 .category #feedbackSlider {
   width: 100%;
-  margin-top: 100px;
   position: relative;
   overflow: hidden;
   color: #ffffff;
   text-align: center;
   padding: 100px 0;
   max-height: 600px;
+  margin: 50px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .category #feedbackSlider {
+    margin: 100px 0 0;
+  }
 }
 
 .category #feedbackSlider p {
@@ -5152,10 +5164,16 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   background-size: cover;
   cursor: pointer;
   z-index: 12;
-  left: 30px;
+  left: 10px;
   width: 40px;
   height: 40px;
   top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .category #feedbackSlider .feedback-slider .slick-prev {
+    left: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -5174,10 +5192,16 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   display: block;
   background-size: cover;
   z-index: 12;
-  right: 30px;
+  right: 10px;
   width: 40px;
   height: 40px;
   top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .category #feedbackSlider .feedback-slider .slick-next {
+    right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -5186,6 +5210,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
     width: 70px;
     height: 70px;
   }
+}
+
+.category #feedbackSlider .feedback-slider h3 {
+  padding: 0 30px;
 }
 
 .category .contact-info h2 {
