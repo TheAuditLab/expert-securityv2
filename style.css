@@ -4852,7 +4852,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .left-category div img {
-  padding: 40px 40px 20px;
+  padding: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 200px;
 }
 
 .category .left-category h3 {
@@ -4860,7 +4863,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .left-category h4 {
-  font-size: 22px;
+  font-size: 20px;
   padding-top: 20px;
   margin-bottom: 0;
 }
@@ -4918,7 +4921,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .right-category div img {
-  padding: 40px 40px 20px;
+  padding: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 200px;
 }
 
 .category .right-category h3 {
@@ -4926,7 +4932,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .right-category h4 {
-  font-size: 22px;
+  font-size: 20px;
   padding-top: 20px;
   margin-bottom: 0;
   background: #ffffff;
@@ -4965,9 +4971,9 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
 }
 
@@ -4979,22 +4985,32 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .category .security-solution-div div {
-    width: 45%;
+    width: 48%;
+    margin: 1%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .category .security-solution-div div {
+    width: 31%;
+    margin: 1%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .category .security-solution-div div {
     width: 23%;
+    margin: 1%;
   }
 }
 
 .category .security-solution-div div img {
   padding: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 200px;
 }
 
 .category .security-solution-div div a {
@@ -5075,7 +5091,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 @media screen and (min-width: 768px) {
   .category #feedbackSlider p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
