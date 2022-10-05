@@ -14,3 +14,58 @@ src: url("fonts/AlbertSans-Regular.otf");
 }
 
 
+h1, h2, h3, h4, h5 {
+    -webkit-font-smoothing: antialiased;
+}
+
+ p, a, span{
+    font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+}
+
+
+strong {
+    font-family: "AlbertSans-Regular", Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+
+    @media (max-width: 768px){
+        font-size: 50px;
+    }
+    @media (max-width: 767px){
+        font-size: 44px;
+    }
+}
+
+h2{
+    font-size: 40px;
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
+
+    @media screen and (min-width: 768px) {
+        font-size: 45px;
+    }
+}
+
+h3{
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif !important;
+
+    @media screen and (min-width: 768px) {
+        font-size: 37px;
+    }
+}
+
+h4{
+    font-size: 22px;
+    line-height: 26px;
+}
+h5 {
+    font-size: 20px;
+}
+

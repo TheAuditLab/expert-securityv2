@@ -36,8 +36,8 @@
     <div class="container hero">
         <div class="row">
             <div class="col-12">			
-                <h2><?php single_cat_title(); 
-                ?></h2>
+                <h1><?php single_cat_title(); 
+                ?></h1>
             </div>
         </div>	
     </div>
