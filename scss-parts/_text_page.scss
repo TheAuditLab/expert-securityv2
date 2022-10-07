@@ -3,7 +3,10 @@
         padding: 25px 0;
     }
     .hero-image {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 50px;
+        }
     }
     ul li, ol li {
         margin: 0 40px 10px;

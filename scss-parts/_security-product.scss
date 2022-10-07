@@ -5,14 +5,12 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .enquiry-form {
-        top: -71px;
-    }
     .product-info {
         width: 100%;
-        padding-bottom: 50px;
+        padding: 50px 0;
         @media screen and (min-width: 768px) {
             display: flex;
+            padding-bottom: 50px;
         }
         .enquire-btn {
             justify-content: center;
@@ -30,14 +28,20 @@
             }
         }
         .product-image {
-            width: 50%;
+            width: 100%;
             text-align-last: center;
             margin: 0 auto;
             margin-bottom: 25px;
+            @media screen and (min-width: 768px) {
+                width: 50%;
+            }
             img {
-                max-height: 400px;
+                max-height: 300px;
                 margin: 0 auto;
                 max-width: 90%;
+                @media screen and (min-width: 768px) {
+                    max-height: 400px;
+                }
             }
         }
         .product-spec {
@@ -172,7 +176,6 @@
         content: '';
         display: block;
         background-size: cover;
-        top: 40px;
         cursor: pointer;
         z-index: 12;
         left: 30px;
@@ -192,7 +195,6 @@
         content: '';
         display: block;
         background-size: cover;
-        top: 40px; 
         z-index: 12;
         right: 30px;
         width: 40px;

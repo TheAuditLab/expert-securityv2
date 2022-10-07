@@ -148,6 +148,7 @@
         .category-div {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             a {
                 position: relative;
                 z-index: 2;
@@ -158,7 +159,10 @@
                 width: 48%;
                 margin-bottom: 30px;
                 margin-right: 2%;
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 480px) {
+                    width: 30%;
+                }
+                @media screen and (min-width: 992px) {
                     width: 23%;
                 }
             }
@@ -171,10 +175,8 @@
                     left: 0;
                     opacity: 0.6;
                 }
-                width: 250px;
                 text-align: center;
                 border: 3px solid var(--green);
-                height: 250px;
                 padding: 50px 0;
                 background-size: cover;
                 position: relative;
@@ -184,8 +186,12 @@
                 overflow: hidden;
                 color: white;
                 background-position: center;
-                background-size: contain;
                 background-repeat: no-repeat;
+                height: 150px;
+                @media screen and (min-width: 768px) {
+                    height: 250px;
+                    width: 250px;
+                }
 
                 
                 
@@ -215,7 +221,9 @@
                     }  
                   }
                   h4 {
-                      opacity: 1;
+                      @media screen and (min-width:768px) {
+                        opacity: 1;
+                      }
                   }
                 }
             }
@@ -241,13 +249,9 @@
 .single-category {
     position: relative;
     .hero-image {
-        height: 250px;
         width: 100%;
         position: relative;
         object-fit: cover;
-        @media screen and (min-width: 768px) {
-            height: 350px;
-        }
         .container {
             height: 100%;
             display: flex;
@@ -258,7 +262,7 @@
         }
     }
     .title-div {
-        height: 250px;
+        height: 200px;
         position: relative;
         display: flex;
         align-items: center;

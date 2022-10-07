@@ -15,7 +15,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">			
-							<h2 class="title"><?php echo $text_content_hero_title; ?><h2>
+							<h2 class="title"><?php echo $text_content_hero_title; ?></h2>
 						</div>
 					</div>
 				</div>	

@@ -175,7 +175,6 @@
                 width: 100%;
                 text-align: center;
                 border: 2px solid var(--green);
-                height: 250px;
                 padding: 50px 0;
                 background-size: cover;
                 position: relative;
@@ -185,6 +184,10 @@
                 overflow: hidden;
                 color: white;
                 background-position: center;
+                height: 150px;
+                @media screen and (min-width: 768px) {
+                    height: 250px;
+                }
                 
                 
                 &:after {
@@ -217,6 +220,7 @@
                 position: relative;
                 z-index: 2;
                 font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
+                padding: 0 20px;
             }
         }
     }  
@@ -233,13 +237,10 @@
 .single-security-solutions {
     position: relative;
     .hero-image {
-        height: 250px;
         width: 100%;
         position: relative;
         object-fit: cover;
-        @media screen and (min-width: 768px) {
-            height: 350px;
-        }
+
         .container {
             height: 100%;
             display: flex;
@@ -250,12 +251,12 @@
         }
     }
     .title-div {
-        height: 250px;
+        height: 150px;
         position: relative;
         display: flex;
         align-items: center;
         @media screen and (min-width: 768px) {
-            height: 350px;
+            height: 300px;
         }
         div {
             width: 100%;

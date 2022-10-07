@@ -62,14 +62,15 @@
         align-items: center;
         vertical-align: center;
         padding: 10px;
-        max-height: 250px;
+        max-height: 200px;
         @media screen and (min-width: 768px) {
-            max-height: 350px;
+            max-height: 300px;
         }
 
         .container {
             position: relative;
             z-index: 3;
+            bottom: 10px;
         }
         &:after {
             content: '';
@@ -83,17 +84,14 @@
         }
     }
     .hero-title {
-        font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
         line-height: 1;
         max-width: 800px;
-        font-size: 30px;
-        @media screen and (min-width: 1200px) {
-            font-size: 60px;
-        }
     }
     .button-div {
         display: flex;
-        margin-top: 20px;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
         .shop-button {
             text-decoration: none;
             padding: 15px 20px;
