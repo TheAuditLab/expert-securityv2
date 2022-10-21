@@ -60,7 +60,7 @@
                 <div class="left-category">
                     <h3>' . $left_category_title . '</h3>
                         <div>
-                            <a href="' . $left_category_1->guid  .'">
+                            <a href="' . get_permalink($left_category_1)  .'">
                                 <h4>' . $left_category_1->post_title . '</h4>
                                 <img src="' . get_field('security_product_image_1',  $left_category_1->ID )['url'] . '">
                                 <span class="price">
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="' . $left_category_2->guid  .'">
+                            <a href="' . get_permalink($left_category_2)  .'">
                                 <h4>' . $left_category_2->post_title . '</h4>
                                 <img src="' . get_field('security_product_image_1',  $left_category_2->ID )['url'] . '">
                                 <span class="price">
@@ -83,7 +83,7 @@
                 <div class="right-category">
                     <h3>' . $right_category_title . '</h3>
                         <div>
-                            <a href="' . $right_category_1->guid  .'">
+                            <a href="' . get_permalink($right_category_1)  .'">
                                 <h4>' . $right_category_2->post_title . '</h4>
                                 <img src="' . get_field('security_product_image_1',  $right_category_2->ID )['url'] . '">
                                 <span class="price">
@@ -93,7 +93,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="' . $right_category_2->guid  .'">
+                            <a href="' . get_permalink($right_category_2)  .'">
                                 <h4>' . $right_category_2->post_title . '</h4>
                                 <img src="' . get_field('security_product_image_1',  $right_category_2->ID )['url'] . '">
                                 <span class="price">
@@ -112,7 +112,7 @@
                 ';
                 if ($category_1->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_1->post_name  .'">
+                        <a href="' . get_permalink($category_1)  .'">
                             <h4>' . $category_1->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_1->ID )['url'] . '">
                             <span class="price">
@@ -124,7 +124,7 @@
                     }
                 if ($category_2->post_name ) {
                     echo '<div>
-                        <a href="' . $category_2->guid  .'">
+                        <a href="' . get_permalink($category_2)  .'">
                             <h4>' . $category_2->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_2->ID )['url'] . '">
                             <span class="price">
@@ -136,7 +136,7 @@
                 }
                 if ($category_3->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_3->post_name  .'">
+                        <a href="' . get_permalink($category_3)  .'">
                             <h4>' . $category_3->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_3->ID )['url'] . '">
                             <span class="price">
@@ -148,7 +148,7 @@
                 }
                 if ($category_4->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_4->post_name  .'">
+                        <a href="' . get_permalink($category_4)  .'">
                             <h4>' . $category_4->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_4->ID )['url'] . '">
                             <span class="price">
@@ -160,7 +160,7 @@
                 }
                 if ($category_5->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_5->post_name  .'">
+                        <a href="' . get_permalink($category_5)  .'">
                             <h4>' . $category_5->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_5->ID )['url'] . '">
                             <span class="price">
@@ -172,7 +172,7 @@
                 }
                 if ($category_6->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_6->post_name  .'">
+                        <a href="' . $category_6->post_name  .'">
                             <h4>' . $category_6->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_6->ID )['url'] . '">
                             <span class="price">
@@ -184,7 +184,7 @@
                 }
                 if ($category_7->post_name ) {
                     echo'<div>
-                        <a href="/security-solutions/bollards/' . $category_7->post_name  .'">
+                        <a href="' . get_permalink($category_7)  .'">
                             <h4>' . $category_7->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_7->ID )['url'] . '">
                             <span class="price">
@@ -196,7 +196,7 @@
                 }
                 if ($category_8->post_name ) {
                     echo '<div>
-                        <a href="/security-solutions/bollards/' . $category_8->post_name  .'">
+                        <a href="' . get_permalink($category_8)  .'">
                             <h4>' . $category_8->post_title . '</h4>
                             <img src="' . get_field('security_product_image_1',  $category_8->ID )['url'] . '">
                             <span class="price">

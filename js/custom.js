@@ -27,6 +27,11 @@ jQuery(document).ready(function($) {
         $("body").removeClass("overflow");
     });
 
+    $(".dropdown-btn").click(function(){
+        $(this).next("ul").toggle();
+        $(this).toggleClass("active");
+    });
+
     jQuery(".product-spec .prive").insertAfter("table");
 
     $(window).resize(function(){

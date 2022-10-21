@@ -6,7 +6,7 @@
         <?php if ( is_singular() ) {
             echo '<div class="img-title" rel="bookmark">';
         }?>
-        <?php if ( $product_hero_bg || has_post_thumbnail()  ) { ?>
+        <?php if ( $product_hero_bg || has_post_thumbnail() ||  is_singular() ) { ?>
         <img class="hero-image" src="<?php the_post_thumbnail_url(); ?>" style="background-image: url('<?php echo $product_hero_bg['url']; ?>')">
         <?php 
             }else{ 

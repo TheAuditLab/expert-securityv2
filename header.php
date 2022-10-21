@@ -77,7 +77,8 @@
     <div class="container">
         <?php
             wp_nav_menu( array( 
-                'theme_location' => 'main-menu', 
+                'theme_location' => 'main-menu',
+                'after'           => '<button class="dropdown-btn"></button>', 
                 'container_class' => 'main-menu' ) ); 
         ?>
         <div class="header-info">

@@ -36,6 +36,7 @@
             }
             .about-us-image-1 {
                 width: 45%;
+                max-height: 450px;
                 @media screen and (min-width: 1200px) {
                     width: 40%;
                 }
@@ -48,6 +49,7 @@
             }
             .about-us-image-2 {
                 width: 45%;
+                max-height: 500px;
                 @media screen and (min-width: 1200px) {
                     width: 40%;
                 }

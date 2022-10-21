@@ -36,7 +36,7 @@
                     <p>from</p>
                     <h4><?php echo $price ?></h4>
                 </div>
-                <div class="enquire-btn"><a href="#product-form">Enquire Now</a></div>
+                <a href="#product-form"><div class="enquire-btn">Enquire Now</div></a>
             </div>
         </div>
     </div>

@@ -8,8 +8,11 @@
 <?php 
 $price = get_field("price");
 
-if ( !is_singular() || $price)
+if ( !is_singular() || !$price)
     include "title-div.php";
+
+if ( !is_singular() || $price)
+    include 'header-div.php';
 ?>
 <?php 
 if ( is_singular() && $price )
