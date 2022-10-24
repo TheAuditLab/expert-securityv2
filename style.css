@@ -4493,6 +4493,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 @media screen and (min-width: 768px) {
   #about-us .team-members {
+    bottom: 250px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
