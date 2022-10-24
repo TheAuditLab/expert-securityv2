@@ -5784,6 +5784,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
           justify-content: center;
 }
 
+.single-our-work .title-div, .single-post .title-div {
+  display: none;
+}
+
 #security-product .container {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,3 +1,4 @@
+
 <div class="title-div">
     <div> 
         <?php if ( !is_singular() ) {
