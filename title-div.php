@@ -11,7 +11,7 @@
         <?php 
             }else{ 
         ?>
-        <img class="hero-image" src="<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')" style="background-image: url('<?php echo $product_hero_bg['url']; ?>')">
+        <img class="hero-image" src="<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')" style="background-image: url('<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')">
         <?php
             } 
         ?> 
