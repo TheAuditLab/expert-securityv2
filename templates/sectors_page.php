@@ -68,14 +68,18 @@
 			</div>
 		</div>
 		<div class="container contact-info-div">
-			<div class="contact-info">
-				<span><img src="<?php echo $phone_icon['url']; ?>"></span>
-				<p><?php echo $phone_icon_text; ?></p>
-			</div>
-			<div class="contact-info">
-				<span><img src="<?php echo $mail_icon['url']; ?>"></span>
-				<p><?php echo $mail_icon_text; ?></p>
-			</div>
+			<a href="<?php $phone_url ?>">
+				<div class="contact-info">
+					<span><img src="<?php echo $phone_icon['url']; ?>"></span>
+					<p><?php echo $phone_icon_text; ?></p>
+				</div>
+			</a>
+			<a href="<?php $mail_url ?>">
+				<div class="contact-info">
+					<span><img src="<?php echo $mail_icon['url']; ?>"></span>
+					<p><?php echo $mail_icon_text; ?></p>
+				</div>
+			</a>
 			<div class="contact-info">
 				<span><img src="<?php echo $home_icon['url']; ?>"></span>
 				<p><?php echo $home_icon_text; ?></p>
