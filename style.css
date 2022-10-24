@@ -1945,6 +1945,12 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 @media screen and (min-width: 768px) {
   #header .menu-item-has-children > .dropdown-btn {
+    top: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #header .menu-item-has-children > .dropdown-btn {
     display: none;
     top: 14px;
   }
@@ -2005,7 +2011,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   border-right: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   #header .sub-menu .menu-item-has-children > .dropdown-btn {
     border-left: solid 5px var(--green);
     border-bottom: solid 5px transparent;
@@ -2028,7 +2034,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   border-bottom: 1px solid #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   #header .sub-menu .sub-menu li {
     background: var(--green);
   }
@@ -2061,7 +2067,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   border-right: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   #header .sub-menu .sub-menu .menu-item-has-children .dropdown-btn {
     border-left: solid 5px #ffffff;
     border-bottom: solid 5px transparent;

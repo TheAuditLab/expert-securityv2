@@ -50,9 +50,12 @@
         background: unset;
         transform: rotate(90deg);
         @media screen and (min-width: 768px) {
-           display: none;
            top: 14px;
         }
+        @media screen and (min-width: 1200px) {
+            display: none;
+            top: 14px;
+         }
     }
     .sub-menu.active {
         display: block !important;
@@ -93,7 +96,7 @@
                 top: 16px;
                 opacity: 0.8;
                 border-right: 0;
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 1200px) {
                     border-left: solid 5px var(--green);
                     border-bottom: solid 5px transparent;
                     border-top: solid 5px transparent;
@@ -110,7 +113,7 @@
             li {
                 background: var(--blue);
                 border-bottom: 1px solid #ffffff;
-                @media screen and (min-width: 768px) {
+                @media screen and (min-width: 1200px) {
                     background: var(--green);
                 }
                 a {
@@ -135,7 +138,7 @@
                     top: 16px;
                     opacity: 0.8;
                     border-right: 0;
-                    @media screen and (min-width: 768px) {
+                    @media screen and (min-width: 1200px) {
                         border-left: solid 5px #ffffff;
                         border-bottom: solid 5px transparent;
                         border-top: solid 5px transparent;
