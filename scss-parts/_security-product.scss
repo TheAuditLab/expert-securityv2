@@ -46,7 +46,7 @@
         }
         .product-spec {
             border: 1px solid;
-            padding: 0px 15px;
+            padding: 25px 15px 15px;
             background: #eeeeed;
             height: fit-content;
             @media screen and (min-width: 768px) {
@@ -204,6 +204,22 @@
             right: 40px;
             width: 40px;
             height: 40px;
+        }
+    }
+    .spec-sheet {
+        text-transform: uppercase;
+        display: flex;
+        margin: 0 auto;
+        max-width: 300px;
+        span {
+            line-height: 1;
+            font-weight: 800;
+            align-self: center;
+        }
+        img {
+            max-width: 50px;
+            padding-right: 10px;
+            object-fit: contain;
         }
     }
 }

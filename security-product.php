@@ -2,6 +2,7 @@
     $product_image = get_field("product_image");
     $security_product_text = get_field("security_product_text");
     $product_spec = get_field("product_spec");
+    $spec_sheet = get_field("spec_sheet");
     $price = get_field("price");
     $product_information = get_field("product_information");
     $product_information_bg = get_field("product_information_bg");
@@ -32,6 +33,13 @@
             </div>
             <div class="product-spec">
                 <?php echo $product_spec ?>
+                <?php if($spec_sheet) { ?>
+                    <a href="<?php echo $spec_sheet ?>" target="_blank">
+                        <div class="spec-sheet">
+                            <img src="<?php bloginfo('template_url'); ?>/images/pdf-icon.png"><span>Download our <?php echo the_title() ?> Guide</span>
+                        </div>
+                    </a>
+                <?php } ?>
                 <div class="price">
                     <p>from</p>
                     <h4><?php echo $price ?></h4>

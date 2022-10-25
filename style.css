@@ -5893,7 +5893,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 
 #security-product .product-info .product-spec {
   border: 1px solid;
-  padding: 0px 15px;
+  padding: 25px 15px 15px;
   background: #eeeeed;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -6116,6 +6116,30 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
     width: 40px;
     height: 40px;
   }
+}
+
+#security-product .spec-sheet {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+#security-product .spec-sheet span {
+  line-height: 1;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#security-product .spec-sheet img {
+  max-width: 50px;
+  padding-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #text_page h2 {
