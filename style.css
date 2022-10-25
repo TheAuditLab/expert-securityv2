@@ -2961,7 +2961,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .page-template-text_page #footer {
-  margin-top: 0px;
+  margin-top: 260px;
   background: var(--blue);
 }
 
@@ -2978,7 +2978,13 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 .page-template-text_page #footer .container .contact-box {
   position: absolute;
   width: 100%;
-  top: -170px;
+  top: -230px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-template-text_page #footer .container .contact-box {
+    top: -170px;
+  }
 }
 
 .page-template-text_page #footer .container .row {
@@ -3006,7 +3012,19 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   margin-top: 0;
 }
 
-#footer .wpcf7-response-output, #footer .wpcf7-not-valid-tip {
+#footer .wpcf7-response-output {
+  position: absolute;
+  top: 250px;
+  left: -18px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer .wpcf7-response-output {
+    top: 80px;
+  }
+}
+
+#footer .wpcf7-not-valid-tip {
   position: absolute;
 }
 
@@ -4626,8 +4644,14 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 .category .hero-image {
-  height: 300px;
+  height: 200px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .category .hero-image {
+    height: 300px;
+  }
 }
 
 .category .hero-image:after {

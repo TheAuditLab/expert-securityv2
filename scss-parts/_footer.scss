@@ -324,7 +324,7 @@
         }
     }
     .page-template-text_page & {
-        margin-top: 0px;
+        margin-top: 260px;
         background: var(--blue);
         @media screen and (min-width: 768px) {
             margin-top: 200px;
@@ -334,7 +334,10 @@
             .contact-box {
                 position: absolute;
                 width: 100%;
-                top: -170px;
+                top: -230px;
+                @media screen and (min-width: 768px) {
+                    top: -170px;
+                }
             }
             .row {
                 padding-top: 130px;
@@ -356,7 +359,15 @@
     .search-results & {
         margin-top: 0;
     }
-    .wpcf7-response-output, .wpcf7-not-valid-tip {
+    .wpcf7-response-output {
+        position: absolute;
+        top: 250px;
+        left: -18px;
+        @media screen and (min-width: 768px) {
+            top: 80px;
+        }
+    }
+    .wpcf7-not-valid-tip {
         position: absolute;
     }
     .wpcf7-not-valid-tip{
