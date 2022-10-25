@@ -11,7 +11,7 @@
 ?>
 
 <section id="feedbackSlider" style="background-image: url('<?php echo $feedback_bg_image['url']; ?>');">
-    <h2> <?php echo $feedback_title ?> </h2>
+    <h1> <?php echo $feedback_title ?> </h1>
     <div class="slider feedback-slider">
         <?php
             if(($feedback_slider_1)){

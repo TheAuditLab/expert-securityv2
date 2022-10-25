@@ -1359,7 +1359,7 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   margin-bottom: 50px;
 }
 
-.entry-summary .hero-image h2 {
+.entry-summary .hero-image h1 {
   position: relative;
   z-index: 1;
   text-align: center;
@@ -1754,6 +1754,10 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
   .blog .blog-header .title {
     font-size: 100px;
   }
+}
+
+.blog .hero-image:after {
+  display: none;
 }
 
 .single-post a {
@@ -7057,14 +7061,14 @@ strong {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   letter-spacing: 1px;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 480px) {
   h1 {
-    font-size: 44px;
+    font-size: 36px;
   }
 }
 

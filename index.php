@@ -3,7 +3,7 @@ get_header();
 if ( have_posts() )  {
     echo    '<div class="news-header">
                 <div class="container"> 
-                    <h2>Latest News</h2>
+                    <h1>Latest News</h1>
                 </div>
             </div>';
 }

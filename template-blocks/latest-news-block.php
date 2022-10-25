@@ -5,7 +5,7 @@
 <section id="latest-news-block">
     <div class="container">
         <div class="title-div">
-            <h2>Latest News</h2>
+            <h1>Latest News</h1>
             <div class="button">
                 <a href="/news"><p class="news-btn">View all news</p></a>
             </div>

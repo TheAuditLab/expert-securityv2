@@ -38,7 +38,7 @@
         ?>
         <div class="home-hero-img" style="background-image: url('<?php echo $hero_slider_image_1; ?>');">
             <div class="container">
-                <h2 class="hero-title"><?php echo $hero_slider_title_1; ?></h2>
+                <h1 class="hero-title"><?php echo $hero_slider_title_1; ?></h1>
                 <div class="button-div">
                     <a class="shop-button" href="<?php echo $hero_slider_shop_link_1; ?>"><?php echo $hero_slider_shop_text_1; ?></a> 
                     <a class="read-button" href="<?php echo $hero_slider_read_link_1; ?>"><?php echo $hero_slider_read_text_1; ?></a> 
@@ -56,7 +56,7 @@
         ?>
         <div class="home-hero-img" style="background-image: url('<?php echo $hero_slider_image_2; ?>');">
             <div class="container">
-                <h2 class="hero-title"><?php echo $hero_slider_title_2; ?></h2>
+                <h1 class="hero-title"><?php echo $hero_slider_title_2; ?></h1>
                 <div class="button-div">
                     <a class="shop-button" href="<?php echo $hero_slider_shop_link_2; ?>"><?php echo $hero_slider_shop_text_2; ?></a> 
                     <a class="read-button" href="<?php echo $hero_slider_read_link_2; ?>"><?php echo $hero_slider_read_text_2; ?></a> 
@@ -74,7 +74,7 @@
         ?>
         <div class="home-hero-img" style="background-image: url('<?php echo $hero_slider_image_3; ?>');">
             <div class="container">
-                <h2 class="hero-title"><?php echo $hero_slider_title_3; ?></h2>
+                <h1 class="hero-title"><?php echo $hero_slider_title_3; ?></h1>
                 <div class="button-div">
                     <a class="shop-button" href="<?php echo $hero_slider_shop_link_3; ?>"><?php echo $hero_slider_shop_text_3; ?></a> 
                     <a class="read-button" href="<?php echo $hero_slider_read_link_3; ?>"><?php echo $hero_slider_read_text_3; ?></a> 

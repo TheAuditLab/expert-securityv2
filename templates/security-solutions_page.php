@@ -64,7 +64,7 @@
 		</div>
 		<div class="security-solutions" style="background-image: url('<?php echo $security_solutions_bg_image['url']; ?>')">
 			<div class="container">
-				<h2><?php echo $security_solutions_hero_title ?></h2>
+				<h1><?php echo $security_solutions_hero_title ?></h1>
 				<div class="security-solutions-div">
 					<a href="/security-solutions/<?php echo $security_solution_1->slug ?>">
 						<div class="security-solution" style="background-image: url('<?php echo $solution_1['url'] ?>')">

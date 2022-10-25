@@ -1,7 +1,7 @@
 <div class="entry-summary">
 <?php if ( ( has_post_thumbnail() ) && ( !is_search() ) ) : ?>
     <div class="hero-image" style="background-image: url('<?php bloginfo('template_url'); ?>/images/security-bollard-5.jpg')">
-        <h2> <?php echo get_the_title(); ?> </h2>
+        <h1> <?php echo get_the_title(); ?> </h1>
     </div>
     <div class="container">
         <?php the_content(); ?>
