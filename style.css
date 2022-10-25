@@ -7057,20 +7057,20 @@ strong {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 36px;
   letter-spacing: 1px;
   font-family: "AlbertSans-Bold", Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   h1 {
-    font-size: 44px;
+    font-size: 60px;
   }
 }
 
