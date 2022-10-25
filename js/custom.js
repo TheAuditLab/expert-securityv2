@@ -2,8 +2,7 @@
 
 // OnLoad
 jQuery(document).ready(function($) {
-    
-    jQuery(".woocommerce-product-details__short-description").insertBefore(".woo-related-products-container ");
+
 
     // Search bar toggle
     jQuery(".search-icon").click(function(){
@@ -97,6 +96,9 @@ jQuery(document).ready(function($) {
 
     //Loader animation in view
         // Check if it's time to start the animation.
+
+    var width = $("body").width();
+    console.log(window.pageYOffset);
     function checkAnimation() {
         $.fn.isInViewport = function() {
             var elementTop = $(this).offset().top;
@@ -112,13 +114,25 @@ jQuery(document).ready(function($) {
     $(window).scroll(function() {
         var $lWrap = $('.l-wrap');
         var $rWrap = $('.r-wrap');
-        if (window.pageYOffset >= 1501) {
-            $lWrap.addClass('left-wrap');
-            $rWrap.addClass('right-wrap');
+        if (width < 768) {
+            if (window.pageYOffset >= 3001) {
+                $lWrap.addClass('left-wrap');
+                $rWrap.addClass('right-wrap');
+            }
+            if (window.pageYOffset <= 3000) {
+                $lWrap.removeClass('left-wrap');
+                $rWrap.removeClass('right-wrap');
+            }
         }
-        if (window.pageYOffset <= 1500) {
-            $lWrap.removeClass('left-wrap');
-            $rWrap.removeClass('right-wrap');
+        if (width >= 768) {
+            if (window.pageYOffset >= 1501) {
+                $lWrap.addClass('left-wrap');
+                $rWrap.addClass('right-wrap');
+            }
+            if (window.pageYOffset <= 1500) {
+                $lWrap.removeClass('left-wrap');
+                $rWrap.removeClass('right-wrap');
+            }
         }
     });
 });
