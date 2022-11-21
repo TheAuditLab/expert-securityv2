@@ -304,7 +304,10 @@
             .contact-box {
                 position: absolute;
                 width: 100%;
-                top: -170px;
+                top: -250px;
+                @media screen and (min-width: 768px) {
+                    top: -170px;
+                }
             }
             .row {
                 padding-top: 130px;

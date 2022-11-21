@@ -79,7 +79,7 @@
 		</div>
 		<div class="category-template" style="background-image: url('<?php echo $category_bg_image['url']; ?>')">
 			<div class="container">
-				<h1><?php echo $category_title ?></h1>
+				<h2><?php echo $category_title ?></h2>
 				<div class="category-div">
 					<?php if ( $category_1 ) { ?>
 						<a href="<?php echo the_permalink($category_1->ID); ?>">

@@ -153,11 +153,10 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        bottom: 150px;
+        bottom: 250px;
         flex-wrap: wrap;
         flex-direction: column;
         @media screen and (min-width: 768px) {
-            bottom: 250px;
             flex-direction: row;
         }
         .team-title {
