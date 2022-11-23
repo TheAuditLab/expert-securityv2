@@ -6147,7 +6147,8 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 }
 
 #text_page h2 {
-  padding: 25px 0;
+  padding: 15px 0;
+  font-size: 30px !important;
 }
 
 #text_page .hero-image {

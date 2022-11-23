@@ -18,15 +18,15 @@
             <div class="why-choose-text"><?php echo $why_choose_text; ?></div>
             <div class="why-choose-div">
                 <div>
-                    <img src="<?php echo $why_choose_1_image['url']; ?>">
+                    <img src="<?php echo $why_choose_1_image['url']; ?>" alt="<?php echo $why_choose_1_image['name']; ?>">
                     <p><?php echo $why_choose_1_text; ?></p>
                 </div>
                 <div>
-                    <img src="<?php echo $why_choose_2_image['url']; ?>">
+                    <img src="<?php echo $why_choose_2_image['url']; ?>" alt="<?php echo $why_choose_2_image['name']; ?>">
                     <p><?php echo $why_choose_2_text; ?></p>
                 </div>
                 <div>
-                    <img src="<?php echo $why_choose_3_image['url']; ?>">
+                    <img src="<?php echo $why_choose_3_image['url']; ?>" alt="<?php echo $why_choose_3_image['name']; ?>">
                     <p><?php echo $why_choose_3_text; ?></p>
                 </div>
             </div>

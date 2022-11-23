@@ -98,7 +98,6 @@ jQuery(document).ready(function($) {
         // Check if it's time to start the animation.
 
     var width = $("body").width();
-    console.log(window.pageYOffset);
     function checkAnimation() {
         $.fn.isInViewport = function() {
             var elementTop = $(this).offset().top;

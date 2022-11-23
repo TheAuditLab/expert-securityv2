@@ -55,7 +55,7 @@
                 <a href="/">
                     <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
                 </a>
-                <button class="mobile-menu">
+                <button class="mobile-menu" aria-label="Mobile Menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
