@@ -28,7 +28,7 @@
             <div class="col-12 col-lg-6">
                 <div class="logo-div">
                     <a href="/">
-                        <img class="footer-logo" src="<?php bloginfo('template_url'); ?>/images/crest-logo.png" alt="Expert Security Logo">
+                        <img class="footer-logo" src="<?php bloginfo('template_url'); ?>/images/crest-logo.png" alt="Expert Security Logo" width="300" height="90">
                         <p>Expert Security UK</p>
                     </a>
                 </div>
@@ -55,13 +55,13 @@
             <div class="col-12 d-flex justify-content-center footer-bottom">
                 <div class="social-icons">
                     <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592" target="_blank">
-                        <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook Icon" width="30" height="30">
                     </a>
                     <a href="https://www.instagram.com/expertsecurityuk/" target="_blank">
-                        <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/instagram.svg" alt="Instagram Icon" width="30" height="30">
                     </a>
                     <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd" target="_blank">
-                        <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
                     </a>
                 </div>
 
@@ -73,6 +73,7 @@
     </div>
 </footer>
 </div>
+<script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
 <?php wp_footer(); 
 include "template-blocks/enquire-popup.php";
 ?>

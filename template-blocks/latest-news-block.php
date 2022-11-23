@@ -22,7 +22,7 @@
                 // Display the Post Title with Hyperlink
                 ?>
 
-                    <div class="blog-div">
+                    <div class="blog-div" aria-label="Blog Post">
                         <a href="<?php the_permalink(); ?>" >
                             <?php if ( has_post_thumbnail() ) { ?>
                                 <div class="img-tiles hover-effect" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')" alt="' <?php the_title() ?>'">

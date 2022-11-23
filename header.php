@@ -53,7 +53,7 @@
         <div class="container">
             <div class="logo-div">
                 <a href="/">
-                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo">
+                    <img class="header-logo" src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Expert Security Logo" width="300" height="90">
                 </a>
                 <button class="mobile-menu" aria-label="Mobile Menu">
                     <span class="line"></span>
@@ -63,11 +63,11 @@
             </div>
             <div class="contact-div">
                 <a class="tel" href="tel:<?php echo $header_phone_number; ?>">
-                    <img class="phone-icon" src="<?php bloginfo('template_url'); ?>/images/phone.svg" alt="Phone Icon">
+                    <img class="phone-icon" src="<?php bloginfo('template_url'); ?>/images/phone.svg" alt="Phone Icon" width="30" height="30">
                     <?php echo $header_phone_number ?>
                 </a>
                 <a class="email" href="mailto:<?php echo $header_email; ?>">
-                    <img class="email-icon" src="<?php bloginfo('template_url'); ?>/images/email.svg" alt="Email Icon">
+                    <img class="email-icon" src="<?php bloginfo('template_url'); ?>/images/email.svg" alt="Email Icon" width="30" height="30">
                     <?php echo $header_email?>
                 </a>
             </div>
@@ -78,35 +78,35 @@
         <?php
             wp_nav_menu( array( 
                 'theme_location' => 'main-menu',
-                'after'           => '<button class="dropdown-btn"></button>', 
+                'after'           => '<button class="dropdown-btn" aria-label="Mobile Menu"></button>', 
                 'container_class' => 'main-menu' ) ); 
         ?>
         <div class="header-info">
             <div id="search">
-                <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon">
+                <img class="search-icon" src="<?php bloginfo('template_url'); ?>/images/search.svg" alt="Search Icon" width="30" height="65">
                 <?php get_search_form(); ?>
             </div>
             <div class="social-icons desktop">
                 <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-green.svg" alt="Facebook Icon" width="30" height="30">
                 </a>
                 <a href="https://www.instagram.com/expertsecurityuk" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/instagram-green.svg" alt="Instagram Icon" width="30" height="30">
                 </a>
                 <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-green.svg" alt="LinkedIn Icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-green.svg" alt="LinkedIn Icon" width="30" height="30">
                 </a>
             </div>
             <div class="social-icons mobile">
                 <a href="https://www.facebook.com/pages/Expert-Security-Systems-UK-LTD/514239565336592" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-white.svg" alt="Facebook Icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/facebook-white.svg" alt="Facebook Icon" width="30" height="30">
                 </a>
                     <a href="https://www.instagram.com/expertsecurityuk" target="_blank">
-                        <img src="<?php bloginfo('template_url'); ?>/images/instagram-white.svg" alt="Instagram Icon">
+                        <img src="<?php bloginfo('template_url'); ?>/images/instagram-white.svg" alt="Instagram Icon" width="30" height="30">
                     </a>
                 </a>
                 <a href="https://www.linkedin.com/company/expert-security-systems-uk-ltd" target="_blank">
-                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-white.svg" alt="LinkedIn Icon">
+                    <img src="<?php bloginfo('template_url'); ?>/images/linkedin-white.svg" alt="LinkedIn Icon" width="30" height="30">
                 </a>
             </div>
         </div>

@@ -7040,16 +7040,19 @@ form .wpcf7-select:focus, form .wpcf7-select:visited {
 @font-face {
   font-family: AlbertSans-Bold;
   src: url("fonts/AlbertSans-Bold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: AlbertSans-ExtraBold;
   src: url("fonts/AlbertSans-ExtraBold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: AlbertSans-Regular;
   src: url("fonts/AlbertSans-Regular.otf");
+  font-display: swap;
 }
 
 h1, h2, h3, h4, h5 {

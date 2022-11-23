@@ -161,7 +161,6 @@ wp_enqueue_style('Font_Awesome');
 // --------- Load Custom CSS
 function generic_enqueue() {
     wp_enqueue_style( 'generic-style', get_stylesheet_uri() );
-    wp_enqueue_style( 'generic-icons', get_template_directory_uri() . '/icons/icons.css' );
     wp_enqueue_script( 'jquery' );
 }
 add_action( 'wp_enqueue_scripts', 'generic_enqueue' );
