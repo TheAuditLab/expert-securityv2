@@ -84,11 +84,11 @@
                     <h3>' . $right_category_title . '</h3>
                         <div>
                             <a href="' . get_permalink($right_category_1)  .'">
-                                <h4>' . $right_category_2->post_title . '</h4>
-                                <img src="' . get_field('security_product_image_1',  $right_category_2->ID )['url'] . '">
+                                <h4>' . $right_category_1->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $right_category_1->ID )['url'] . '">
                                 <span class="price">
                                     <p>Prices available from</p>
-                                    <h5>' . get_field('price',  $right_category_2->ID ) . '</h5>
+                                    <h5>' . get_field('price',  $right_category_1->ID ) . '</h5>
                                 </span>
                             </a>
                         </div>
@@ -106,109 +106,111 @@
             </div>
         </div>';
     }
-    echo '<div class="container">
-            <div class="security-solution-div">
-                <h3>' . $category_title . '</h3>
-                ';
-                if ($category_1->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_1)  .'">
-                            <h4>' . $category_1->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_1->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_1->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
+    if ($category_1) {
+        echo '<div class="container">
+                <div class="security-solution-div">
+                    <h3>' . $category_title . '</h3>
+                    ';
+                    if ($category_1->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_1)  .'">
+                                <h4>' . $category_1->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_1->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_1->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                        }
+                    if ($category_2->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_2)  .'">
+                                <h4>' . $category_2->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_2->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_2->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
                     }
-                if ($category_2->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_2)  .'">
-                            <h4>' . $category_2->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_2->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_2->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_3->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_3)  .'">
-                            <h4>' . $category_3->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_3->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_3->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_4->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_4)  .'">
-                            <h4>' . $category_4->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_4->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_4->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_5->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_5)  .'">
-                            <h4>' . $category_5->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_5->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_5->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_6->post_name ) {
-                    echo '<div>
-                        <a href="' . $category_6->post_name  .'">
-                            <h4>' . $category_6->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_6->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_6->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_7->post_name ) {
-                    echo'<div>
-                        <a href="' . get_permalink($category_7)  .'">
-                            <h4>' . $category_7->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_7->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_7->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-                if ($category_8->post_name ) {
-                    echo '<div>
-                        <a href="' . get_permalink($category_8)  .'">
-                            <h4>' . $category_8->post_title . '</h4>
-                            <img src="' . get_field('security_product_image_1',  $category_8->ID )['url'] . '">
-                            <span class="price">
-                                <p>Prices available from</p>
-                                <h5>' . get_field('price',  $category_8->ID ) . '</h5>
-                            </span>
-                        </a>
-                    </div>';
-                }
-            echo '</div>
-        </div>
-    </div>';
+                    if ($category_3->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_3)  .'">
+                                <h4>' . $category_3->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_3->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_3->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                    if ($category_4->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_4)  .'">
+                                <h4>' . $category_4->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_4->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_4->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                    if ($category_5->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_5)  .'">
+                                <h4>' . $category_5->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_5->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_5->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                    if ($category_6->post_name ) {
+                        echo '<div>
+                            <a href="' . $category_6->post_name  .'">
+                                <h4>' . $category_6->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_6->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_6->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                    if ($category_7->post_name ) {
+                        echo'<div>
+                            <a href="' . get_permalink($category_7)  .'">
+                                <h4>' . $category_7->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_7->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_7->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                    if ($category_8->post_name ) {
+                        echo '<div>
+                            <a href="' . get_permalink($category_8)  .'">
+                                <h4>' . $category_8->post_title . '</h4>
+                                <img src="' . get_field('security_product_image_1',  $category_8->ID )['url'] . '">
+                                <span class="price">
+                                    <p>Prices available from</p>
+                                    <h5>' . get_field('price',  $category_8->ID ) . '</h5>
+                                </span>
+                            </a>
+                        </div>';
+                    }
+                echo '</div>
+            </div>
+        </div>';    
+    }
 ?>
 <?php include "template-blocks/feedback-slider.php";?>
 

@@ -64,6 +64,7 @@ jQuery(document).ready(function($) {
         swipeToSlide: true,
         prevArrow:"<span class='slick-prev' alt='Previous arrow'></span>",
         nextArrow:"<span class='slick-next' alt='Next arrow'></span>",
+        autoplaySpeed: 2000
     });
 
 
