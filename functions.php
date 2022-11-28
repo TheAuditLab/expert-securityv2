@@ -221,3 +221,6 @@ function mytheme_custom_excerpt_length( $length ) {
   return 15;
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+
+// Fixing lazy load
+add_filter( 'wp_lazy_loading_enabled', '__return_false' );

@@ -1200,7 +1200,7 @@ body {
 .hero-image {
   background-size: cover;
   background-position: center;
-  height: 150px;
+  height: 200px;
   position: relative;
   color: #ffffff;
   z-index: 1;
@@ -1209,7 +1209,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero-image {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -7099,7 +7099,7 @@ h1 {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 

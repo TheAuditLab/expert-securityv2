@@ -414,13 +414,13 @@ body{
 .hero-image {
     background-size: cover;
     background-position: center;
-    height: 150px;
+    height: 200px;
     position: relative;
     color: #ffffff;
     z-index: 1;
     width: 100%;
     @media screen and (min-width: 768px) {
-        height: 300px;        
+        height: 250px;        
     }
     .container {
         height: 100%;
